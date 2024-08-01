@@ -1,0 +1,1097 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+td,
+th {
+  border:  solid 1px black;
+  text-align: center;
+  padding: .5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+label, input label{
+    display: block;
+}
+
+button{
+    font-family: var(--ff-primary);
+    cursor: pointer;
+}
+
+
+
+:root{
+    --bc: #050538;
+    --bc-secondary: white;
+    --bctr: rgba(5, 5, 56, 0.5);
+    --fc-primary: #00968F;
+    --fct-primary: rgba(0, 150, 143, 0.5);
+    --fc-secondary:#00FFF4;
+    --fct-secondary: rgba(0, 255, 244, 0.5);
+    --fc-secondary2: #cecccc;
+    --fct-secondary2:rgba(206, 204, 204, 0.5);
+    --fc-paragraphs: white;
+    --fs-paragraphs: 25px;
+    --ff-primary: 'Itim';
+    --transition: all 0.3s linear;
+    --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    --box-shadow2: 10px 10px 10px rgba(206, 204, 204, 0.3);
+}
+
+/*@media only screen and (min-width: 1024px) and (max-width:1379.99px){
+    
+    body{
+       background-color: var(--bc);
+        font-family: var(--ff-primary);
+        color: var(--bc);
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: var(--bc);
+    }
+    
+    .logo,
+    .carrinho,
+    .para1,
+    .para2,
+    .ajuda,
+    .central,
+    .botoes,
+    .botao-form,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape,
+    .relatorios{
+        float: left;
+    }
+
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    header{
+        width: 100%;
+        background-color: var(--bc);
+    }
+
+    header .logo{
+        margin-left: 45%;
+       
+    }
+
+    header .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    header .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    main{
+        width: 100%;
+        height: auto;
+        background-color: var(--bc-secondary);
+    }
+
+    main .carrinho{
+        width: 55%;
+        margin-left: 36%;
+        padding: .5rem;
+    }
+
+    main .carrinho img{
+        width: 10%;
+        height: 20%;
+        margin-top: 2%;
+        float: left;
+    }
+
+    main  .carrinho .para1{
+        margin-top: 45px;
+        text-align: right;
+        color: var(--bc);
+    }
+    
+    main  .carrinho .para2{
+        margin-top: 90px;
+        color: var(--bc);
+    }
+
+    main .central{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .central h1,h2,h3{
+        color: var(--bc);
+        margin:auto;
+        margin-top:1rem;
+        text-align: center;
+    }
+
+    main .central .formulario{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    main .central .formulario .botao-form{
+        width: 100%;
+        align-items: center;
+    }
+    main .central .formulario .botao-form .botao{
+        width: 150px;
+        padding: .25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: var(--fc-primary);
+        color:var(--fc-paragraphs) ;
+        font-family: var(--ff-primary);
+        font-size: 15px;
+    }
+
+    main .central  .formulario .botao-form .botao a{
+        color: var(--fc-paragraphs);
+    }
+
+    main .central .formulario .botao-form .botao:hover{
+        background-color: #050538;
+    }
+
+    main .central .container-modal{
+        width: 30%;
+        margin-left: 35%;
+        padding: 2rem;
+    }
+
+    main .central .container-modal .modal-btn{
+        width: 50%;
+        height: auto;
+        margin-left: 19%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+        color: var(--fc-paragraphs)
+    }
+
+    main .central .container-modal .modal-btn:hover{
+        background-color: var(--bc);
+    }
+
+    main .central .modal-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bctr);
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+        z-index: -10;
+        transition: var(--transition);
+    }
+    main .central .open-modal{
+        visibility: visible;
+        z-index: 10;
+    }
+    main .central .modal-container{
+        width: 50%;
+        height: auto;
+        background: var(--bc-secondary);
+        border-radius: 20px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        box-shadow: var(--box-shadow2);
+    }
+
+    main .central .modal-container h1{
+        padding: 1.5rem;
+    }
+    
+    main .central .close-btn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        color: var(--cv);
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    main .central .close-btn:hover{
+        color: var(--fc);
+        transform: scale(1.3);
+    }
+
+    
+
+    main .central .relatorios{
+        width: 60%;
+        height: auto;
+        padding: 2rem;
+        margin:auto;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    main .central .relatorios #table-relatorios-crm{
+        width: 100%;
+        background-color: var(--fc-primary);
+    }
+
+    main .central .rel-clientes{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin: auto;
+        margin-bottom: .5rem;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    main .central .rel-clientes #table-rel-clientes{
+        width: 100%;
+        background-color: var(--fc-primary);
+    }
+   
+
+    main .central .formulario .cliente{
+        width: 100%;
+        float: left;
+    }
+    main .central .formulario .cliente .row{
+        width: 90%;
+    }
+
+    main .central .formulario .cliente .input-cliente{
+        width: 65%;
+    }
+
+    main .central .formulario form input{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: none;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+    main .central .formulario form select{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: var(--fc-paragraphs);
+        padding: 0.5rem;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+
+ 
+
+    main .central .formulario .parcelamento{
+        float: left;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    main .central .formulario .parcelamento .radio{
+        width: 10%;
+        float: left;
+        display: block;
+        
+    }
+
+    main .central .formulario .parcelamento .radio label{
+        display: block;
+        
+    }
+    main .central .formulario .parcelamento .row{
+        width: 23%;
+    }
+
+    main .central .box-login{
+        width: 30%;
+        height: auto;
+        background-color: var(--fct-primary);
+        border-radius: 1rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    main .central .box-login p{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+
+    main .central .box-login a{
+        color: var(--bc);
+        display: flex;
+        justify-content: center;
+    }
+    main .central .box-login a:hover{
+        color: var(--fc-primary);
+    }
+
+    main .central .box-login .formulario .btn-login{
+        width: 25%;
+        height: auto;
+        margin-left: 35%;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+        color: var(--fc-paragraphs)
+    }
+
+    main .central .box-login .formulario form input{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: var(--fct-secondary2);
+        background-color: var(--fct-secondary2);
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+        
+    }
+    main .central .box-login .formulario form select{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: var(--fc-paragraphs);
+        padding: 0.5rem;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+  
+
+    main .central .box-login .row{
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+    }
+
+    main .central .box-login .row .col-12{
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin: auto;
+
+    }
+
+    main .central .box-login .row .col-12 .check-box{
+        float: left;
+        width: 10%;
+        margin-left: 22%;
+        
+    }
+    main .central .row{
+        width: 22.5%;
+        float: left;
+        margin-left: 15%;
+    }
+
+
+ /*   
+        main .central .page-changer{
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    main .central .page-changer ul li{
+        display: inline;
+       padding-left: .5rem;
+    }
+
+    main .central .page-changer a{
+        text-decoration: none;
+        color: var(--bc);
+    }
+
+    main .central .page-changer a:hover{
+        color: var(--fc-primary);
+    }
+
+
+    main .ajuda{
+        width: 60%;
+        height: auto;
+        margin-left: 38.5%;
+    }
+
+    main  .ajuda img{
+        width: 8%;
+        height: 70px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    main  .ajuda p{
+        color: var(--bc);
+        float: left;
+    }
+
+    main  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    main  .ajuda .para1 a{
+        color: var(--bc);
+    }
+
+    main  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    main  .ajuda .para2{
+        margin-top: 45.5px;
+        margin-left: 10px;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .rodape{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .rodape .sociais{
+        
+        font-size: 30px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    footer .rodape .social{
+        width: 200px;
+        display: flex;
+    }
+    footer .rodape .social li{
+        width: 100%;
+        list-style: none;
+    }
+    
+    footer .rodape .social li a{
+        color: #fff;
+    }
+
+    footer .rodape .social a:hover{
+        color: #00968F;
+    }
+    
+
+    footer .rodape .texto-rodape p, a{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--fc-primary);
+    }
+}
+*/
+
+
+
+@media only screen and (min-width: 1380px){
+    
+    body{
+        background-color: var(--bc);
+        font-family: var(--ff-primary);
+        color: var(--bc);
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: var(--bc);
+    }
+    
+    .logo,
+    .carrinho,
+    .para1,
+    .para2,
+    .ajuda,
+    .central,
+    .botoes,
+    .botao-form,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape,
+    .relatorios{
+        float: left;
+    }
+
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    header{
+        width: 100%;
+        background-color: var(--bc);
+    }
+
+    header .logo{
+        margin-left: 45%;
+       
+    }
+
+    header .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    header .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    main{
+        width: 100%;
+        height: auto;
+        background-color: var(--bc-secondary);
+    }
+
+    main .carrinho{
+        width: 55%;
+        margin-left: 36%;
+        padding: .5rem;
+    }
+
+    main .carrinho img{
+        width: 10%;
+        height: 20%;
+        margin-top: 2%;
+        float: left;
+    }
+
+    main  .carrinho .para1{
+        margin-top: 45px;
+        text-align: right;
+        color: var(--bc);
+    }
+    
+    main  .carrinho .para2{
+        margin-top: 90px;
+        color: var(--bc);
+    }
+
+    main .central{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .central h1,h2,h3{
+        color: var(--bc);
+        margin:auto;
+        margin-top:1rem;
+        text-align: center;
+    }
+
+    main .central .formulario{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    main .central .formulario .botao-form{
+        width: 100%;
+        align-items: center;
+    }
+    main .central .formulario .botao-form .botao{
+        width: 150px;
+        padding: .25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: var(--fc-primary);
+        color:var(--fc-paragraphs) ;
+        font-family: var(--ff-primary);
+        font-size: 15px;
+    }
+
+    main .central  .formulario .botao-form .botao a{
+        color: var(--fc-paragraphs);
+    }
+
+    main .central .formulario .botao-form .botao:hover{
+        background-color: #050538;
+    }
+
+    main .central .container-modal{
+        width: 30%;
+        margin-left: 35%;
+        padding: 2rem;
+    }
+
+    main .central .container-modal .modal-btn{
+        width: 50%;
+        height: auto;
+        margin-left: 19%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+        color: var(--fc-paragraphs)
+    }
+
+    main .central .container-modal .modal-btn:hover{
+        background-color: var(--bc);
+    }
+
+    main .central .modal-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bctr);
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+        z-index: -10;
+        transition: var(--transition);
+    }
+    main .central .open-modal{
+        visibility: visible;
+        z-index: 10;
+    }
+    main .central .modal-container{
+        width: 50%;
+        height: auto;
+        background: var(--bc-secondary);
+        border-radius: 20px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        box-shadow: var(--box-shadow2);
+    }
+
+    main .central .modal-container h1{
+        padding: 1.5rem;
+    }
+    
+    main .central .close-btn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        color: var(--cv);
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    main .central .close-btn:hover{
+        color: var(--fc);
+        transform: scale(1.3);
+    }
+
+    
+
+    main .central .relatorios{
+        width: 60%;
+        height: auto;
+        padding: 2rem;
+        margin:auto;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    main .central .relatorios #table-relatorios-crm{
+        width: 100%;
+        background-color: var(--fc-primary);
+    }
+
+    main .central .rel-clientes{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin: auto;
+        margin-bottom: .5rem;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    main .central .rel-clientes #table-rel-clientes{
+        width: 100%;
+        background-color: var(--fc-primary);
+    }
+   
+
+    main .central .formulario .cliente{
+        width: 100%;
+        float: left;
+    }
+    main .central .formulario .cliente .row{
+        width: 90%;
+    }
+
+    main .central .formulario .cliente .input-cliente{
+        width: 65%;
+    }
+
+    main .central .formulario form input{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: none;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+    main .central .formulario form select{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: var(--fc-paragraphs);
+        padding: 0.5rem;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+
+    main .central .formulario form .info{
+        width:100%;
+        height: auto;
+        float:left;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    main .central .formulario form .info p{
+       margin-left: 13%;
+    }
+
+    main .central .formulario form .tipo-cli{
+        float: left;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    main .central .formulario form .tipo-cli p{
+        margin-left: 13%;
+     }
+
+
+    main .central .formulario form .tipo-cli .radio{
+        width: 10%;
+        float: left;
+        display: block;
+        
+    }
+    
+    main .central .formulario .tipo-cli .radio label{
+        display: block;
+        
+    }
+    main .central .formulario .tipo-cli .row{
+        width: 40%;
+    }
+
+    main .central .formulario .parcelamento{
+        float: left;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    main .central .formulario .parcelamento .radio{
+        width: 10%;
+        float: left;
+        display: block;
+        
+    }
+
+    main .central .formulario .parcelamento .radio label{
+        display: block;
+        
+    }
+    main .central .formulario .parcelamento .row{
+        width: 23%;
+    }
+
+    main .central .box-login{
+        width: 30%;
+        height: auto;
+        background-color: var(--fct-primary);
+        border-radius: 1rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    main .central .box-login p{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+
+    main .central .box-login a{
+        color: var(--bc);
+        display: flex;
+        justify-content: center;
+    }
+    main .central .box-login a:hover{
+        color: var(--fc-primary);
+    }
+
+    main .central .box-login .formulario .btn-login{
+        width: 25%;
+        height: auto;
+        margin-left: 35%;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+        color: var(--fc-paragraphs)
+    }
+
+    main .central .box-login .formulario form input{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: var(--fct-secondary2);
+        background-color: var(--fct-secondary2);
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+        
+    }
+    main .central .box-login .formulario form select{
+        width: 90%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: var(--fc-paragraphs);
+        padding: 0.5rem;
+        line-height: 2rem;
+        font-family: var(--ff-primary);
+        margin-bottom: 2%;
+    }
+  
+
+    main .central .box-login .row{
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+    }
+
+    main .central .box-login .row .col-12{
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin: auto;
+
+    }
+
+    main .central .box-login .row .col-12 .check-box{
+        float: left;
+        width: 10%;
+        margin-left: 22%;
+        
+    }
+    main .central .row{
+        width: 22.5%;
+        float: left;
+        margin-left: 15%;
+    }
+
+
+ /*   
+        main .central .page-changer{
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    main .central .page-changer ul li{
+        display: inline;
+       padding-left: .5rem;
+    }
+
+    main .central .page-changer a{
+        text-decoration: none;
+        color: var(--bc);
+    }
+
+    main .central .page-changer a:hover{
+        color: var(--fc-primary);
+    }
+*/
+
+    main .ajuda{
+        width: 60%;
+        height: auto;
+        margin-left: 38.5%;
+    }
+
+    main  .ajuda img{
+        width: 8%;
+        height: 70px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    main  .ajuda p{
+        color: var(--bc);
+        float: left;
+    }
+
+    main  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    main  .ajuda .para1 a{
+        color: var(--bc);
+    }
+
+    main  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    main  .ajuda .para2{
+        margin-top: 45.5px;
+        margin-left: 10px;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .rodape{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .rodape .sociais{
+        
+        font-size: 30px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    footer .rodape .social{
+        width: 200px;
+        display: flex;
+    }
+    footer .rodape .social li{
+        width: 100%;
+        list-style: none;
+    }
+    
+    footer .rodape .social li a{
+        color: #fff;
+    }
+
+    footer .rodape .social a:hover{
+        color: #00968F;
+    }
+    
+
+    footer .rodape .texto-rodape p, a{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--fc-primary);
+    }
+
+
+}

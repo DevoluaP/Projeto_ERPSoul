@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media only screen  and (min-width:1380px){
+
+
+    body{
+        font-family: 'Itim';
+        background-color: #050538;
+    }
+
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+     header{
+        width: 100%;
+        background-color: #050538;
+     }
+  
+    header .topo .logo{
+        width: 25%;
+        margin-left: 45%;
+    }
+
+    header .topo .logo img{
+        width: 30%;
+        height: 30%;
+    }
+    header .topo .nav-bar{
+        height: auto;
+        float: right;
+        margin-top: -78px;
+        margin-left: 45%;
+    }
+
+    header .topo .nav-bar nav ul li{
+        text-decoration: none;
+        list-style: none;
+        display: table-cell;
+        padding: 1rem;
+        color: white;
+    }
+
+    main{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        color: #050538;
+    }
+
+    main .container{
+        width: 100%;
+    }
+    
+    main .container .carrinho{
+        width: 70%;
+        height: 100px;
+        margin-left: 32%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+       
+ 
+    }
+    main .container .carrinho img{
+        width: 9%;
+        height: 100px;
+        float: left;
+ 
+    }
+    main .container .carrinho p{
+        color: #050538;
+        float: left;
+        font-size: 20px;
+    }
+    main .container .carrinho .para1{
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    main .container .carrinho .para2{
+        margin-top: 70px;
+    }
+    main .container .central{
+        width: 100%;
+    }
+    main .container .central h1{
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+    }
+   
+    main .container .central .botoes{
+        width: 50%;
+        margin-left: 38%;
+    }
+    main .container .central .botoes .botao{
+        width: 30%;
+        height: auto;
+        margin: 5%;
+        margin-left: 6%;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #00968F;
+    }
+
+
+
+}

@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bc: #050538;
+    --bctr: rgba(5, 5, 56, 0.5);
+    --fc-primary: #00968F;
+    --fct-primary: rgba(0, 255, 244, 0.5);
+    --fc-secondary:#00FFF4;
+    --fct-secondary: rgba(0, 255, 244, 0.5);
+    --fc-secondary2: #cecccc;
+    --fct-secondary2:rgba(206, 204, 204, 0.5);
+    --fc-paragraphs: white;
+    --fs-paragraphs: 25px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1379.99px){
+    body{
+        background-color: var(--bc);
+        font-family: 'Itim';
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: var(--fc-paragraphs);
+    }
+
+    .logo-topo,
+    .boxes,
+    .box,
+    .box1,
+    .ajuda,
+    .para1,
+    .para2,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape{
+        float: left;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    header{
+        width: 100%;
+        background-color: var(--bc);
+    }
+    header .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    header .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    main{
+        width: 100%;
+        background-color: var(--bc);
+    }
+    
+    main .logo-topo{
+        width: 100%;
+    }
+    
+    main .logo-topo img{
+        display: block;
+        margin: auto;
+    }
+    main .pai{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main .boxes{
+        width: 70%;
+        margin:auto;       
+        margin-bottom: 2%;
+    }
+    
+    main .boxes .box{
+        width: 250px;
+        height: 250px;
+        background-color: var(--fct-secondary);
+        margin: 1rem;
+        text-align: center;
+        border-radius: 8%;
+    }
+
+    main .boxes .box:hover{
+        transform: scale(1.2);
+        background-color: var(--fct-secondary2);
+    }
+    
+    main .boxes .box a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+    
+    
+    
+    main .boxes .box img{
+        width: 55%;
+        margin: 30px;
+    }
+    main .boxes .box1 img{
+        width: 55%;
+        margin: 30px;
+    }
+    main .ajuda{
+        width: 70%;
+        height: 90px;
+        margin-left: 27%;
+    }
+
+    main  .ajuda img{
+        width: 15%;
+        height: 90px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    main  .ajuda p{
+        color: var(--fc-paragraphs);
+        float: left;
+        font-size: 20px;
+    }
+
+    main  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    main  .ajuda .para1 a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+     
+    }
+
+    main  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    main  .ajuda .para2{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer .rodape{
+        width: 100%;
+    }
+
+    footer .rodape .sociais{
+        margin-left: 40%;
+        margin-top: 2%;
+    }
+
+    footer .rodape .social{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    
+    footer .rodape .social a{
+        float: left;
+        text-decoration: none;
+        color:var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+
+    footer .rodape .social a:hover{
+        color: var(--fc-primary)
+    }
+    footer .rodape .texto-rodape{
+        color: var(--fc-paragraphs);
+        margin-left: -29%;
+        line-height: 2rem;
+        margin-top: 3rem;
+    }
+    
+    footer .rodape .texto-rodape p{
+        float: left;
+        margin-left: 4rem;
+    }
+
+    footer .rodape .texto-rodape a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--fc-primary);
+    }
+}
+
+@media only screen and (min-width: 1380px){
+    
+    body{
+        background-color: var(--bc);
+        font-family: 'Itim';
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: var(--fc-paragraphs);
+    }
+
+    .logo-topo,
+    .boxes,
+    .box,
+    .box1,
+    .ajuda,
+    .para1,
+    .para2,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape{
+        float: left;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    header{
+        width: 100%;
+        background-color: var(--bc);
+    }
+    header .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    header .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    main{
+        width: 100%;
+        background-color: var(--bc);
+    }
+    
+    main .logo-topo{
+        width: 100%;
+    }
+    
+    main .logo-topo img{
+        display: block;
+        margin: auto;
+    }
+    main .pai{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main .boxes{
+        width: 50%;
+        justify-content: center;
+        margin:auto;       
+        margin-bottom: 2%;
+    }
+    
+    main .boxes .box{
+        width: 250px;
+        height: 250px;
+        background-color: var(--fct-secondary);
+        margin: 1rem;
+        text-align: center;
+        border-radius: 8%;
+    }
+
+    main .boxes .box:hover{
+        transform: scale(1.2);
+        background-color: var(--fct-secondary2);
+    }
+    
+    main .boxes .box a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+    
+    
+    
+    main .boxes .box img{
+        width: 55%;
+        margin: 30px;
+    }
+    main .boxes .box1 img{
+        width: 55%;
+        margin: 30px;
+    }
+    main .ajuda{
+        width: 70%;
+        height: 90px;
+        margin-left: 33%;
+    }
+
+    main  .ajuda img{
+        width: 10%;
+        height: 90px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    main  .ajuda p{
+        color: var(--fc-paragraphs);
+        float: left;
+        font-size: 20px;
+    }
+
+    main  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    main  .ajuda .para1 a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+     
+    }
+
+    main  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    main  .ajuda .para2{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer .rodape{
+        width: 100%;
+    }
+
+    footer .rodape .sociais{
+        margin-left: 40%;
+        margin-top: 2%;
+    }
+
+    footer .rodape .social{
+       margin-left: 2rem;
+    }
+    
+    footer .rodape .social a{
+        float: left;
+        text-decoration: none;
+        color:var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+
+    footer .rodape .social a:hover{
+        color: var(--fc-primary)
+    }
+    footer .rodape .texto-rodape{
+        color: var(--fc-paragraphs);
+        margin-left: -19%;
+        line-height: 2rem;
+        margin-top: 3rem;
+    }
+    
+    footer .rodape .texto-rodape p{
+        float: left;
+        margin-left: 4rem;
+    }
+
+    footer .rodape .texto-rodape a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+
+    footer .rodape .texto-rodape a:hover{
+        color: var(--fc-primary);
+    }
+
+
+}

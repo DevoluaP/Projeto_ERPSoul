@@ -13,17 +13,17 @@ class Footers extends React.Component {
                         <div className="sociais">
                             <div className="social">
                                 <a href="www.facebook.com" target="_blank">
-                                    <p><FontAwesomeIcon icon={faFacebook} /></p>
+                                    <p><FontAwesomeIcon icon={ faFacebook } /></p>
                                 </a>
                             </div>
                             <div className="social">
                                 <a href="www.instagram.com" target="_blank">
-                                    <p><FontAwesomeIcon icon={faInstagram} /></p>
+                                    <p><FontAwesomeIcon icon={ faInstagram } /></p>
                                 </a>
                             </div>
                             <div className="social">
                                 <a href="www.linkedin.com" target="_blank">
-                                    <p><FontAwesomeIcon icon={faLinkedin} /></p>
+                                    <p><FontAwesomeIcon icon={ faLinkedin } /></p>
                                 </a>
                             </div>
                         </div>

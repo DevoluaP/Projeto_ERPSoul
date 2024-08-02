@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -24,7 +26,6 @@
 
     hr{
         width: 80%;
-        margin-left: 10%;
         color: var(--fc-paragraphs);
     }
 
@@ -49,6 +50,7 @@
     }
     header{
         width: 100%;
+        display: flex;
         background-color: var(--bc);
     }
     header .nav-bar{
@@ -66,6 +68,10 @@
     
     main{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background-color: var(--bc);
     }
     
@@ -80,11 +86,13 @@
     main .pai{
         width:100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
     main .boxes{
         width: 70%;
-        margin:auto;       
+        margin: auto;       
         margin-bottom: 2%;
     }
     
@@ -158,15 +166,19 @@
 
     footer{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     footer .rodape{
         width: 100%;
-    }
-
-    footer .rodape .sociais{
-        margin-left: 40%;
-        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-left: -50px;
     }
 
     footer .rodape .social{
@@ -175,7 +187,6 @@
     }
     
     footer .rodape .social a{
-        float: left;
         text-decoration: none;
         color:var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
@@ -186,9 +197,7 @@
     }
     footer .rodape .texto-rodape{
         color: var(--fc-paragraphs);
-        margin-left: -29%;
         line-height: 2rem;
-        margin-top: 3rem;
     }
     
     footer .rodape .texto-rodape p{
@@ -240,6 +249,7 @@
     }
     header{
         width: 100%;
+        display: flex;
         background-color: var(--bc);
     }
     header .nav-bar{
@@ -257,6 +267,7 @@
     
     main{
         width: 100%;
+        margin-top: 50px;
         background-color: var(--bc);
     }
     
@@ -312,7 +323,7 @@
     main .ajuda{
         width: 70%;
         height: 90px;
-        margin-left: 33%;
+        margin-left: 35%;
     }
 
     main  .ajuda img{
@@ -350,15 +361,19 @@
 
     footer{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -25px;
     }
 
     footer .rodape{
         width: 100%;
-    }
-
-    footer .rodape .sociais{
-        margin-left: 40%;
-        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
     }
 
     footer .rodape .social{
@@ -377,9 +392,7 @@
     }
     footer .rodape .texto-rodape{
         color: var(--fc-paragraphs);
-        margin-left: -19%;
         line-height: 2rem;
-        margin-top: 3rem;
     }
     
     footer .rodape .texto-rodape p{
@@ -395,6 +408,4 @@
     footer .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
-
-
 }

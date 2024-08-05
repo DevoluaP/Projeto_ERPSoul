@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-:root{
+:root{ 
     --bc: #050538;
     --bctr: rgba(5, 5, 56, 0.5);
     --fc-primary: #00968F;

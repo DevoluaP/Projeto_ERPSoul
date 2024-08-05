@@ -17,7 +17,7 @@ class Estoque extends React.Component {
                 <div id="page">
                     <Headers />
 
-                    <main>
+                    <main className="interna">
                         <div className="carrinho">
                             <p className="para1"><b>Comece a vender mais.</b></p>
                             <img src={ carrinho } alt="Carrinho" />

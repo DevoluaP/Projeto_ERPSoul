@@ -14,7 +14,7 @@ class FinancaContas extends React.Component {
             <>
                 <Headers />
 
-                <main>
+                <main className="interna">
                     <div className="container">
                         <div className="carrinho">
                             <p className="para1"><b>Comece a vender mais.</b></p>

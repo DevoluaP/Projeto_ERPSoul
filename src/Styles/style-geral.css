@@ -614,6 +614,9 @@ button{
     main{
         width: 100%;
         height: auto;
+        
+    }
+    .interna{
         background-color: var(--bc-secondary);
     }
 

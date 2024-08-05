@@ -7,8 +7,7 @@ import Headers from '../Inc/Headers';
 import Footers from '../Inc/Footers';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
-
-import '../Styles/style-geral.css';
+//import '../Styles/style-geral.css';
 
 class Crm extends React.Component {
     render() {
@@ -17,7 +16,7 @@ class Crm extends React.Component {
                 <div id="page">
                     <Headers />
 
-                    <main>
+                    <main className="interna">
                         <div className="carrinho">
                             <p className="para1"><b>Comece a vender mais.</b></p>
                             <img src={ carrinho } alt="Carrinho" />

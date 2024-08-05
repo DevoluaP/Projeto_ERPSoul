@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Headers from '../Inc/Headers';
+import Footers from '../Inc/Footers';
 import crm from '../Assets/crm.png';
 import vendas from '../Assets/vendas.png';
 import servicos from '../Assets/servicos.png';
@@ -8,6 +10,7 @@ import financas from '../Assets/financas.png';
 import estoque from '../Assets/estoque.png';
 import contab from '../Assets/contab.png';
 import ajuda from '../Assets/ajuda.png';
+
 import '../Styles/style-erp.css';
 
 class HomeERP extends React.Component {
@@ -15,6 +18,8 @@ class HomeERP extends React.Component {
         return(
             <>
                 <div id="page">
+                    <Headers />
+
                     <main>
                         <div className="pai">
                             <div className="boxes">
@@ -67,6 +72,8 @@ class HomeERP extends React.Component {
                             <p className="para2">A Soul está aqui <br />para te ajudar.</p>
                         </div>
                     </main>
+                    
+                    <Footers />
                 </div>
             </>
         );

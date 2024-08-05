@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket, faGear } from '@fortawesome/free-solid-svg-icons';
+
 import logo from '../Assets/logo.png';
-import '../Styles/style-erp.css';
 
 class Headers extends React.Component {
     render() {
         return(
-            <div id="page">
+            <>
                 <header>
                     <div className="logo">
                         <Link to="/home-erp">
@@ -22,7 +22,7 @@ class Headers extends React.Component {
                         </ul>
                     </div>
                 </header>
-            </div>
+            </>
         );
     }
 }

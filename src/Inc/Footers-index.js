@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-class Footers extends React.Component {
+class FootersIndex extends React.Component {
     render() {
-        return(
+        return (
             <>
                 <footer>
                     <div className="rodape">
@@ -40,4 +40,4 @@ class Footers extends React.Component {
     }
 }
 
-export default Footers;
+export default FootersIndex;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-class TesteGratis extends React.Component {
-    render() {
+export default function TesteGratis({ isOpen }) {
+    if (isOpen) {
         return(
             <>
                 <h2>Teste por 30 dias grátis!</h2>
@@ -65,6 +65,6 @@ class TesteGratis extends React.Component {
             </>
         );
     }
-}
 
-export default TesteGratis;
+    return null;
+}

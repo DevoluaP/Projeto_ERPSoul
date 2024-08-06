@@ -22,28 +22,28 @@ hr{
         width: 90%;
         margin-left: 5%;
     }
-     header{
+     .headerGeral{
         width: 100%;
         background-color: #050538;
      }
   
-    header .topo .logo{
+    .headerGeral .topo .logo{
         width: 25%;
         margin-left: 45%;
     }
 
-    header .topo .logo img{
+    .headerGeral .topo .logo img{
         width: 30%;
         height: 30%;
     }
-    header .topo .nav-bar{
+    .headerGeral .topo .nav-bar{
         height: auto;
         float: right;
         margin-top: -78px;
         margin-left: 45%;
     }
 
-    header .topo .nav-bar nav ul li{
+    .headerGeral .topo .nav-bar nav ul li{
         text-decoration: none;
         list-style: none;
         display: table-cell;

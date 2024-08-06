@@ -92,20 +92,20 @@ p{
 }
 
 /*fim*/
-footer{
+.footerGeral{
     width: 100%;
     display: flex;
     background: #050538;
     flex-direction: column;
     justify-content: center;
 }
-footer .rodape-senha{
+.footerGeral .rodape-senha{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-footer .rodape-senha .sociais-senha{
+.footerGeral .rodape-senha .sociais-senha{
     
     font-size: 30px;
     height: 60px;
@@ -113,21 +113,21 @@ footer .rodape-senha .sociais-senha{
     align-items: center;
     justify-content: center;  
 }
-footer .rodape-senha .social-senha{
+.footerGeral .rodape-senha .social-senha{
     width: 200px;
     display: flex;
 }
-footer .rodape-senha .social-senha li{
+.footerGeral .rodape-senha .social-senha li{
     width: 100%;
     list-style: none;
 }
-footer .rodape-senha .social-senha li a{
+.footerGeral .rodape-senha .social-senha li a{
     color: #fff;
 }
-footer .rodape-senha .social-senha a:hover{
+.footerGeral .rodape-senha .social-senha a:hover{
     color: #00968F;
 }
-footer .rodape-senha .texto-rodape-senha p{
+.footerGeral .rodape-senha .texto-rodape-senha p{
     display: flex;
     align-items: center;
     justify-content: center;

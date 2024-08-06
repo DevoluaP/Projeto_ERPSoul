@@ -7,7 +7,7 @@ class FootersIndex extends React.Component {
     render() {
         return (
             <>
-                <footer>
+                <footer className="footerIndex">
                     <div className="rodape">
                         <div className="sociais">
                             <div className="social">

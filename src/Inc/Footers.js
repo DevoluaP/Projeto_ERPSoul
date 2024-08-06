@@ -7,7 +7,7 @@ class Footers extends React.Component {
     render() {
         return(
             <>
-                <footer>
+                <footer className="footerGeral">
                     <div className="rodape">
                         <div className="sociais">
                             <div className="social">

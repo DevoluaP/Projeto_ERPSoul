@@ -24,8 +24,6 @@ button{
     cursor: pointer;
 }
 
-
-
 :root{
     --bc: #050538;
     --bc-secondary: white;
@@ -47,7 +45,6 @@ button{
 }
 
 @media only screen and (min-width: 1380px){
-    
     body{
        background-color: var(--bctr);
         font-family: var(--ff-primary);
@@ -60,26 +57,26 @@ button{
         color: var(--bc);
     }
 
-    #page{
+    .pageIndex{
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
     }
-    header{
+
+    .headerIndex{
         width: 100%;
         background-color: var(--bc);
     }
 
-    header .logo{
+    .headerIndex .logo{
         width: auto;
         height: auto;
         padding: 0;
         float: left;
     }
 
-
-    header .nav-bar{
+    .headerIndex .nav-bar{
         width: 100%;
         margin-left: 13rem;
         color: var(--fc-paragraphs);
@@ -87,7 +84,7 @@ button{
         
     }
     
-    header .nav-bar ul li{
+    .headerIndex .nav-bar ul li{
         list-style: none;
         display: block;
         float: left;
@@ -95,26 +92,26 @@ button{
       
     }
 
-    header .nav-bar a{
+    .headerIndex .nav-bar a{
         color: var(--fc-paragraphs);
         display: block;
         margin-left: 17rem;
         margin-top: 3rem;
     }
 
-    header .nav-bar a:hover{
+    .headerIndex .nav-bar a:hover{
         color: var(--fc-primary);
         display: block;
     }
 
-    header .container-modal{
+    .headerIndex .container-modal{
         width: 30%;
         margin-top: 1rem;
         margin-right: 1rem;
         float: right;
     }
 
-    header .container-modal .modal-btn{
+    .headerIndex .container-modal .modal-btn{
         width: 130px;
         height: auto;
         margin-left: 2rem;
@@ -126,11 +123,11 @@ button{
         float: right;
     }
 
-    header .container-modal .modal-btn:hover{
+    .headerIndex .container-modal .modal-btn:hover{
         background-color: var(--bc);
     }
 
-    header   .modal-overlay{
+    .headerIndex   .modal-overlay{
         position: fixed;
         top: 0;
         left: 0;
@@ -143,11 +140,13 @@ button{
         z-index: -10;
         transition: var(--transition);
     }
-    header .open-modal{
+
+    .headerIndex .open-modal{
         visibility: visible;
         z-index: 10;
     }
-    header .modal-container{
+
+    .headerIndex .modal-container{
         width: 50%;
         height: auto;
         background: var(--bc);
@@ -157,26 +156,24 @@ button{
         position: relative;
         box-shadow: var(--box-shadow2);
     }
-    header  .modal-container p{
+
+    .headerIndex  .modal-container p{
         color: var(--bc-secondary);
         text-align: center;
     }
     
-
-    header  .modal-container h2{
+    .headerIndex  .modal-container h2{
         padding: 1.5rem;
         color: var(--bc-secondary);
         text-align: center;
         margin-top: 2px;
     }
 
-    header  .modal-container label{
+    .headerIndex  .modal-container label{
         color: var(--bc-secondary);
     }
-
- 
     
-    header  .close-btn{
+    .headerIndex  .close-btn{
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -187,10 +184,10 @@ button{
         cursor: pointer;
     }
 
-    header  .box-login{
+    .headerIndex  .box-login{
         width: 50%;
         height: 200px;
-       /*background-color: var(--fct-primary);*/
+       /* background-color: var(--fct-primary); */
         border-radius: 1rem;
         margin: auto;
         margin-bottom: 2rem;
@@ -199,24 +196,24 @@ button{
         font-size: var(--fs-paragraphs);
     }
 
-    header  .box-login p{
+    .headerIndex  .box-login p{
         width: 100%;
         float: left;
         margin-top: 1rem;
         font-size: 15px;
     }
 
-
-    header  .box-login a{
+    .headerIndex  .box-login a{
         color: var(--fc-paragraphs);
         display: flex;
        
     }
-    header  .box-login a:hover{
+
+    .headerIndex  .box-login a:hover{
         color: var(--fc-primary);
     }
 
-    header  .box-login .formulario .btn-login{
+    .headerIndex  .box-login .formulario .btn-login{
         width: 40%;
         height: auto;
         margin-left: 35%;
@@ -228,7 +225,7 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    header  .box-login .formulario form input{
+    .headerIndex  .box-login .formulario form input{
         width: 100%;
         border-top: none;
         border-left: none;
@@ -241,7 +238,8 @@ button{
         margin-bottom: 2%;
         
     }
-    header .box-login .formulario form select{
+
+    .headerIndex .box-login .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -253,14 +251,13 @@ button{
         margin-bottom: 2%;
     }
   
-
-    header.box-login .row{
+    .headerIndex.box-login .row{
         width: 80%;
         float: left;
         margin-left: 10%;
     }
 
-    header .box-login .row .col-12{
+    .headerIndex .box-login .row .col-12{
         width: 100%;
         float: left;
         margin: auto;
@@ -270,33 +267,29 @@ button{
 
     }
 
-  
-
-    header .box-login .row .col-12 .check-box{
+    .headerIndex .box-login .row .col-12 .check-box{
         float: left;
         width: 10%;
         margin-left: 22%;
         
     }
 
-    header .box-login h1,h2,h3{
+    .headerIndex .box-login h1,h2,h3{
         color: var(--bc);
         margin:auto;
         margin-top:1rem;
         text-align: center;
 
     }
-    
 
-    header .formulario{
+    .headerIndex .formulario{
         width: 100%;
         display: flex;
         flex-direction: column;
         height: auto;
     }
-
     
-    header .box-teste{
+    .headerIndex .box-teste{
         width: 70%;
         height: auto;
         /*background-color: var(--fct-primary);*/
@@ -308,7 +301,7 @@ button{
         font-size: var(--fs-paragraphs);
     }
 
-    header .box-teste p{
+    .headerIndex .box-teste p{
         width: 100%;
         float: left;
         display: flex;
@@ -317,17 +310,17 @@ button{
         font-size: 15px;
     }
 
-
-    header .box-teste a{
+    .headerIndex .box-teste a{
         color: var(--bc);
         display: flex;
        
     }
-    header .box-teste a:hover{
+
+    .headerIndex .box-teste a:hover{
         color: var(--fc-primary);
     }
 
-    header  .box-teste .formulario .btn-login{
+    .headerIndex  .box-teste .formulario .btn-login{
         width: 25%;
         height: auto;
         margin-left: 35%;
@@ -339,7 +332,7 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    header  .box-teste .formulario form input{
+    .headerIndex  .box-teste .formulario form input{
         width: 100%;
         border-top: none;
         border-left: none;
@@ -352,7 +345,8 @@ button{
         margin-bottom: 2%;
         
     }
-    header .box-teste .formulario form select{
+
+    .headerIndex .box-teste .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -363,15 +357,14 @@ button{
         font-family: var(--ff-primary);
         margin-bottom: 2%;
     }
-  
 
-    header .box-teste .row{
+    .headerIndex .box-teste .row{
         width: 80%;
         float: left;
         margin-left: 10%;
     }
 
-    header .box-teste .row .col-12{
+    .headerIndex .box-teste .row .col-12{
         width: 100%;
         float: left;
         margin: auto;
@@ -381,16 +374,14 @@ button{
 
     }
 
-  
-
-    header .box-teste .row .col-12 .check-box{
+    .headerIndex .box-teste .row .col-12 .check-box{
         float: left;
         width: 10%;
         margin-left: 22%;
         
     }
 
-    header .box-teste h1,h2,h3{
+    .headerIndex .box-teste h1,h2,h3{
         color: var(--bc);
         margin:auto;
         margin-top:1rem;
@@ -398,21 +389,21 @@ button{
 
     }
 
-    main .box1{
+    .mainIndex .box1{
         width: 100%;
         height: 300px;
         background-color: var(--fc-paragraphs);
         float: left;
     }
 
-    main .box1 .text-box1{
+    .mainIndex .box1 .text-box1{
         width: 40%;
         margin-left: 6rem;
         height: 300px;
         float: left;
     }
 
-    main .box1 .text-box1 p{
+    .mainIndex .box1 .text-box1 p{
         font-size: var(--fs-paragraphs);
         color: var(--bc);
         padding: 1rem;
@@ -420,34 +411,36 @@ button{
        
     }
 
-    main .box1  .img-box1{
+    .mainIndex .box1  .img-box1{
         float: right;
         width: 50%;
         height: 300px;
         margin-top: 15px;
     }
-    main .box1 .img-box1 img{
+
+    .mainIndex .box1 .img-box1 img{
         width: 31%;
         float: right;
         padding: 1rem;
         margin-right: 12rem;
         filter: drop-shadow(var(--drop-shadow));
     }
-    main .box2{
+
+    .mainIndex .box2{
         width: 100%;
         height: 300px;
         background-color: var(--bc);
         float: left;
     }
 
-    main .box2 .img-box2{
+    .mainIndex .box2 .img-box2{
         width: 40%;
         height: 300px;
         float: left;
         margin-top: -1rem;
     }
 
-    main .box2 .img-box2 img{
+    .mainIndex .box2 .img-box2 img{
         width: 50%;
         height: auto;
         margin-left: 8rem;
@@ -455,13 +448,13 @@ button{
         padding: 1rem;
     }
 
-    main .box2 .text-box2{
+    .mainIndex .box2 .text-box2{
         width: 50%;
         float: right;
         margin-right: 8rem;
     }
 
-    main .box2 .text-box2 p{
+    .mainIndex .box2 .text-box2 p{
         font-size: var(--fs-paragraphs);
         color: var(--fc-paragraphs);
         padding: 1rem;
@@ -469,20 +462,21 @@ button{
         text-align: right;
     }
 
-    main .box3{
+    .mainIndex .box3{
         width: 100%;
         height: 300px;
         background-color: var(--fc-primary);
         float: left;
     }
-    main .box3 .text-box3{
+
+    .mainIndex .box3 .text-box3{
         width: 40%;
         margin-left: 6rem;
         height: 300px;
         float: left;
     }
 
-    main .box3 .text-box3 p{
+    .mainIndex .box3 .text-box3 p{
         font-size: var(--fs-paragraphs);
         color: var(--fc-paragraphs);
         padding: 1rem;
@@ -490,20 +484,22 @@ button{
        
     }
 
-    main .box3  .img-box3{
+    .mainIndex .box3  .img-box3{
         float: right;
         width: 50%;
         height: 300px;
         margin-top: -43px;
     }
-    main .box3 .img-box3 img{
+
+    .mainIndex .box3 .img-box3 img{
         width: 60%;
         float: right;
         padding: 1rem;
         margin-right: 8rem;
        filter: drop-shadow(var(--drop-shadow));
     }
-    main .box4{
+
+    .mainIndex .box4{
         width: 100%;
         height: 700px;
         background-color: var(--bc-secondary);
@@ -511,7 +507,7 @@ button{
 
     }
 
-    main .box4  p{
+    .mainIndex .box4  p{
         font-size: 30px;
         color: var(--bc);
         padding: 1rem;
@@ -519,13 +515,13 @@ button{
         text-align: center;
     }
 
-    main .box4 .caixas{
+    .mainIndex .box4 .caixas{
         width: 65%;
         height: auto;
         margin: auto;
     }
 
-    main .box4 .caixas .caixa{
+    .mainIndex .box4 .caixas .caixa{
         width: 200px;
         height: 200px;
         margin: 2rem;
@@ -536,13 +532,13 @@ button{
 
     }
 
-    main .box4 .caixas .caixa img{
+    .mainIndex .box4 .caixas .caixa img{
         width: 60%;
         margin: auto;
         filter: drop-shadow(var(--box-shadow));
     }
 
-    main .box4  .caixas .caixa p{
+    .mainIndex .box4  .caixas .caixa p{
         font-size: 20px;
         color: var(--bc);
         padding: 1rem;
@@ -550,20 +546,22 @@ button{
         margin-top: 2%;
     }
    
-    main .box5{
+    .mainIndex .box5{
         width: 100%;
         height: 550px;
         background-color: var(--bc);
         float: left;
     }
-    main .box5 p{
+
+    .mainIndex .box5 p{
         font-size: 30px;
         color: var(--fc-secondary);
         padding: 1rem;
         margin-top: 1rem;
         text-align: center;
     }
-    main .box5 .plano{
+
+    .mainIndex .box5 .plano{
         width: 25%;
         height: 400px;
         margin-left: 15%;
@@ -573,11 +571,12 @@ button{
         float: left;
         border-radius: 2%;
     }
-    main .box5 .plano h2{
+
+    .mainIndex .box5 .plano h2{
         color: var(--fc-paragraphs)
     }
 
-    main .box5 .plano p{
+    .mainIndex .box5 .plano p{
         color: var(--fc-secondary);
         text-align: center;
         margin: auto;
@@ -585,19 +584,19 @@ button{
        
     }
 
-    main .box5 .plano .lista{
+    .mainIndex .box5 .plano .lista{
         width: 50%;
         margin: auto;
       
     }
 
-   main .box5 .plano .lista ul li{
+   .mainIndex .box5 .plano .lista ul li{
         margin:auto;
         font-size: 20px;
         list-style: none;
     }
 
-    main .box5 .plano .btn-login{
+    .mainIndex .box5 .plano .btn-login{
         width: 100%;
         height: auto;
         margin-top: 1rem;
@@ -608,13 +607,14 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    main .box6{
+    .mainIndex .box6{
         width: 100%;
         height: 480px;
         float: left;
         background-color: var(--fc-primary);
     }
-    main .box6  .ctt{
+
+    .mainIndex .box6  .ctt{
         font-size: 30px;
         color: var(--bc);
         padding: 1rem;
@@ -622,7 +622,7 @@ button{
         text-align: center;
     }
 
-    main .box6 .contato{
+    .mainIndex .box6 .contato{
         width: 25%;
         height: 330px;
         margin-left: 15%;
@@ -633,24 +633,25 @@ button{
         border-radius: 2%;
     }
 
-
-    main .box6 .contato .central-suporte{
+    .mainIndex .box6 .contato .central-suporte{
         width:50%;
         margin:auto;
         display: flex;
         flex-direction: column;
     }
 
-    main .box6 .contato .central-suporte .titulo{
+    .mainIndex .box6 .contato .central-suporte .titulo{
         font-size: var(--fs-paragraphs);
         text-align: center;
     }
-    main .box6 .contato .central-suporte p{
+
+    .mainIndex .box6 .contato .central-suporte p{
         font-size: 20px;
         text-align: center;
         padding: .5rem;
     }
-    main .box6 .contato .central-suporte .btn-login{
+
+    .mainIndex .box6 .contato .central-suporte .btn-login{
         width:100%;
         height: auto;
         margin-top: 1rem;
@@ -661,14 +662,15 @@ button{
         background-color: var(--fc-primary);
         color: var(--fc-paragraphs)
     }
-    footer{
+
+    .footerIndex{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    footer .rodape{
+    .footerIndex .rodape{
         background-color: var(--bc);
         width: 100%;
         display: flex;
@@ -676,7 +678,7 @@ button{
         justify-content: center;
     }
 
-    footer .rodape .sociais{
+    .footerIndex .rodape .sociais{
         
         font-size: 30px;
         height: 60px;
@@ -685,25 +687,25 @@ button{
         justify-content: center;  
     }
 
-    footer .rodape .social{
+    .footerIndex .rodape .social{
         width: 200px;
         display: flex;
     }
-    footer .rodape .social li{
+
+    .footerIndex .rodape .social li{
         width: 100%;
         list-style: none;
     }
     
-    footer .rodape .social li a{
+    .footerIndex .rodape .social li a{
         color: #fff;
     }
 
-    footer .rodape .social a:hover{
+    .footerIndex .rodape .social a:hover{
         color: #00968F;
     }
-    
 
-    footer .rodape .texto-rodape p, a{
+    .footerIndex .rodape .texto-rodape p, a{
         width: 100%;
         display: flex;
         margin-top: 10px;
@@ -712,12 +714,7 @@ button{
         color: #fff;
     }
 
-    footer .rodape .texto-rodape a:hover{
+    .footerIndex .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
-
-
-   
-   
-
 }

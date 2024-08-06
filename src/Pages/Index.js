@@ -23,10 +23,10 @@ class Index extends React.Component {
     render() {
         return(
                 <>
-                    <div id="page">
+                    <div className="pageIndex" id="page">
                         <HeadersIndex />
 
-                        <main>
+                        <main className="mainIndex">
                             <div className="box1">
                                 <div className="text-box1">
                                     <p>A <b style={{ color: '#00968F', fontSize: '35px' }}>Soul</b> é um sistema de gestão <br />

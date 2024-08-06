@@ -14,7 +14,7 @@ class Servicos extends React.Component {
     render() {
         return(
             <>
-                <div id="page">
+                <div className="pageGeral" id="page">
                     <Headers />
 
                     <main className="interna">

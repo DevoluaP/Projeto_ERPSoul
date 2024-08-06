@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Login extends React.Component {
-    render() {
+export default function Login({ isOpen }) {
+    if (isOpen) {
         return(
             <>
                 <h2>Entrar</h2>
@@ -40,6 +40,6 @@ class Login extends React.Component {
             </>
         );
     }
-}
 
-export default Login;
+    return null;
+}

@@ -73,90 +73,90 @@ button{
         float: left;
     }
 
-    #page{
+    .pageGeral{
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
     }
-    header{
+    .headerGeral{
         width: 100%;
         background-color: var(--bc);
     }
 
-    header .logo{
+    .headerGeral .logo{
         margin-left: 45%;
        
     }
 
-    header .nav-bar{
+    .headerGeral .nav-bar{
         width: 100%;
         color: var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
     
-    header .nav-bar ul li{
+    .headerGeral .nav-bar ul li{
         list-style: none;
         display: inline;
         padding: 1rem;
         float: right;
     }
     
-    main{
+    .mainGeral{
         width: 100%;
         height: auto;
         background-color: var(--bc-secondary);
     }
 
-    main .carrinho{
+    .mainGeral .carrinho{
         width: 55%;
         margin-left: 36%;
         padding: .5rem;
     }
 
-    main .carrinho img{
+    .mainGeral .carrinho img{
         width: 10%;
         height: 20%;
         margin-top: 2%;
         float: left;
     }
 
-    main  .carrinho .para1{
+    .mainGeral  .carrinho .para1{
         margin-top: 45px;
         text-align: right;
         color: var(--bc);
     }
     
-    main  .carrinho .para2{
+    .mainGeral  .carrinho .para2{
         margin-top: 90px;
         color: var(--bc);
     }
 
-    main .central{
+    .mainGeral .central{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    main .central h1,h2,h3{
+    .mainGeral .central h1,h2,h3{
         color: var(--bc);
         margin:auto;
         margin-top:1rem;
         text-align: center;
     }
 
-    main .central .formulario{
+    .mainGeral .central .formulario{
         display: flex;
         flex-direction: column;
         height: auto;
         padding: 2rem;
     }
 
-    main .central .formulario .botao-form{
+    .mainGeral .central .formulario .botao-form{
         width: 100%;
         align-items: center;
     }
-    main .central .formulario .botao-form .botao{
+    .mainGeral .central .formulario .botao-form .botao{
         width: 150px;
         padding: .25rem;
         margin-top: 1rem;
@@ -170,21 +170,21 @@ button{
         font-size: 15px;
     }
 
-    main .central  .formulario .botao-form .botao a{
+    .mainGeral .central  .formulario .botao-form .botao a{
         color: var(--fc-paragraphs);
     }
 
-    main .central .formulario .botao-form .botao:hover{
+    .mainGeral .central .formulario .botao-form .botao:hover{
         background-color: #050538;
     }
 
-    main .central .container-modal{
+    .mainGeral .central .container-modal{
         width: 30%;
         margin-left: 35%;
         padding: 2rem;
     }
 
-    main .central .container-modal .modal-btn{
+    .mainGeral .central .container-modal .modal-btn{
         width: 50%;
         height: auto;
         margin-left: 19%;
@@ -196,11 +196,11 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    main .central .container-modal .modal-btn:hover{
+    .mainGeral .central .container-modal .modal-btn:hover{
         background-color: var(--bc);
     }
 
-    main .central .modal-overlay{
+    .mainGeral .central .modal-overlay{
         position: fixed;
         top: 0;
         left: 0;
@@ -213,11 +213,11 @@ button{
         z-index: -10;
         transition: var(--transition);
     }
-    main .central .open-modal{
+    .mainGeral .central .open-modal{
         visibility: visible;
         z-index: 10;
     }
-    main .central .modal-container{
+    .mainGeral .central .modal-container{
         width: 50%;
         height: auto;
         background: var(--bc-secondary);
@@ -228,11 +228,11 @@ button{
         box-shadow: var(--box-shadow2);
     }
 
-    main .central .modal-container h1{
+    .mainGeral .central .modal-container h1{
         padding: 1.5rem;
     }
     
-    main .central .close-btn{
+    .mainGeral .central .close-btn{
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -244,14 +244,14 @@ button{
         transition: var(--transition);
     }
 
-    main .central .close-btn:hover{
+    .mainGeral .central .close-btn:hover{
         color: var(--fc);
         transform: scale(1.3);
     }
 
     
 
-    main .central .relatorios{
+    .mainGeral .central .relatorios{
         width: 60%;
         height: auto;
         padding: 2rem;
@@ -262,12 +262,12 @@ button{
         background-color: var(--fct-primary);
     }
 
-    main .central .relatorios #table-relatorios-crm{
+    .mainGeral .central .relatorios #table-relatorios-crm{
         width: 100%;
         background-color: var(--fc-primary);
     }
 
-    main .central .rel-clientes{
+    .mainGeral .central .rel-clientes{
         width: 100%;
         height: auto;
         padding: 2rem;
@@ -278,25 +278,25 @@ button{
         background-color: var(--fct-primary);
     }
 
-    main .central .rel-clientes #table-rel-clientes{
+    .mainGeral .central .rel-clientes #table-rel-clientes{
         width: 100%;
         background-color: var(--fc-primary);
     }
    
 
-    main .central .formulario .cliente{
+    .mainGeral .central .formulario .cliente{
         width: 100%;
         float: left;
     }
-    main .central .formulario .cliente .row{
+    .mainGeral .central .formulario .cliente .row{
         width: 90%;
     }
 
-    main .central .formulario .cliente .input-cliente{
+    .mainGeral .central .formulario .cliente .input-cliente{
         width: 65%;
     }
 
-    main .central .formulario form input{
+    .mainGeral .central .formulario form input{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -306,7 +306,7 @@ button{
         font-family: var(--ff-primary);
         margin-bottom: 2%;
     }
-    main .central .formulario form select{
+    .mainGeral .central .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -320,28 +320,28 @@ button{
 
  
 
-    main .central .formulario .parcelamento{
+    .mainGeral .central .formulario .parcelamento{
         float: left;
         width: 100%;
         margin-top: 1%;
     }
 
-    main .central .formulario .parcelamento .radio{
+    .mainGeral .central .formulario .parcelamento .radio{
         width: 10%;
         float: left;
         display: block;
         
     }
 
-    main .central .formulario .parcelamento .radio label{
+    .mainGeral .central .formulario .parcelamento .radio label{
         display: block;
         
     }
-    main .central .formulario .parcelamento .row{
+    .mainGeral .central .formulario .parcelamento .row{
         width: 23%;
     }
 
-    main .central .box-login{
+    .mainGeral .central .box-login{
         width: 30%;
         height: auto;
         background-color: var(--fct-primary);
@@ -352,7 +352,7 @@ button{
         box-shadow: var(--box-shadow);
     }
 
-    main .central .box-login p{
+    .mainGeral .central .box-login p{
         width: 100%;
         float: left;
         display: flex;
@@ -361,16 +361,16 @@ button{
     }
 
 
-    main .central .box-login a{
+    .mainGeral .central .box-login a{
         color: var(--bc);
         display: flex;
         justify-content: center;
     }
-    main .central .box-login a:hover{
+    .mainGeral .central .box-login a:hover{
         color: var(--fc-primary);
     }
 
-    main .central .box-login .formulario .btn-login{
+    .mainGeral .central .box-login .formulario .btn-login{
         width: 25%;
         height: auto;
         margin-left: 35%;
@@ -382,7 +382,7 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    main .central .box-login .formulario form input{
+    .mainGeral .central .box-login .formulario form input{
         width: 100%;
         border-top: none;
         border-left: none;
@@ -394,7 +394,7 @@ button{
         margin-bottom: 2%;
         
     }
-    main .central .box-login .formulario form select{
+    .mainGeral .central .box-login .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -407,13 +407,13 @@ button{
     }
   
 
-    main .central .box-login .row{
+    .mainGeral .central .box-login .row{
         width: 80%;
         float: left;
         margin-left: 10%;
     }
 
-    main .central .box-login .row .col-12{
+    .mainGeral .central .box-login .row .col-12{
         float: left;
         width: 100%;
         text-align: left;
@@ -421,13 +421,13 @@ button{
 
     }
 
-    main .central .box-login .row .col-12 .check-box{
+    .mainGeral .central .box-login .row .col-12 .check-box{
         float: left;
         width: 10%;
         margin-left: 22%;
         
     }
-    main .central .row{
+    .mainGeral .central .row{
         width: 22.5%;
         float: left;
         margin-left: 15%;
@@ -435,7 +435,7 @@ button{
 
 
  /*   
-        main .central .page-changer{
+        .mainGeral .central .page-changer{
         width: auto;
         height: auto;
         margin: auto;
@@ -443,72 +443,72 @@ button{
         text-align: center;
     }
 
-    main .central .page-changer ul li{
+    .mainGeral .central .page-changer ul li{
         display: inline;
        padding-left: .5rem;
     }
 
-    main .central .page-changer a{
+    .mainGeral .central .page-changer a{
         text-decoration: none;
         color: var(--bc);
     }
 
-    main .central .page-changer a:hover{
+    .mainGeral .central .page-changer a:hover{
         color: var(--fc-primary);
     }
 
 
-    main .ajuda{
+    .mainGeral .ajuda{
         width: 60%;
         height: auto;
         margin-left: 38.5%;
     }
 
-    main  .ajuda img{
+    .mainGeral  .ajuda img{
         width: 8%;
         height: 70px;
         float: left;
         margin-top: 2%;
     }
 
-    main  .ajuda p{
+    .mainGeral  .ajuda p{
         color: var(--bc);
         float: left;
     }
 
-    main  .ajuda .para1{
+    .mainGeral  .ajuda .para1{
         margin-top: 25px;
         text-align: right;
     }
 
-    main  .ajuda .para1 a{
+    .mainGeral  .ajuda .para1 a{
         color: var(--bc);
     }
 
-    main  .ajuda .para1 a:hover{
+    .mainGeral  .ajuda .para1 a:hover{
         color: var(--fc-primary);
     }
 
-    main  .ajuda .para2{
+    .mainGeral  .ajuda .para2{
         margin-top: 45.5px;
         margin-left: 10px;
     }
 
-    footer{
+    .footerGeral{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    footer .rodape{
+    .footerGeral .rodape{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    footer .rodape .sociais{
+    .footerGeral .rodape .sociais{
         
         font-size: 30px;
         height: 60px;
@@ -517,25 +517,25 @@ button{
         justify-content: center;  
     }
 
-    footer .rodape .social{
+    .footerGeral .rodape .social{
         width: 200px;
         display: flex;
     }
-    footer .rodape .social li{
+    .footerGeral .rodape .social li{
         width: 100%;
         list-style: none;
     }
     
-    footer .rodape .social li a{
+    .footerGeral .rodape .social li a{
         color: #fff;
     }
 
-    footer .rodape .social a:hover{
+    .footerGeral .rodape .social a:hover{
         color: #00968F;
     }
     
 
-    footer .rodape .texto-rodape p, a{
+    .footerGeral .rodape .texto-rodape p, a{
         width: 100%;
         display: flex;
         margin-top: 10px;
@@ -544,7 +544,7 @@ button{
         color: #fff;
     }
 
-    footer .rodape .texto-rodape a:hover{
+    .footerGeral .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
 }
@@ -582,29 +582,29 @@ button{
         float: left;
     }
 
-    #page{
+    .pageGeral{
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
     }
-    header{
+    .headerGeral{
         width: 100%;
         background-color: var(--bc);
     }
 
-    header .logo{
+    .headerGeral .logo{
         margin-left: 45%;
        
     }
 
-    header .nav-bar{
+    .headerGeral .nav-bar{
         width: 100%;
         color: var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
     
-    header .nav-bar ul li{
+    .headerGeral .nav-bar ul li{
         list-style: none;
         display: inline;
         padding: 1rem;
@@ -983,7 +983,7 @@ button{
 
 
  /*   
-        main .central .page-changer{
+        .mainGeral .central .page-changer{
         width: auto;
         height: auto;
         margin: auto;
@@ -991,17 +991,17 @@ button{
         text-align: center;
     }
 
-    main .central .page-changer ul li{
+    .mainGeral .central .page-changer ul li{
         display: inline;
        padding-left: .5rem;
     }
 
-    main .central .page-changer a{
+    .mainGeral .central .page-changer a{
         text-decoration: none;
         color: var(--bc);
     }
 
-    main .central .page-changer a:hover{
+    .mainGeral .central .page-changer a:hover{
         color: var(--fc-primary);
     }
 */
@@ -1042,21 +1042,21 @@ button{
         margin-left: 10px;
     }
 
-    footer{
+    .footerGeral{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    footer .rodape{
+    .footerGeral .rodape{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    footer .rodape .sociais{
+    .footerGeral .rodape .sociais{
         
         font-size: 30px;
         height: 60px;
@@ -1065,25 +1065,25 @@ button{
         justify-content: center;  
     }
 
-    footer .rodape .social{
+    .footerGeral .rodape .social{
         width: 200px;
         display: flex;
     }
-    footer .rodape .social li{
+    .footerGeral .rodape .social li{
         width: 100%;
         list-style: none;
     }
     
-    footer .rodape .social li a{
+    .footerGeral .rodape .social li a{
         color: #fff;
     }
 
-    footer .rodape .social a:hover{
+    .footerGeral .rodape .social a:hover{
         color: #00968F;
     }
     
 
-    footer .rodape .texto-rodape p, a{
+    .footerGeral .rodape .texto-rodape p, a{
         width: 100%;
         display: flex;
         margin-top: 10px;
@@ -1092,7 +1092,7 @@ button{
         color: #fff;
     }
 
-    footer .rodape .texto-rodape a:hover{
+    .footerGeral .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
 

@@ -9,36 +9,36 @@ body{
     font-family: 'Itim';
     min-height: 600px;
 }
-header .topo{
+.headerGeral .topo{
     width: 100%;
     height: 100px;
     background-color: #050538;
 }
-header .topo .logo img{
+.headerGeral .topo .logo img{
     width: 10%;
     height: 100px;
     margin-left: 42%;
     float: left;
 }
-header .topo .nav-bar{
+.headerGeral .topo .nav-bar{
     height: auto;
     float: right;
     margin-top: -78px;
     margin-left: 45%;
     
 }
-header .topo .nav-bar nav ul li{
+.headerGeral .topo .nav-bar nav ul li{
     text-decoration: none;
     list-style: none;
     display: table-cell;
     padding: 1rem;
     color: white;
 }
-main .container{
+.interna .container{
     width: 80%;
     min-height: 600px;
 } 
-main .container .carrinho{
+.interna .container .carrinho{
     width: 70%;
     height: 100px;
     margin-left: 23%;
@@ -47,47 +47,47 @@ main .container .carrinho{
     
 
 }
-main .container .carrinho img{
+.interna .container .carrinho img{
     width: 11%;
     height: 100px;
     float: left;
 
 }
-main .container .carrinho p{
+.interna .container .carrinho p{
     color: #050538;
     float: left;
     font-size: 20px;
 }
-main .container .carrinho .para1{
+.interna .container .carrinho .para1{
     margin-top: 25px;
     margin-left: 15px;
 }
-main .container .carrinho .para2{
+.interna .container .carrinho .para2{
     margin-top: 70px;
 }
 hr{
     width: 90%;
     margin-left: 5%;
 }
-main h1{
+.interna h1{
     height: 50px;
     margin-left: 35%;
 }
 
-main .container .formulario{
+.interna .container .formulario{
     width: 90%;
     margin: auto;
     margin-left: 20%
 }
 
-main .container .formulario .row{
+.interna .container .formulario .row{
     width: 50%;
     float: left;
     margin-left: 2%;
     
 }
 
-main .container .formulario form input{
+.interna .container .formulario form input{
     border-top:none;
     border-left: none;
     border-right: none;
@@ -96,23 +96,23 @@ main .container .formulario form input{
     float: left;
     line-height: 2rem;
  }
- main .container .formulario .enviar{
+ .interna .container .formulario .enviar{
     width: 60%;
     float: left;
  }
 
- main .container .formulario .enviar .reset{
+ .interna .container .formulario .enviar .reset{
     width: 20%;
     margin-left: 6%;
     margin-right: 10%;
     margin-top: 2rem;
     
  }
- main .container .formulario .enviar .submit{
+ .interna .container .formulario .enviar .submit{
     width: 20%;
     margin-top: 2rem;
  }
-main .container .formulario .form-select{
+.interna .container .formulario .form-select{
    border-top:none;
    border-left: none;
    border-right: none;
@@ -122,7 +122,7 @@ main .container .formulario .form-select{
 
     
 }
-main .container .ajuda{
+.interna .container .ajuda{
     width: 70%;
     height: 90px;
     margin-left: 25%;
@@ -131,60 +131,60 @@ main .container .ajuda{
     
 
 }
-main .container .ajuda img{
+.interna .container .ajuda img{
     width: 10%;
     height: 74px;
     float: left;
 
 }
-main .container .ajuda p{
+.interna .container .ajuda p{
     color: #050538;
     float: left;
     font-size: 20px;
 }
-main .container .ajuda .para1{
+.interna .container .ajuda .para1{
         margin-left: 15px;
     text-align: right;
 }
-main .container .ajuda .para1 a{
+.interna .container .ajuda .para1 a{
     text-decoration: none;
     color: #050538;
     
 
 }
-main .container .ajuda .para1 a:hover{
+.interna .container .ajuda .para1 a:hover{
     color: #00968f;
 }
-main .container .ajuda .para2{
+.interna .container .ajuda .para2{
     margin-top: 10px;
     margin-left: 11px;
 
 }
-footer .rodape{
+.footerGeral .rodape{
    width: 100%;
     height: 135px;
     background-color: #050538;
 
 }
-footer .rodape .sociais{
+.footerGeral .rodape .sociais{
     margin-left: 40%;
     width: 30%;
     float: left;
 }
-footer .rodape .social{
+.footerGeral .rodape .social{
     text-align: center;
     color: white;
     margin-left: 7%;
     float: left;
 }
-footer .rodape .social a{
+.footerGeral .rodape .social a{
     float: left;
     text-decoration: none;
     color: white;
     font-size: 23px;
 }
 
-footer .rodape .texto-rodape{
+.footerGeral .rodape .texto-rodape{
     width: 65%;
     float: left;
     color: white;
@@ -194,11 +194,11 @@ footer .rodape .texto-rodape{
     
 
 }
-footer .rodape .texto-rodape p{
+.footerGeral .rodape .texto-rodape p{
     float: left;
    margin-left: 1rem;
 }
-footer .rodape .texto-rodape .copyright{
+.footerGeral .rodape .texto-rodape .copyright{
     width: 90%;
     float: left;
     text-align: center;

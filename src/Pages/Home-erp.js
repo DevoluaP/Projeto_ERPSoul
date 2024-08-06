@@ -17,10 +17,10 @@ class HomeERP extends React.Component {
     render() {
         return(
             <>
-                <div id="page">
+                <div className="pageGeral" id="page">
                     <Headers />
 
-                    <main>
+                    <main className="mainGeral">
                         <div className="pai">
                             <div className="boxes">
                                 <div className="box">

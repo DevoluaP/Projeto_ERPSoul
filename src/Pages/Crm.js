@@ -7,13 +7,14 @@ import Headers from '../Inc/Headers';
 import Footers from '../Inc/Footers';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
-//import '../Styles/style-geral.css';
+
+import '../Styles/style-geral.css';
 
 class Crm extends React.Component {
     render() {
         return(
             <>
-                <div id="page">
+                <div className="pageGeral" id="page">
                     <Headers />
 
                     <main className="interna">

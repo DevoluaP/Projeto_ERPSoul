@@ -40,31 +40,31 @@
     .texto-rodape{
         float: left;
     }
-    #page{
+    .pageGeral{
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
     }
-    header{
+    .headerGeral{
         width: 100%;
         display: flex;
         background-color: var(--bc);
     }
-    header .nav-bar{
+    .headerGeral .nav-bar{
         width: 100%;
         color: var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
     
-    header .nav-bar ul li{
+    .headerGeral .nav-bar ul li{
         list-style: none;
         display: inline;
         padding: 1rem;
         float: right;
     }
     
-    main{
+    .mainGeral{
         width: 100%;
         display: flex;
         align-items: center;
@@ -73,28 +73,28 @@
         background-color: var(--bc);
     }
     
-    main .logo-topo{
+    .mainGeral .logo-topo{
         width: 100%;
     }
     
-    main .logo-topo img{
+    .mainGeral .logo-topo img{
         display: block;
         margin: auto;
     }
-    main .pai{
+    .mainGeral .pai{
         width:100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    main .boxes{
+    .mainGeral .boxes{
         width: 70%;
         margin: auto;       
         margin-bottom: 2%;
     }
     
-    main .boxes .box{
+    .mainGeral .boxes .box{
         width: 250px;
         height: 250px;
         background-color: var(--fct-secondary);
@@ -103,73 +103,73 @@
         border-radius: 8%;
     }
 
-    main .boxes .box:hover{
+    .mainGeral .boxes .box:hover{
         transform: scale(1.2);
         background-color: var(--fct-secondary2);
     }
     
-    main .boxes .box a{
+    .mainGeral .boxes .box a{
         text-decoration: none;
         color: var(--fc-paragraphs);
     }
     
     
     
-    main .boxes .box img{
+    .mainGeral .boxes .box img{
         width: 55%;
         margin: 30px;
     }
-    main .boxes .box1 img{
+    .mainGeral .boxes .box1 img{
         width: 55%;
         margin: 30px;
     }
-    main .ajuda{
+    .mainGeral .ajuda{
         width: 70%;
         height: 90px;
         margin-left: 27%;
     }
 
-    main  .ajuda img{
+    .mainGeral  .ajuda img{
         width: 15%;
         height: 90px;
         float: left;
         margin-top: 2%;
     }
 
-    main  .ajuda p{
+    .mainGeral  .ajuda p{
         color: var(--fc-paragraphs);
         float: left;
         font-size: 20px;
     }
 
-    main  .ajuda .para1{
+    .mainGeral  .ajuda .para1{
         margin-top: 25px;
         text-align: right;
     }
 
-    main  .ajuda .para1 a{
+    .mainGeral  .ajuda .para1 a{
         text-decoration: none;
         color: var(--fc-paragraphs);
      
     }
 
-    main  .ajuda .para1 a:hover{
+    .mainGeral  .ajuda .para1 a:hover{
         color: var(--fc-primary);
     }
 
-    main  .ajuda .para2{
+    .mainGeral  .ajuda .para2{
         margin-top: 60px;
         margin-left: 10px;
     }
 
-    footer{
+    .footerGeral{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    footer .rodape{
+    .footerGeral .rodape{
         width: 100%;
         display: flex;
         align-items: center;
@@ -179,36 +179,36 @@
         margin-left: -50px;
     }
 
-    footer .rodape .social{
+    .footerGeral .rodape .social{
         margin-top: 1rem;
         margin-left: 2rem;
     }
     
-    footer .rodape .social a{
+    .footerGeral .rodape .social a{
         text-decoration: none;
         color:var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
 
-    footer .rodape .social a:hover{
+    .footerGeral .rodape .social a:hover{
         color: var(--fc-primary)
     }
-    footer .rodape .texto-rodape{
+    .footerGeral .rodape .texto-rodape{
         color: var(--fc-paragraphs);
         line-height: 2rem;
     }
     
-    footer .rodape .texto-rodape p{
+    .footerGeral .rodape .texto-rodape p{
         float: left;
         margin-left: 4rem;
     }
 
-    footer .rodape .texto-rodape a{
+    .footerGeral .rodape .texto-rodape a{
         text-decoration: none;
         color: var(--fc-paragraphs);
     }
 
-    footer .rodape .texto-rodape a:hover{
+    .footerGeral .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
 }
@@ -239,57 +239,57 @@
     .texto-rodape{
         float: left;
     }
-    #page{
+    .pageGeral{
         display: flex;
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
     }
-    header{
+    .headerGeral{
         width: 100%;
         display: flex;
         background-color: var(--bc);
     }
-    header .nav-bar{
+    .headerGeral .nav-bar{
         width: 100%;
         color: var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
     
-    header .nav-bar ul li{
+    .headerGeral .nav-bar ul li{
         list-style: none;
         display: inline;
         padding: 1rem;
         float: right;
     }
     
-    main{
+    .mainGeral{
         width: 100%;
         margin-top: 50px;
         background-color: var(--bc);
     }
     
-    main .logo-topo{
+    .mainGeral .logo-topo{
         width: 100%;
     }
     
-    main .logo-topo img{
+    .mainGeral .logo-topo img{
         display: block;
         margin: auto;
     }
-    main .pai{
+    .mainGeral .pai{
         width:100%;
         display: flex;
         flex-direction: column;
     }
-    main .boxes{
+    .mainGeral .boxes{
         width: 50%;
         justify-content: center;
         margin:auto;       
         margin-bottom: 2%;
     }
     
-    main .boxes .box{
+    .mainGeral .boxes .box{
         width: 250px;
         height: 250px;
         background-color: var(--fct-secondary);
@@ -298,66 +298,66 @@
         border-radius: 8%;
     }
 
-    main .boxes .box:hover{
+    .mainGeral .boxes .box:hover{
         transform: scale(1.2);
         background-color: var(--fct-secondary2);
     }
     
-    main .boxes .box a{
+    .mainGeral .boxes .box a{
         text-decoration: none;
         color: var(--fc-paragraphs);
     }
     
     
     
-    main .boxes .box img{
+    .mainGeral .boxes .box img{
         width: 55%;
         margin: 30px;
     }
-    main .boxes .box1 img{
+    .mainGeral .boxes .box1 img{
         width: 55%;
         margin: 30px;
     }
-    main .ajuda{
+    .mainGeral .ajuda{
         width: 70%;
         height: 90px;
         margin-left: 35%;
     }
 
-    main  .ajuda img{
+    .mainGeral  .ajuda img{
         width: 10%;
         height: 90px;
         float: left;
         margin-top: 2%;
     }
 
-    main  .ajuda p{
+    .mainGeral  .ajuda p{
         color: var(--fc-paragraphs);
         float: left;
         font-size: 20px;
     }
 
-    main  .ajuda .para1{
+    .mainGeral  .ajuda .para1{
         margin-top: 25px;
         text-align: right;
     }
 
-    main  .ajuda .para1 a{
+    .mainGeral  .ajuda .para1 a{
         text-decoration: none;
         color: var(--fc-paragraphs);
      
     }
 
-    main  .ajuda .para1 a:hover{
+    .mainGeral  .ajuda .para1 a:hover{
         color: var(--fc-primary);
     }
 
-    main  .ajuda .para2{
+    .mainGeral  .ajuda .para2{
         margin-top: 60px;
         margin-left: 10px;
     }
 
-    footer{
+    .footerGeral{
         width: 100%;
         display: flex;
         align-items: center;
@@ -365,7 +365,7 @@
         margin-left: -25px;
     }
 
-    footer .rodape{
+    .footerGeral .rodape{
         width: 100%;
         display: flex;
         align-items: center;
@@ -374,36 +374,36 @@
         margin-top: 3rem;
     }
 
-    footer .rodape .social{
+    .footerGeral .rodape .social{
        margin-left: 2rem;
     }
     
-    footer .rodape .social a{
+    .footerGeral .rodape .social a{
         float: left;
         text-decoration: none;
         color:var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }
 
-    footer .rodape .social a:hover{
+    .footerGeral .rodape .social a:hover{
         color: var(--fc-primary)
     }
-    footer .rodape .texto-rodape{
+    .footerGeral .rodape .texto-rodape{
         color: var(--fc-paragraphs);
         line-height: 2rem;
     }
     
-    footer .rodape .texto-rodape p{
+    .footerGeral .rodape .texto-rodape p{
         float: left;
         margin-left: 4rem;
     }
 
-    footer .rodape .texto-rodape a{
+    .footerGeral .rodape .texto-rodape a{
         text-decoration: none;
         color: var(--fc-paragraphs);
     }
 
-    footer .rodape .texto-rodape a:hover{
+    .footerGeral .rodape .texto-rodape a:hover{
         color: var(--fc-primary);
     }
 }

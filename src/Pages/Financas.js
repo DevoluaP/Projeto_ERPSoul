@@ -6,9 +6,9 @@ import Footers from '../Inc/Footers.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
-import '../Styles/Geral.css';
+import '../Styles/Financas.css';
 
-class Contabilidade extends React.Component {
+class Financas extends React.Component {
     render() {
         return(
             <>
@@ -26,17 +26,15 @@ class Contabilidade extends React.Component {
                             <br />
                             <hr />
                             <div className="central">
-                                <h1>CONTABILIDADE</h1>
+                                <h1>FINANÇAS</h1>
                                 <div className="container-modal">
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btn-cad-contador" data-url="html-modal/cadastrar-contador.html" data-conteudo="cadastrar-contador">CADASTRAR CONTADOR</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btn-plano-contas" data-url="html-modal/plano-contas.html" data-conteudo="plano-contas">PLANO DE CONTAS</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btn-integracoes" data-url="html-modal/integracoes.html" data-conteudo="integracoes">INTEGRAÇÕES</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btn-gerar-arquivo" data-url="html-modal/formularioX.html" data-conteudo="formularioX">GERAR ARQUIVO</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btn-fechar-periodo" data-url="html-modal/formularioX.html" data-conteudo="formularioX">FECHAR PERÍODO</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/baixar-contas.html" data-conteudo="baixar-conta">BAIXAR CONTAS</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/financas-contas.html" data-conteudo="financas-contas">CONTAS A RECEBER</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/financas-contas-a-receber.html" data-conteudo="financas-contas-a-pagar">CONTAS A PAGAR</button><br />
                                 </div>
                                 <div className="modal-overlay">
                                     <div className="modal-container">
-                                        <div className="x">
+                                        <div className="botoes">
                                             <button className="close-btn" onclick="fecharModal()">
                                                 <i class="fa-solid fa-xmark"></i>
                                             </button>
@@ -64,4 +62,4 @@ class Contabilidade extends React.Component {
     }
 }
 
-export default Contabilidade;
+export default Financas;

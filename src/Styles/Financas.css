@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}   
+  
+label{
+    display: block;
+}
+
+.bodyGeral{
+    font-family: 'Itim';
+    min-height: 600px;
+}
+
+.headerGeral .topo{
+    width: 100%;
+    height: 100px;
+    background-color: #050538;
+}
+
+.headerGeral .topo .logo img{
+    width: 10%;
+    height: 100px;
+    margin-left: 42%;
+    float: left;
+}
+
+.headerGeral .topo .nav-bar{
+    height: auto;
+    float: right;
+    margin-top: -78px;
+    margin-left: 45%;
+}
+
+.headerGeral .topo .nav-bar nav ul li{
+    text-decoration: none;
+    list-style: none;
+    display: table-cell;
+    padding: 1rem;
+    color: white;
+}
+
+.interna .container{
+    width: 80%;
+    min-height: 600px;
+} 
+
+.interna .container .carrinho{
+    width: 70%;
+    height: 100px;
+    margin-left: 23%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.interna .container .carrinho img{
+    width: 11%;
+    height: 100px;
+    float: left;
+}
+
+.interna .container .carrinho p{
+    color: #050538;
+    float: left;
+    font-size: 20px;
+}
+
+.interna .container .carrinho .para1{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.interna .container .carrinho .para2{
+    margin-top: 70px;
+}
+
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.interna h1{
+    height: 50px;
+    margin-left: 35%;
+}
+
+.interna .container .formulario{
+    width: 90%;
+    margin: auto;
+    margin-left: 20%
+}
+
+.interna .container .formulario .row{
+    width: 50%;
+    float: left;
+    margin-left: 2%;
+}
+
+.interna .container .formulario form input{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Itim';
+    width: 100%;
+    float: left;
+    line-height: 2rem;
+}
+
+.interna .container .formulario .enviar{
+    width: 60%;
+    float: left;
+}
+
+.interna .container .formulario .enviar .reset{
+    width: 20%;
+    margin-left: 6%;
+    margin-right: 10%;
+    margin-top: 2rem;
+}
+
+.interna .container .formulario .enviar .submit{
+    width: 20%;
+    margin-top: 2rem;
+}
+
+.interna .container .formulario .form-select{
+   border-top:none;
+   border-left: none;
+   border-right: none;
+   font-family: 'Itim';
+   width: 100%;
+   float: left;
+}
+
+.interna .container .ajuda{
+    width: 70%;
+    height: 90px;
+    margin-left: 25%;
+    padding-top: 1rem;
+}
+
+.interna .container .ajuda img{
+    width: 10%;
+    height: 74px;
+    float: left;
+}
+
+.interna .container .ajuda p{
+    color: #050538;
+    float: left;
+    font-size: 20px;
+}
+
+.interna .container .ajuda .para1{
+    margin-left: 15px;
+    text-align: right;
+}
+
+.interna .container .ajuda .para1 a{
+    text-decoration: none;
+    color: #050538;
+}
+
+.interna .container .ajuda .para1 a:hover{
+    color: #00968f;
+}
+
+.interna .container .ajuda .para2{
+    margin-top: 10px;
+    margin-left: 11px;
+}

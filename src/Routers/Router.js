@@ -7,9 +7,13 @@ import HomeERP from '../Pages/Home-erp';
 import Crm from '../Pages/Crm';
 import Vendas from '../Pages/Vendas';
 import Servicos from '../Pages/Servicos';
-import FinancaContas from '../Pages/Financa-contas';
+import Financas from '../Pages/Financas';
 import Estoque from '../Pages/Estoque';
 import Contabilidade from '../Pages/Contabilidade';
+import Pagamento from '../Pages/Pagamento';
+import EsqueciSenha from '../Pages/Esqueci-senha';
+import NovaSenha from '../Pages/Nova-senha';
+import SenhaSucesso from '../Pages/Senha-sucesso';
 
 const Router = () => {
     return(
@@ -21,9 +25,13 @@ const Router = () => {
                 <Route element={ <Crm /> } path="/crm" />
                 <Route element={ <Vendas /> } path="/vendas" />
                 <Route element={ <Servicos /> } path="/servicos" />
-                <Route element={ <FinancaContas /> } path="/financa-contas" />
+                <Route element={ <Financas /> } path="/financas" />
                 <Route element={ <Estoque /> } path="/estoque" />
                 <Route element={ <Contabilidade /> } path="/contabilidade" />
+                <Route element={ <Pagamento /> } path="/pagamento" />
+                <Route element={ <EsqueciSenha /> } path="/esqueci-senha" />
+                <Route element={ <NovaSenha /> } path="/nova-senha" />
+                <Route element={ <SenhaSucesso /> } path="/senha-sucesso" />
             </Routes>
         </BrowserRouter>
     );

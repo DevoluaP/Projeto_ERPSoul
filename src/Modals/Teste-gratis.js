@@ -23,7 +23,6 @@ export default function TesteGratis({ isOpen }) {
                                     <input type="text" id="whatsapp" name="whatsapp" placeholder="Nº WhatsApp (com DDD)*" required="required" />
                                 </div>
                             </div>
-
                             <div className="row">
                                 <div className="col-6">
                                     <input type="text" id="nome_empresa" name="nome_empresa" placeholder="Nome da Empresa*" required="required" />
@@ -55,7 +54,6 @@ export default function TesteGratis({ isOpen }) {
                                     <label for="termos_priv"> Li e Aceitos os Termos de Privacidade</label>
                                 </div>
                             </div>
-
                             <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="Login">
                                 ENTRAR
                             </button>

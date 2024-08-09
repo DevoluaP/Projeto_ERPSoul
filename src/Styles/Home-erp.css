@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{ 
+    --bc: #050538;
+    --bctr: rgba(5, 5, 56, 0.5);
+    --fc-primary: #00968F;
+    --fct-primary: rgba(0, 255, 244, 0.5);
+    --fc-secondary:#00FFF4;
+    --fct-secondary: rgba(0, 255, 244, 0.5);
+    --fc-secondary2: #cecccc;
+    --fct-secondary2:rgba(206, 204, 204, 0.5);
+    --fc-paragraphs: white;
+    --fs-paragraphs: 25px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1379.99px){
+    .bodyGeral{
+        background-color: var(--bc);
+        font-family: 'Itim';
+    }
+
+    hr{
+        width: 80%;
+        color: var(--fc-paragraphs);
+    }
+
+    .logo-topo,
+    .boxes,
+    .box,
+    .box1,
+    .ajuda,
+    .para1,
+    .para2,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape{
+        float: left;
+    }
+
+    .pageGeral{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .headerGeral{
+        width: 100%;
+        display: flex;
+        background-color: var(--bc);
+    }
+
+    .headerGeral .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    .headerGeral .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    .mainGeral{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--bc);
+    }
+    
+    .mainGeral .logo-topo{
+        width: 100%;
+    }
+    
+    .mainGeral .logo-topo img{
+        display: block;
+        margin: auto;
+    }
+
+    .mainGeral .pai{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mainGeral .boxes{
+        width: 70%;
+        margin: auto;       
+        margin-bottom: 2%;
+    }
+    
+    .mainGeral .boxes .box{
+        width: 250px;
+        height: 250px;
+        background-color: var(--fct-secondary);
+        margin: 1rem;
+        text-align: center;
+        border-radius: 8%;
+    }
+
+    .mainGeral .boxes .box:hover{
+        transform: scale(1.2);
+        background-color: var(--fct-secondary2);
+    }
+    
+    .mainGeral .boxes .box a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+    
+    .mainGeral .boxes .box img{
+        width: 55%;
+        margin: 30px;
+    }
+
+    .mainGeral .boxes .box1 img{
+        width: 55%;
+        margin: 30px;
+    }
+
+    .mainGeral .ajuda{
+        width: 70%;
+        height: 90px;
+        margin-left: 27%;
+    }
+
+    .mainGeral  .ajuda img{
+        width: 15%;
+        height: 90px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    .mainGeral  .ajuda p{
+        color: var(--fc-paragraphs);
+        float: left;
+        font-size: 20px;
+    }
+
+    .mainGeral  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    .mainGeral  .ajuda .para1 a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+
+    .mainGeral  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    .mainGeral  .ajuda .para2{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1380px){
+    .bodyGeral{
+        background-color: var(--bc);
+        font-family: 'Itim';
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: var(--fc-paragraphs);
+    }
+
+    .logo-topo,
+    .boxes,
+    .box,
+    .box1,
+    .ajuda,
+    .para1,
+    .para2,
+    .rodape,
+    .sociais,
+    .social,
+    .texto-rodape{
+        float: left;
+    }
+
+    .pageGeral{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .headerGeral{
+        width: 100%;
+        display: flex;
+        background-color: var(--bc);
+    }
+
+    .headerGeral .nav-bar{
+        width: 100%;
+        color: var(--fc-paragraphs);
+        font-size: var(--fs-paragraphs);
+    }
+    
+    .headerGeral .nav-bar ul li{
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        float: right;
+    }
+    
+    .mainGeral{
+        width: 100%;
+        margin-top: 50px;
+        background-color: var(--bc);
+    }
+    
+    .mainGeral .logo-topo{
+        width: 100%;
+    }
+    
+    .mainGeral .logo-topo img{
+        display: block;
+        margin: auto;
+    }
+
+    .mainGeral .pai{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainGeral .boxes{
+        width: 50%;
+        justify-content: center;
+        margin:auto;       
+        margin-bottom: 2%;
+    }
+    
+    .mainGeral .boxes .box{
+        width: 250px;
+        height: 250px;
+        background-color: var(--fct-secondary);
+        margin: 1rem;
+        text-align: center;
+        border-radius: 8%;
+    }
+
+    .mainGeral .boxes .box:hover{
+        transform: scale(1.2);
+        background-color: var(--fct-secondary2);
+    }
+    
+    .mainGeral .boxes .box a{
+        flex-direction: column;
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+    }
+    
+    .mainGeral .boxes .box img{
+        width: 55%;
+        margin: 30px;
+    }
+
+    .mainGeral .boxes .box1 img{
+        width: 55%;
+        margin: 30px;
+    }
+
+    .mainGeral .ajuda{
+        width: 70%;
+        height: 90px;
+        margin-left: 35%;
+        margin-bottom: 40px;
+    }
+
+    .mainGeral  .ajuda img{
+        width: 10%;
+        height: 90px;
+        float: left;
+        margin-top: 2%;
+    }
+
+    .mainGeral  .ajuda p{
+        color: var(--fc-paragraphs);
+        float: left;
+        font-size: 20px;
+    }
+
+    .mainGeral  .ajuda .para1{
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    .mainGeral  .ajuda .para1 a{
+        text-decoration: none;
+        color: var(--fc-paragraphs);
+     
+    }
+
+    .mainGeral  .ajuda .para1 a:hover{
+        color: var(--fc-primary);
+    }
+
+    .mainGeral  .ajuda .para2{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+}

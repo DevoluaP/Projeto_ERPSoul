@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightFromBracket, faGear } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../Assets/logo.png';
 
@@ -17,8 +15,8 @@ class Headers extends React.Component {
                     </div>
                     <div className="nav-bar">
                         <ul>
-                            <li><FontAwesomeIcon icon={ faRightFromBracket } /></li>
-                            <li><FontAwesomeIcon icon={ faGear } /></li>
+                            <li><i className="fa-solid fa-right-from-bracket"></i></li>
+                            <li><i className="fa-solid fa-gear"></i></li>
                         </ul>
                     </div>
                 </header>

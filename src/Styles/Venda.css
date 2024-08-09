@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bodyGeral{
+    font-family: 'Itim';
+}
+
+.headerGeral .topo{
+    width: 100%;
+    height: 100px;
+    background-color: #050538;
+}
+
+.headerGeral .topo .logo img{
+    width: 10%;
+    height: 100px;
+    margin-left: 42%;
+    float: left;
+}
+
+.headerGeral .topo .nav-bar{
+    height: auto;
+    float: right;
+    margin-top: -78px;
+    margin-left: 45%;
+    
+}
+
+.headerGeral .topo .nav-bar nav ul li{
+    text-decoration: none;
+    list-style: none;
+    display: table-cell;
+    padding: 1rem;
+    color: white;
+}
+
+.mainGeral .container{
+    width: 100%;
+    min-height: 600px;
+} 
+
+.mainGeral .container .carrinho{
+    width: 70%;
+    height: 100px;
+    margin-left: 30%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.mainGeral .container .carrinho img{
+    width: 11%;
+    height: 100px;
+    float: left;
+}
+
+.mainGeral .container .carrinho p{
+    color: #050538;
+    float: left;
+    font-size: 20px;
+}
+
+.mainGeral .container .carrinho .para1{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.mainGeral .container .carrinho .para2{
+    margin-top: 70px;
+}
+
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mainGeral .container .central{
+    width: 70%;
+    height: auto;
+    padding: 2rem;
+}
+
+.mainGeral .container .central h1{
+    margin-left: 55% ;
+    color: #050538;
+}
+
+.mainGeral .container .central .botoes{
+    margin-left:40%;
+}
+
+.mainGeral .container .central .botoes .botao{
+    width: 250px;
+    height: 50px;
+    background-color: #00968f;
+    float: left;
+    margin: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.mainGeral .container .central .botoes .botao p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.mainGeral .container .ajuda{
+    width: 70%;
+    height: 90px;
+    margin-left: 30%;
+    padding-top: 1rem;
+}
+
+.mainGeral .container .ajuda img{
+    width: 10%;
+    height: 90px;
+    float: left;
+}
+
+.mainGeral .container .ajuda p{
+    color: #050538;
+    float: left;
+    font-size: 20px;
+}
+
+.mainGeral .container .ajuda .para1{
+    margin-top: 25px;
+    margin-left: 15px;
+    text-align: right;
+}
+
+.mainGeral .container .ajuda .para1 a{
+    text-decoration: none;
+    color: #050538;
+}
+
+.mainGeral .container .ajuda .para1 a:hover{
+    color: #00968f;
+}
+
+.mainGeral .container .ajuda .para2{
+    margin-top: 60px;
+    margin-left: 10px;
+}     

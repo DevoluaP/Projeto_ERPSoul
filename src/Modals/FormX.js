@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function CadastrarServico ({ isOpen }) {
+export default function FormX({ isOpen }) {
     if (isOpen) {
-        return(
+        return (
             <>
-                <h1>Cadastrar Serviço</h1>
+                <h1>Cadastrar Serviços</h1>
                 <div className="formulario">
                     <form method="" action="">
                         <div className="row">
@@ -40,7 +40,17 @@ export default function CadastrarServico ({ isOpen }) {
                         </div>
                         <div className="row">
                             <div className="col-6">
-                                <input type="text" id="val_servico" name="val_servico" placeholder="Valor do Serviço" required="required" />
+                                <input type="text" id="fil-cliente" name="fil-cliente" placeholder="Filtrar por cliente" required="required" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-6">
+                                <input type="text" id="fil-produto" name="fil-produto" placeholder="Filtrar por produto" required="required" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-6">
+                                <input type="text" id="fil-cpf-cnpj" name="fil-cpf-cnpj" placeholder="Filtrar por CPF" required="required" />
                             </div>
                         </div>
                         <div className="row textarea">
@@ -55,7 +65,7 @@ export default function CadastrarServico ({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/servicos">
+                            <Link to="#">
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

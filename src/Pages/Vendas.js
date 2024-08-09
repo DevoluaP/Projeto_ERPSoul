@@ -1,64 +1,64 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import Headers from '../Inc/Headers';
-import Footers from '../Inc/Footers';
+import Headers from '../Inc/Headers.js';
+import Footers from '../Inc/Footers.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
-import '../Styles/style-geral.css';
+import '../Styles/Geral.css';
 
 class Vendas extends React.Component {
     render() {
         return(
             <>
-                <div className="pageGeral" id="page">
-                    <Headers />
-            
-                    <main className="interna">
-                        <div className="carrinho">
-                            <p className="para1"><b>Comece a vender mais.</b></p>
-                            <img src={ carrinho } alt="Carrinho" />
-                            <p className="para2">Plataforma que te impulsiona.</p>
-                        </div>
-                        <br />
-                        <br />
-                        <hr />
-                        <div className="central">
-                            <h1>VENDAS E NF'S</h1>
-                            <div className="container-modal">
-                                <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">GERAR NF</button><br />
-                                <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">RELATÓRIOS</button><br />
-                                <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR FATURAS</button><br />
-                                <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR PRODUTOS</button><br />
-                                <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR PEDIDO</button>
+                <body className="bodyGeral">
+                    <div className="pageGeral" id="page">
+                        <Headers />
+                
+                        <main className="interna">
+                            <div className="carrinho">
+                                <p className="para1"><b>Comece a vender mais.</b></p>
+                                <img src={ carrinho } alt="Carrinho" />
+                                <p className="para2">Plataforma que te impulsiona.</p>
                             </div>
-                            <div className="modal-overlay">
-                                <div className="modal-container">
-                                    <div className="botoes">
-                                        <button className="close-btn" onclick="fecharModal()">
-                                            <FontAwesomeIcon icon={ faXmark } />
-                                        </button>
+                            <br />
+                            <br />
+                            <hr />
+                            <div className="central">
+                                <h1>VENDAS E NF'S</h1>
+                                <div className="container-modal">
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">GERAR NF</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">RELATÓRIOS</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR FATURAS</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR PRODUTOS</button><br />
+                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="" data-conteudo="">CADASTRAR PEDIDO</button>
+                                </div>
+                                <div className="modal-overlay">
+                                    <div className="modal-container">
+                                        <div className="botoes">
+                                            <button className="close-btn" onclick="fecharModal()">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div id="modal-container"></div>
                                     </div>
-                                    <div id="modal-container"></div>
+                                </div>
+                                <hr />
+                                <div className="ajuda">
+                                    <p className="para1">
+                                        Precisa de ajuda?
+                                        <b><Link to="#">Clique aqui.</Link></b>
+                                    </p>
+                                    <img src={ ajuda } alt="Ajuda" />
+                                    <p className="para2">A Soul está aqui para te ajudar.</p>
                                 </div>
                             </div>
-                            <hr />
-                            <div className="ajuda">
-                                <p className="para1">
-                                    Precisa de ajuda?
-                                    <b><Link to="#">Clique aqui.</Link></b>
-                                </p>
-                                <img src={ ajuda } alt="Ajuda" />
-                                <p className="para2">A Soul está aqui para te ajudar.</p>
-                            </div>
-                        </div>
-                    </main>
-            
-                    <Footers />
-                </div>
+                        </main>
+                
+                        <Footers />
+                    </div>
+                </body>
             </>
         );
     }

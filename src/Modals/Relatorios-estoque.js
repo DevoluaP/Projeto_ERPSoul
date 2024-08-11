@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function RelatoriosEstoque({ isOpen }) {
-    if (isOpen) {
+export default function RelatoriosEstoque({ isOpenRelatoriosEstoque }) {
+    if (isOpenRelatoriosEstoque) {
         return(
             <>
                 <h1>Relatórios</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="row">
                             <div className="col-6">
                                 <select name="periodo-estoque" id="periodo-estoque">
@@ -69,7 +69,7 @@ export default function RelatoriosEstoque({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/estoque">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

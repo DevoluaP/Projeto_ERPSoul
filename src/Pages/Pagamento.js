@@ -34,7 +34,7 @@ class Pagamento extends React.Component {
                                         <i className="fa-brands fa-cc-paypal" style={{ marginLeft: '5px' }}></i> 
                                     </p>
                                     <div className="formulario">
-                                        <form method="" action="">
+                                        <form action="" method="POST">
                                             <div className="row">
                                                 <div className="col-12">
                                                     <input type="text" name="nome_cartao" id="nome_cartao" placeholder="Nome impresso no cartão" required="required" />
@@ -44,6 +44,8 @@ class Pagamento extends React.Component {
                                                 <div className="col-6">
                                                     <input type="text" name="num_cartao" id="num_cartao" placeholder="Número do cartão" />
                                                 </div>
+                                            </div>
+                                            <div className="row">
                                                 <div className="col-6">
                                                     <input type="text" name="ccv" id="ccv" placeholder="CCV" />
                                                 </div>
@@ -52,6 +54,8 @@ class Pagamento extends React.Component {
                                                 <div className="col-6">
                                                     <input type="text" name="cpf_tit" id="cpf_tit" placeholder="CPF titular" />
                                                 </div>
+                                            </div>
+                                            <div className="row">
                                                 <div className="col-6">
                                                     <input type="text" name="validade" id="validade" placeholder="Validade" />
                                                 </div>

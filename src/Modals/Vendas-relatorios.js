@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function VendasRelatorios({ isOpen }) {
-    if (isOpen) {
+export default function VendasRelatorios({ isOpenVendasRelatorios }) {
+    if (isOpenVendasRelatorios) {
         return (
             <>
                 <div className="formulario">
@@ -34,7 +34,7 @@ export default function VendasRelatorios({ isOpen }) {
                         </table>
                     </div>
                     <div className="botao-form">
-                        <Link to="/vendas">
+                        <Link to="#" onClick={ () => this.setCloseModal() }>
                             <div className="botao">
                                 <p>Voltar</p>
                             </div>

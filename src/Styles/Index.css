@@ -103,14 +103,14 @@ button{
         display: block;
     }
 
-    .headerIndex .container-modal{
+    .headerIndex .container-modal-index{
         width: 30%;
         margin-top: 1rem;
         margin-right: 1rem;
         float: right;
     }
 
-    .headerIndex .container-modal .modal-btn{
+    .headerIndex .container-modal-index .modal-btn-index{
         width: 130px;
         height: auto;
         margin-left: 2rem;
@@ -122,11 +122,11 @@ button{
         float: right;
     }
 
-    .headerIndex .container-modal .modal-btn:hover{
+    .headerIndex .container-modal-index .modal-btn-index:hover{
         background-color: var(--bc);
     }
 
-    .headerIndex   .modal-overlay{
+    .headerIndex .modal-overlay-index{
         position: fixed;
         top: 0;
         left: 0;
@@ -135,17 +135,12 @@ button{
         background: var(--bctr);
         display: grid;
         place-items: center;
-        visibility: hidden;
-        z-index: -10;
+        visibility: visible;
+        z-index: 10;
         transition: var(--transition);
     }
 
-    .headerIndex .open-modal{
-        visibility: visible;
-        z-index: 10;
-    }
-
-    .headerIndex .modal-container{
+    .headerIndex .modal-container-index{
         width: 50%;
         height: auto;
         background: var(--bc);
@@ -156,23 +151,23 @@ button{
         box-shadow: var(--box-shadow2);
     }
 
-    .headerIndex  .modal-container p{
+    .headerIndex  .modal-container-index p{
         color: var(--bc-secondary);
         text-align: center;
     }
     
-    .headerIndex  .modal-container h2{
+    .headerIndex  .modal-container-index h2{
         padding: 1.5rem;
         color: var(--bc-secondary);
         text-align: center;
         margin-top: 2px;
     }
 
-    .headerIndex  .modal-container label{
+    .headerIndex  .modal-container-index label{
         color: var(--bc-secondary);
     }
     
-    .headerIndex  .close-btn{
+    .headerIndex  .close-btn-index{
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -185,7 +180,7 @@ button{
 
     .headerIndex  .box-login{
         width: 50%;
-        height: 200px;
+        height: 270px;
         border-radius: 1rem;
         margin: auto;
         margin-bottom: 2rem;
@@ -278,6 +273,8 @@ button{
     .headerIndex .formulario{
         width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         height: auto;
     }

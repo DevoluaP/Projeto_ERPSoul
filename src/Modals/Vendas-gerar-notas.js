@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function VendasGerarNotas({ isOpen }) {
-    if (isOpen) {
+export default function VendasGerarNotas({ isOpenVendasGerarNotas }) {
+    if (isOpenVendasGerarNotas) {
         return (
             <>
                 <h1>Gerar nota fiscal</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="info">
                             <p>Gerar nota fiscal</p>
                             <div className="row">
@@ -22,12 +22,12 @@ export default function VendasGerarNotas({ isOpen }) {
                             </div>
                             <div className="row">
                                 <div className="col-6">
-                                    <input type="text" id="serie" name="serie" placeholder="Serie" />
+                                    <input type="text" id="serie" name="serie" placeholder="Série" />
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-6">
-                                    <input type="text" id="numero" name="numero" placeholder="Numero" />
+                                    <input type="text" id="numero" name="numero" placeholder="Número" />
                                 </div>
                             </div>
 
@@ -44,7 +44,7 @@ export default function VendasGerarNotas({ isOpen }) {
                             <div className="row">
                                 <div className="col-3">
                                     <select name="uni-negocio" id="uni-negocio" required="required">
-                                        <option>Selecione unidade de negocio</option>
+                                        <option>Selecione unidade de negócio</option>
                                         <option value="1">1 </option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -88,7 +88,7 @@ export default function VendasGerarNotas({ isOpen }) {
 
                             <div className="row">
                                 <div className="col-6">
-                                    <input type="text" id="numero" name="numero" placeholder="Numero" />
+                                    <input type="text" id="numero" name="numero" placeholder="Número" />
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@ export default function VendasGerarNotas({ isOpen }) {
                             <div className="row">
                                 <div className="col-6">
                                     <select name="municipio" id="municipio" required="required">
-                                        <option>Selecione municipio</option>
+                                        <option>Selecione município</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -161,7 +161,7 @@ export default function VendasGerarNotas({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/vendas">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

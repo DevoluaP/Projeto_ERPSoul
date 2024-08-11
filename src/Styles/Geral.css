@@ -111,7 +111,7 @@ button{
 
     main .carrinho{
         width: 55%;
-        margin-left: 36%;
+        margin-left: 37%;
         padding: .5rem;
     }
 
@@ -182,7 +182,7 @@ button{
 
     main .central .container-modal{
         width: 30%;
-        margin-left: 35%;
+        margin-left: 37%;
         padding: 2rem;
     }
 
@@ -198,6 +198,38 @@ button{
         color: var(--fc-paragraphs)
     }
 
+    .info .lista {
+        width: 20%;
+        margin-left: 155px;
+    }
+
+    .info .lista ul, .info .lista2 ul {
+        list-style: none;
+    }
+
+    .info .lista2 {
+        margin-left: 600px;
+    }
+
+    .info .lista2 a {
+        width: 60px;
+    }
+
+    .info .modal-btn{
+        width: 80px;
+        height: 30px;
+        color: var(--fc-paragraphs);
+        background-color: var(--fc-primary);
+        border-radius: 20px;
+        margin-left: 50px;
+    }
+
+    .info #btn-cadastrar-vendas {
+        position: absolute;
+        margin-left: 720px;
+        margin-top: -60px;
+    }
+
     main .central .container-modal .modal-btn:hover{
         background-color: var(--bc);
     }
@@ -211,14 +243,9 @@ button{
         background: var(--bctr);
         display: grid;
         place-items: center;
-        visibility: hidden;
-        z-index: -10;
-        transition: var(--transition);
-    }
-
-    main .central .open-modal{
         visibility: visible;
         z-index: 10;
+        transition: var(--transition);
     }
 
     main .central .modal-container{
@@ -358,6 +385,15 @@ button{
         width: 40%;
     }
 
+    .row-textarea {
+        width: 20%;
+        margin-left: 130px;
+    }
+
+    .row-textarea #historico, .row-textarea #desc-produto {
+        width: 560px;
+    }
+
     main .central .formulario .parcelamento{
         float: left;
         width: 100%;
@@ -402,7 +438,11 @@ button{
 
     main .central .escolha{
         width: 80%;
-        margin: auto;
+        margin-left: 250px;
+    }
+
+    main .central .escolha p{
+        margin-left: -150px;
     }
 
     main .central .escolha .planinho{
@@ -489,6 +529,11 @@ button{
         font-family: var(--ff-primary);
         margin-bottom: 2%;
         margin-left: 15%;
+    }
+
+    main .central .box-senha .formulario .labelSenha {
+        margin-left: 31px;
+        margin-bottom: 3px;
     }
 
     main .central .box-senha .formulario .btn{
@@ -663,7 +708,7 @@ button{
     main .ajuda{
         width: 60%;
         height: auto;
-        margin-left: 38.5%;
+        margin-left: 40%;
     }
 
     main  .ajuda img{

@@ -1,45 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function FinancasContasAReceber({ isOpen }) {
-    if (isOpen) {
+export default function FinancasContasAReceber({ isOpenFinancasContasAReceber }) {
+    if (isOpenFinancasContasAReceber) {
         return(
             <>
                 <h1>Contas a receber</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <input type="text" id="fornecedor" name="fornecedor" placeholder="Fornecedor" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <input type="text" id="venci-original" name="venci-original" placeholder="Vencimento original" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <input type="text" id="venci" name="venci" placeholder="Vencimento" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <input type="text" id="valor" name="valor" placeholder="Valor" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
-                                <input type="text" id="n-docu" name="n-docu" placeholder="N documento" required="required" />
+                            <div className="col-6-financas">
+                                <input type="text" id="n-docu" name="n-docu" placeholder="Nº documento" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <input type="text" id="compe" name="compe" placeholder="Competência" required="required" />
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <select name="form-pagamento" id="form-pagamento" required="required">
                                     <option>Selecione forma de pagamento</option>
                                     <option value="1">Categoria 1</option>
@@ -49,7 +49,7 @@ export default function FinancasContasAReceber({ isOpen }) {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <select name="portador" id="portador">
                                     <option>Selecione portador</option>
                                     <option value="1">Categoria 1</option>
@@ -59,7 +59,7 @@ export default function FinancasContasAReceber({ isOpen }) {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <select name="categoria" id="categoria">
                                     <option>Selecione categoria</option>
                                     <option value="1">Categoria 1</option>
@@ -69,7 +69,7 @@ export default function FinancasContasAReceber({ isOpen }) {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6-financas">
                                 <select name="ocorrencia" id="ocorrencia">
                                     <option>Selecione ocorrência</option>
                                     <option value="1">Categoria 1</option>
@@ -78,8 +78,8 @@ export default function FinancasContasAReceber({ isOpen }) {
                                 </select>
                             </div>
                         </div>
-                        <div className="row textarea">
-                            <label for="historico">Historico:</label>
+                        <div className="row-textarea">
+                            <label for="historico">Histórico:</label>
                             <textarea id="historico" name="historico" rows="4" cols="50"></textarea>
                         </div>
                         <div className="botao-form">
@@ -90,7 +90,7 @@ export default function FinancasContasAReceber({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/financas">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

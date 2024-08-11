@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function VendasCadastrarVendas({ isOpen }) {
-    if (isOpen) {
+export default function VendasCadastrarVendas({ isOpenVendasCadastrarVendas }) {
+    if (isOpenVendasCadastrarVendas) {
         return (
             <>
                 <h1>Cadastrar vendas</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="info">
                             <p>Dados do cliente</p>
                             <div className="row">
@@ -84,7 +84,7 @@ export default function VendasCadastrarVendas({ isOpen }) {
                             </div>
                             <button className="modal-btn">Buscar</button>
                             <br />
-                            <div className="lista">
+                            <div className="lista2">
                                 <ul>
                                     <Link to="#" style={{ color: 'black' }}>
                                         <li>TESTE 1</li>
@@ -95,13 +95,13 @@ export default function VendasCadastrarVendas({ isOpen }) {
                                 </ul>
                             </div>
                             <br />
-                            <button className="modal-btn">Adicionar</button>
+                            <button className="modal-btn" id="btn-cadastrar-vendas">Adicionar</button>
                         </div>
                         <div className="info">
                             <div className="row">
                                 <div className="col-6">
                                     <label>Total da venda</label>
-                                    <input type="text" id="total-venda" name="total-venda" />
+                                    <input type="text" id="total-venda" name="total-venda" placeholder="R$" />
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ export default function VendasCadastrarVendas({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/vendas">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

@@ -22,10 +22,20 @@ class Index extends React.Component {
     constructor(props) {
         super(props);
         this.state = { openModal: false };
+        this.state = { openModal2: false };
     }
     
-    setOpenModal = (isOpen) => {
-        this.setState({ openModal: isOpen });
+    setOpenModal = (isOpenLogin) => {
+        this.setState({ openModal: isOpenLogin });
+    }
+
+    setOpenModal2 = (isOpenTesteGratis) => {
+        this.setState({ openModal2: isOpenTesteGratis });
+    }
+
+    setCloseModal = () => {
+        this.setState({ openModal: false });
+        this.setState({ openModal2: false });
     }
 
     render() {
@@ -52,29 +62,39 @@ class Index extends React.Component {
                                       </a>
                                   </ul>
                                 </div>
-                                <div className="container-modal">
-                                  <button className="modal-btn" onClick={ () => this.setOpenModal(true) }>
-                                      <TesteGratis isOpen={ this.state.openModal } /> TESTE GRÁTIS
-                                  </button>
-                                  <button className="modal-btn" onClick={ () => this.setOpenModal(true) }>
-                                      <Login isOpen={ this.state.openModal } />
+                                <div className="container-modal-index">
+                                  <button className="modal-btn-index" onClick={ () => this.setOpenModal2(true) }>TESTE GRÁTIS</button>
+                                  <button className="modal-btn-index" onClick={ () => this.setOpenModal(true) }>
                                       <i className="fa-solid fa-user"></i> ENTRE
                                   </button>
                                 </div>
-                            </header> 
+                                
+                                {this.state.openModal && (
+                                    <div className="modal-overlay-index">
+                                        <div className="modal-container-index">
+                                            <Login isOpenLogin={ this.state.openModal } />
+                                            <div className="botoes">
+                                                <button className="close-btn-index" onClick={ () => this.setCloseModal() }>
+                                                    <i className="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                                {this.state.openModal2 && (
+                                    <div className="modal-overlay-index">
+                                        <div className="modal-container-index">
+                                            <TesteGratis isOpenTesteGratis={ this.state.openModal2 } />
+                                            <div className="botoes">
+                                                <button className="close-btn-index" onClick={ () => this.setCloseModal() }>
+                                                    <i className="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
 
-                            {this.state.openModal && (
-                            <div className="modal-overlay">
-                              <div className="modal-container">
-                                  <div className="botoes">
-                                      <button className="close-btn" onClick={ () => this.setOpenModal(false) }>
-                                        <i className="fa-solid fa-xmark"></i>
-                                      </button>
-                                  </div>
-                                  <div id="modal-container"></div>
-                              </div>
-                            </div>
-                            )}
+                            </header>
 
                             <main className="mainIndex">
                                 <div className="box1">
@@ -100,7 +120,7 @@ class Index extends React.Component {
                                 <div className="box3">
                                     <div className="text-box3">
                                         <p>Gestão de Estoque como você nunca viu!<br />
-                                            <b style={{ color: '#050538', fontSize: '35px' }}>Cadastro</b> de seus fornecedores, <br />emissão dos <b style={{ color: '#050538', fontSize: '35px' }}>relatórios</b> de estoque, <br /> <b style={{ color: '#050538', fontSize: '35px' }}>controle</b> de suas compras e muito, muito mais!
+                                            <b style={{ color: '#050538', fontSize: '35px' }}>Cadastro</b> de seus fornecedores, <br />emissão dos <b style={{ color: '#050538', fontSize: '35px' }}>relatórios</b> de estoque, <br /> <b style={{ color: '#050538', fontSize: '35px' }}>controle</b> de suas compras e muito mais!
                                         </p>
                                     </div>
                                     <div className="img-box3">
@@ -159,7 +179,7 @@ class Index extends React.Component {
                                                 <li><i className="fa-solid fa-check"></i> SERVIÇOS</li>
                                                 <li><i className="fa-solid fa-check"></i> SUPORTE</li>
                                                 <li><i className="fa-solid fa-check"></i> COBRANÇAS</li>
-                                                <li><i className="fa-solid fa-check"></i> FORNEDORES</li>
+                                                <li><i className="fa-solid fa-check"></i> FORNECEDORES</li>
                                             </ul>
                                             <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
                                                 TESTE GRÁTIS
@@ -181,7 +201,7 @@ class Index extends React.Component {
                                                 <li><i className="fa-solid fa-check"></i> SERVIÇOS</li>
                                                 <li><i className="fa-solid fa-check"></i> SUPORTE</li>
                                                 <li><i className="fa-solid fa-check"></i> COBRANÇAS</li>
-                                                <li><i className="fa-solid fa-check"></i> FORNEDORES</li>
+                                                <li><i className="fa-solid fa-check"></i> FORNECEDORES</li>
                                             </ul>
                                             <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
                                                 TESTE GRÁTIS

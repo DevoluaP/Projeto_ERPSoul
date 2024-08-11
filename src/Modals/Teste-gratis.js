@@ -1,13 +1,15 @@
 import React from 'react';
 
-export default function TesteGratis({ isOpen }) {
-    if (isOpen) {
+import HomeGratuito from '../Pages/Home-gratuito.js';
+
+export default function TesteGratis({ isOpenTesteGratis }) {
+    if (isOpenTesteGratis) {
         return(
             <>
-                <h2>Teste por 30 dias grátis!</h2>
+                <h2>Teste por <b style={{ color:'#00FFF4', fontSize: '40px' }}>30</b> dias grátis!</h2>
                 <div className="box-teste">
                     <div className="formulario">
-                        <form method="" action="">
+                        <form action={ HomeGratuito } method="POST">
                             <div className="row">
                                 <div className="col-6">
                                     <input type="text" id="nome" name="nome" placeholder="Nome*" required="required" />
@@ -54,9 +56,7 @@ export default function TesteGratis({ isOpen }) {
                                     <label for="termos_priv"> Li e Aceitos os Termos de Privacidade</label>
                                 </div>
                             </div>
-                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="Login">
-                                ENTRAR
-                            </button>
+                            <button className="btn-login" id="loginBtn">ENTRAR</button>
                         </form>
                     </div>
                 </div>

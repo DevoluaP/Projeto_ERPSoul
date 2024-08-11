@@ -3,12 +3,40 @@ import { Link } from 'react-router-dom';
 
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
+import CadastrarCliente from '../Modals/Cadastrar-cliente.js';
+import ClientesCadastrados from '../Modals/Clientes-cadastrados.js';
+import GerarRelatoriosClientes from '../Modals/Gerar-relatorios-clientes.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
 import '../Styles/Geral.css';
 
 class Crm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { openModal: false };
+        this.state = { openModal2: false };
+        this.state = { openModal3: false };
+    }
+    
+    setOpenModal = (isOpenCadastrarCliente) => {
+        this.setState({ openModal: isOpenCadastrarCliente });
+    }
+
+    setOpenModal2 = (isOpenClientesCadastrados) => {
+        this.setState({ openModal2: isOpenClientesCadastrados });
+    }
+
+    setOpenModal3 = (isOpenGerarRelatoriosClientes) => {
+        this.setState({ openModal3: isOpenGerarRelatoriosClientes });
+    }
+
+    setCloseModal = () => {
+        this.setState({ openModal: false });
+        this.setState({ openModal2: false });
+        this.setState({ openModal3: false });
+    }
+
     render() {
         return(
             <>
@@ -28,20 +56,48 @@ class Crm extends React.Component {
                             <div className="central">
                                 <h1>CRM</h1>
                                 <div className="container-modal">
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/cadastrar-cliente.html" data-conteudo="cadastrar-cliente">CADASTRAR CLIENTE</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/relatorio-clientes-cadastrados.html" data-conteudo="relatorio-clientes">CLIENTES CADASTRADOS</button><br />
-                                    <button className="modal-btn" onclick="abreModal(this)" id="btnModal" data-url="html-modal/gerar-relatorios-clientes.html" data-conteudo="gerar-relatorios-clientes">GERAR RELATÓRIO</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal(true) } id="btnModal">CADASTRAR CLIENTE</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal2(true) } id="btnModal">CLIENTES CADASTRADOS</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal3(true) } id="btnModal">GERAR RELATÓRIO</button><br />
                                 </div>
-                                <div className="modal-overlay">
-                                    <div className="modal-container">
-                                        <div className="botoes">
-                                            <button className="close-btn" onclick="fecharModal()">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </button>
+
+                                {this.state.openModal && (
+                                    <div className="modal-overlay">
+                                        <div className="modal-container">
+                                            <CadastrarCliente isOpenCadastrarCliente={ this.state.openModal } />
+                                            <div className="botoes">
+                                                <button className="close-btn" onClick={ () => this.setCloseModal() }>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div id="modal-container"></div>
                                     </div>
-                                </div>
+                                )}
+                                {this.state.openModal2 && (
+                                    <div className="modal-overlay">
+                                        <div className="modal-container">
+                                            <ClientesCadastrados isOpenClientesCadastrados={ this.state.openModal2 } />
+                                            <div className="botoes">
+                                                <button className="close-btn" onClick={ () => this.setCloseModal() }>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                                {this.state.openModal3 && (
+                                    <div className="modal-overlay">
+                                        <div className="modal-container">
+                                            <GerarRelatoriosClientes isOpenGerarRelatoriosClientes={ this.state.openModal3 } />
+                                            <div className="botoes">
+                                                <button className="close-btn" onClick={ () => this.setCloseModal() }>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                                
                                 <hr />
                                 <div className="ajuda">
                                     <p className="para1">

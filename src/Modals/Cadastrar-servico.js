@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function CadastrarServico ({ isOpen }) {
-    if (isOpen) {
+export default function CadastrarServico({ isOpenCadastrarServico }) {
+    if (isOpenCadastrarServico) {
         return(
             <>
                 <h1>Cadastrar Serviço</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="row">
                             <div className="col-6">
                                 <input type="text" id="servico" name="servico" placeholder="Serviço*" required="required" />
@@ -55,7 +55,7 @@ export default function CadastrarServico ({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/servicos">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

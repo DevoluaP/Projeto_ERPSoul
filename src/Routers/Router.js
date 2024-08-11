@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Index from '../Pages/Index';
-import HomeGratuito from '../Pages/Home-gratuito';
-import HomeERP from '../Pages/Home-erp';
-import Crm from '../Pages/Crm';
-import Vendas from '../Pages/Vendas';
-import Servicos from '../Pages/Servicos';
-import Financas from '../Pages/Financas';
-import Estoque from '../Pages/Estoque';
-import Contabilidade from '../Pages/Contabilidade';
-import Pagamento from '../Pages/Pagamento';
-import EsqueciSenha from '../Pages/Esqueci-senha';
-import NovaSenha from '../Pages/Nova-senha';
-import SenhaSucesso from '../Pages/Senha-sucesso';
+import Index from '../Pages/Index.js';
+import HomeGratuito from '../Pages/Home-gratuito.js';
+import HomeERP from '../Pages/Home-erp.js';
+import Crm from '../Pages/Crm.js';
+import Vendas from '../Pages/Vendas.js';
+import Servicos from '../Pages/Servicos.js';
+import Financas from '../Pages/Financas.js';
+import Estoque from '../Pages/Estoque.js';
+import Contabilidade from '../Pages/Contabilidade.js';
+import Pagamento from '../Pages/Pagamento.js';
+import EsqueciSenha from '../Pages/Esqueci-senha.js';
+import NovaSenha from '../Pages/Nova-senha.js';
+import SenhaSucesso from '../Pages/Senha-sucesso.js';
 
 const Router = () => {
     return(

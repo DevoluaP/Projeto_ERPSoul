@@ -20,6 +20,7 @@
     .bodyGeral{
         background-color: var(--bc);
         font-family: 'Itim';
+        overflow: hidden;
     }
 
     hr{
@@ -171,6 +172,7 @@
     .bodyGeral{
         background-color: var(--bc);
         font-family: 'Itim';
+        overflow: hidden;
     }
 
     hr{
@@ -280,7 +282,7 @@
     .mainGeral .ajuda{
         width: 70%;
         height: 90px;
-        margin-left: 35%;
+        margin-left: 37%;
         margin-bottom: 40px;
     }
 

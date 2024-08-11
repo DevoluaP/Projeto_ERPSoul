@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Login({ isOpen }) {
-    if (isOpen) {
+import HomeGratuito from '../Pages/Home-gratuito.js';
+
+export default function Login({ isOpenLogin }) {
+    if (isOpenLogin) {
         return(
             <>
                 <h2>Entrar</h2>
                 <p>Bem vindo de volta<br /> É um prazer tê-lo aqui.</p>
                 <div className="box-login">
                     <div className="formulario">
-                        <form action="" method="">
+                        <form action={ HomeGratuito } method="POST">
                             <div className="row">
                                 <div className="col-12">
                                     <input type="text" id="email" name="email" placeholder="E-mail" />
@@ -30,11 +32,14 @@ export default function Login({ isOpen }) {
                                     <label for="conectado"> Lembre-se de mim</label>
                                 </div>
                             </div>
-                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="Login">
+                            <button className="btn-login" id="loginBtn">
                                 ENTRAR
                             </button>
                         </form>
-                        <p>Esqueceu sua senha?   <Link to="#"><b>Clique aqui</b></Link></p>
+                        <p>
+                            Esqueceu sua senha?
+                            <Link to="/esqueci-senha"><b>Clique aqui</b></Link>
+                        </p>
                     </div>
                 </div>
             </>

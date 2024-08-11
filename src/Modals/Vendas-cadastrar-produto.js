@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function VendasCadastrarProduto({ isOpen }) {
-    if (isOpen) {
+export default function VendasCadastrarProduto({ isOpenVendasCadastrarProduto }) {
+    if (isOpenVendasCadastrarProduto) {
         return(
             <>
                 <h1>Cadastrar novo produto</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="row">
                             <div className="col-6">
                                 <input type="text" id="nome" name="nome" placeholder="Nome" required="required" />
@@ -77,7 +77,7 @@ export default function VendasCadastrarProduto({ isOpen }) {
 
                         <div className="row">
                             <div className="col-6">
-                                <input type="text" id="peso-liquido" name="peso-liquido" placeholder="Peso liquído" required="required" />
+                                <input type="text" id="peso-liquido" name="peso-liquido" placeholder="Peso líquido" required="required" />
                             </div>
                         </div>
                         <div className="row">
@@ -116,7 +116,7 @@ export default function VendasCadastrarProduto({ isOpen }) {
                             </div>
                         </div>
                         <div className="row-textarea">
-                            <label for="historico">Historico:</label>
+                            <label for="historico">Histórico:</label>
                             <textarea id="historico" name="historico" rows="4" cols="50"></textarea>
                         </div>
 
@@ -132,7 +132,7 @@ export default function VendasCadastrarProduto({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/vendas">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

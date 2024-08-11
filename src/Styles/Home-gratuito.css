@@ -140,6 +140,15 @@ hr{
     margin: auto;
     margin-top: 10px;
     color: var(--bc-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.mainGratuito #alterar-usuario .btn-alterar {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .mainGratuito #resumo-rapido{
@@ -316,6 +325,9 @@ hr{
     border-radius: 11px;
     background-color:  rgba(0,150,143,0.5);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainGratuito #acessar-erp #acesso-gratuito-cor .acessar-erp{
@@ -327,6 +339,15 @@ hr{
     border-radius: 11px;
     background-color:  rgba(0,150,143);
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.mainGratuito #acessar-erp #acesso-gratuito-cor .btn-assinar, .mainGratuito #acessar-erp #acesso-gratuito-cor .btn-acessar {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 11px;
 }
 
 .mainGratuito #resumo-vendas{

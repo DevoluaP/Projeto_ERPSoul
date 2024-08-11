@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function GerarRelatoriosClientes({ isOpen }) {
-    if (isOpen) {
+export default function GerarRelatoriosClientes({ isOpenGerarRelatoriosClientes }) {
+    if (isOpenGerarRelatoriosClientes) {
         return(
             <> 
                 <h1>Relatórios</h1>
                 <h3>Para gerar seu relatório, é necessário que pelo menos um dos campos esteja preenchido. </h3>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                       <div className="row">
                           <div className="col-6">
                               <input type="text" placeholder="Nome do Cliente" />
@@ -61,7 +61,7 @@ export default function GerarRelatoriosClientes({ isOpen }) {
                       </Link>
                     </div>
                     <div class="botao-form">
-                      <Link to="/crm">
+                      <Link to="#" onClick={ () => this.setCloseModal() }>
                           <div class="botao">
                               <p>Voltar</p>
                           </div>

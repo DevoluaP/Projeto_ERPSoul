@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function CadastrarCliente({ isOpen }) {
-    if (isOpen) {
+export default function CadastrarCliente({ isOpenCadastrarCliente }) {
+    if (isOpenCadastrarCliente) {
         return(
             <>
                 <h1>Cadastrar Cliente</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="info">
                             <p>Informações pessoais</p>
                             <div className="row">
@@ -71,7 +71,7 @@ export default function CadastrarCliente({ isOpen }) {
                             </div>
                             <div className="row">
                                 <div className="col-12">
-                                    <label for="parcelamento">Juridico</label>
+                                    <label for="parcelamento">Jurídico</label>
                                     <input className="radio" type="radio" id="tipo_cli" name="tipo_cli" value="2" />
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function CadastrarCliente({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/crm">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

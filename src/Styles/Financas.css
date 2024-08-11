@@ -96,6 +96,20 @@ hr{
     margin-left: 2%;
 }
 
+.formulario .baixar-conta .row .col-6-baixar-contas {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.formulario .row .col-6-financas {
+    width: 250px;
+}
+
+.formulario .row-textarea #historico {
+    width: 560px;
+}
+
 .interna .container .formulario form input{
     border-top:none;
     border-left: none;

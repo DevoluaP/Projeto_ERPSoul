@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Integracoes({ isOpen }) {
-    if (isOpen) {
+export default function Integracoes({ isOpenIntegracoes }) {
+    if (isOpenIntegracoes) {
         return(
             <>
                 <h1>Integrações</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <div className="row">
                             <div className="col-6">
                                 <select name="categoria" id="categoria">
@@ -46,7 +46,7 @@ export default function Integracoes({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="/contabilidade">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

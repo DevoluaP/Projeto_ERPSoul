@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function PlanoContas({ isOpen }) {
-    if (isOpen) {
+export default function PlanoContas({ isOpenPlanoContas }) {
+    if (isOpenPlanoContas) {
         return(
             <>
                 <h1>Plano de Contas</h1>
                 <div className="formulario">
-                    <form method="" action="">
+                    <form action="" method="POST">
                         <h4>Preencha as informações obrigatórias para SCI</h4>
                                 <select name="opcao-plano-contas" className="opcao-plano-contas">
-                                    <option placeholder>Forma de greração da partidas contábeis</option>
+                                    <option placeholder>Forma de geração da partidas contábeis</option>
                                     <option value="1">Categoria 1</option>
                                     <option value="2">Categoria 2</option>
                                     <option value="3">Categoria 3</option>
@@ -33,7 +33,7 @@ export default function PlanoContas({ isOpen }) {
                             </Link>
                         </div>
                         <div className="botao-form">
-                            <Link to="#">
+                            <Link to="#" onClick={ () => this.setCloseModal() }>
                                 <div className="botao">
                                     <p>Voltar</p>
                                 </div>

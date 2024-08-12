@@ -75,11 +75,12 @@ button{
         height: auto;
         padding: 0;
         float: left;
+        margin-left: 100px;
     }
 
     .headerIndex .nav-bar{
         width: 100%;
-        margin-left: 13rem;
+        margin-left: 5rem;
         color: var(--fc-paragraphs);
         font-size: var(--fs-paragraphs);
     }

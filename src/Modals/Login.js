@@ -23,12 +23,6 @@ export default function Login({ isOpenLogin }) {
                             <div className="row">
                                 <div className="col-12">
                                     <input className="check-box" type="checkbox" id="conectado" name="conectado" value="1" />
-                                    <label for="conectado"> Mantenha-me conectado</label>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12">
-                                    <input className="check-box" type="checkbox" id="conectado" name="conectado" value="1" />
                                     <label for="conectado"> Lembre-se de mim</label>
                                 </div>
                             </div>

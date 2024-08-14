@@ -5,9 +5,22 @@ export default function FinancasContas({ isOpenFinancasContas }) {
     if (isOpenFinancasContas) {
         return(
             <>
-                <h1>Contas a pagar</h1>
+                <h1>Contas</h1>
                 <div className="formulario">
                     <form action="" method="POST">
+                            <p className="titulo-financas">Selecionar tipo de conta</p>
+                            <div className="row">
+                                <div className="col-6-financas" id="tipo-conta-financas">
+                                    <label className="label-financas">A pagar</label>
+                                    <input className="radio-financas" type="radio" id="tipo-contas-pagar" name="tipo-contas" value="1" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-6-financas">
+                                    <label className="label-financas">A receber</label>
+                                    <input className="radio-financas" type="radio" id="tipo-contas-receber" name="tipo-contas" value="2" />
+                                </div>
+                            </div>
                         <div className="row">
                             <div className="col-6-financas">
                                 <input type="text" id="fornecedor" name="fornecedor" placeholder="Fornecedor" required="required" />

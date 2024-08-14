@@ -102,6 +102,23 @@ hr{
     margin-left: 10px;
 }
 
+.formulario .titulo-financas {
+    font-weight: bold;
+    margin-left: 350px;
+}
+
+.formulario #tipo-conta-financas {
+    margin-left: 180px;
+}
+
+.formulario .label-financas {
+    margin-bottom: -16px;
+}
+
+.formulario .radio-financas {
+    margin-left: -35px;
+}
+
 .formulario .row .col-6-financas {
     width: 250px;
 }

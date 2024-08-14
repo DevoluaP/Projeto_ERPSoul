@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
 import CadastrarContador from '../Modals/Cadastrar-contador.js';
+import VendasCadastrarProduto from '../Modals/Vendas-cadastrar-produto.js';
 import PlanoContas from '../Modals/Plano-contas.js';
-import Integracoes from '../Modals/Integracoes.js';
 import RelatoriosEstoque from '../Modals/Relatorios-estoque.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
@@ -25,12 +25,12 @@ class Estoque extends React.Component {
         this.setState({ openModal: isOpenCadastrarContador });
     }
 
-    setOpenModal2 = (isOpenPlanoContas) => {
-        this.setState({ openModal2: isOpenPlanoContas });
+    setOpenModal2 = (isOpenVendasCadastrarProduto) => {
+        this.setState({ openModal2: isOpenVendasCadastrarProduto });
     }
 
-    setOpenModal3 = (isOpenIntegracoes) => {
-        this.setState({ openModal3: isOpenIntegracoes });
+    setOpenModal3 = (isOpenPlanoContas) => {
+        this.setState({ openModal3: isOpenPlanoContas });
     }
     
     setOpenModal4 = (isOpenRelatoriosEstoque) => {
@@ -64,8 +64,8 @@ class Estoque extends React.Component {
                                 <h1>ESTOQUE</h1>
                                 <div className="container-modal">
                                     <button className="modal-btn" onClick={ () => this.setOpenModal(true) } id="btn-cadastrar-fornecedores">CADASTRAR FORNECEDORES</button><br />
-                                    <button className="modal-btn" onClick={ () => this.setOpenModal2(true) } id="btn-cadastrar-reabastecimento">CADASTRAR REABASTECIMENTO</button><br />
-                                    <button className="modal-btn" onClick={ () => this.setOpenModal3(true) } id="btn-importar-nfs">IMPORTAR NFS</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal2(true) } id="btnModal">CADASTRAR PRODUTOS</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal3(true) } id="btn-cadastrar-reabastecimento">CADASTRAR REABASTECIMENTO</button><br />
                                     <button className="modal-btn" onClick={ () => this.setOpenModal4(true) } id="btn-relatorios-estoque">RELATÓRIOS</button><br />
                                 </div>
                                 
@@ -84,7 +84,7 @@ class Estoque extends React.Component {
                                 {this.state.openModal2 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <PlanoContas isOpenPlanoContas={ this.state.openModal2 } />
+                                            <VendasCadastrarProduto isOpenVendasCadastrarProduto={ this.state.openModal2 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>
@@ -96,7 +96,7 @@ class Estoque extends React.Component {
                                 {this.state.openModal3 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <Integracoes isOpenIntegracoes={ this.state.openModal3 } />
+                                            <PlanoContas isOpenPlanoContas={ this.state.openModal3 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
-import BaixarContas from '../Modals/Baixar-contas.js';
-import FinancasContasAReceber from '../Modals/Financas-contas-a-receber.js';
 import FinancasContas from '../Modals/Financas-contas.js';
+import BaixarContas from '../Modals/Baixar-contas.js';
+import VendasGerarNotas from '../Modals/Vendas-gerar-notas.js';
+import Integracoes from '../Modals/Integracoes.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
@@ -17,24 +18,30 @@ class Financas extends React.Component {
         this.state = { openModal: false };
         this.state = { openModal2: false };
         this.state = { openModal3: false };
+        this.state = { openModal4: false };
     }
     
-    setOpenModal = (isOpenBaixarContas) => {
-        this.setState({ openModal: isOpenBaixarContas });
+    setOpenModal = (isOpenFinancasContas) => {
+        this.setState({ openModal: isOpenFinancasContas });
     }
 
-    setOpenModal2 = (isOpenFinancasContasAReceber) => {
-        this.setState({ openModal2: isOpenFinancasContasAReceber });
+    setOpenModal2 = (isOpenBaixarContas) => {
+        this.setState({ openModal2: isOpenBaixarContas });
     }
 
-    setOpenModal3 = (isOpenFinancasContas) => {
-        this.setState({ openModal3: isOpenFinancasContas });
+    setOpenModal3 = (isOpenVendasGerarNotas) => {
+        this.setState({ openModal3: isOpenVendasGerarNotas });
+    }
+
+    setOpenModal4 = (isOpenIntegracoes) => {
+        this.setState({ openModal4: isOpenIntegracoes });
     }
 
     setCloseModal = () => {
         this.setState({ openModal: false });
         this.setState({ openModal2: false });
         this.setState({ openModal3: false });
+        this.setState({ openModal4: false });
     }
 
     render() {
@@ -56,15 +63,16 @@ class Financas extends React.Component {
                             <div className="central">
                                 <h1>FINANÇAS</h1>
                                 <div className="container-modal">
-                                    <button className="modal-btn" onClick={ () => this.setOpenModal(true) } id="btnModal">BAIXAR CONTAS</button><br />
-                                    <button className="modal-btn" onClick={ () => this.setOpenModal2(true) } id="btnModal">CONTAS A RECEBER</button><br />
-                                    <button className="modal-btn" onClick={ () => this.setOpenModal3(true) } id="btnModal">CONTAS A PAGAR</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal(true) } id="btnModal">CONTAS</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal2(true) } id="btnModal">BAIXAR CONTAS</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal3(true) } id="btnModal">GERAR NF</button><br />
+                                    <button className="modal-btn" onClick={ () => this.setOpenModal4(true) } id="btn-importar-nfs">IMPORTAR NFS</button><br />
                                 </div>
 
                                 {this.state.openModal && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <BaixarContas isOpenBaixarContas={ this.state.openModal } />
+                                            <FinancasContas isOpenFinancasContas={ this.state.openModal } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>
@@ -76,7 +84,7 @@ class Financas extends React.Component {
                                 {this.state.openModal2 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <FinancasContasAReceber isOpenFinancasContasAReceber={ this.state.openModal2 } />
+                                            <BaixarContas isOpenBaixarContas={ this.state.openModal2 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>
@@ -88,7 +96,19 @@ class Financas extends React.Component {
                                 {this.state.openModal3 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <FinancasContas isOpenFinancasContas={ this.state.openModal3 } />
+                                            <VendasGerarNotas isOpenVendasGerarNotas={ this.state.openModal3 } />
+                                            <div className="botoes">
+                                                <button className="close-btn" onClick={ () => this.setCloseModal() }>
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                                {this.state.openModal4 && (
+                                    <div className="modal-overlay">
+                                        <div className="modal-container">
+                                            <Integracoes isOpenIntegracoes={ this.state.openModal4 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

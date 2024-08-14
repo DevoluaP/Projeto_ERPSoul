@@ -5,7 +5,7 @@ export default function VendasCadastrarVendas({ isOpenVendasCadastrarVendas }) {
     if (isOpenVendasCadastrarVendas) {
         return (
             <>
-                <h1>Cadastrar vendas</h1>
+                <h1>Cadastrar venda</h1>
                 <div className="formulario">
                     <form action="" method="POST">
                         <div className="info">

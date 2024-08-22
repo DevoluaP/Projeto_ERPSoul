@@ -4,20 +4,15 @@
     box-sizing: border-box;
 }
 
-td,
-th {
+td, th{
   border:  solid 1px black;
   text-align: center;
   padding: .5rem;
 }
 
-a{
-    text-decoration: none;
-}
+a{text-decoration: none}
 
-label, input label{
-    display: block;
-}
+label, input label{display: block}
 
 button{
     font-family: var(--ff-primary);
@@ -42,6 +37,18 @@ button{
     --box-shadow2: 10px 10px 10px rgba(206, 204, 204, 0.3);
 }
 
+@media only screen and (max-width: 290px){body{display: none}}
+
+/* Tela Mobile */
+@media only screen and (max-width: 1379.99px){}
+
+/* Tela Tablet */
+@media only screen and (min-width: 570px) and (max-width: 1379.99px){}
+
+/* Tela Desktop - Pequeno */
+@media only screen and (min-width: 768px) and (max-width: 1379.99px){}
+
+/* Tela Desktop - Largo */
 @media only screen and (min-width: 1380px){
     .bodyGeral{
         background-color: var(--bc);
@@ -76,28 +83,6 @@ button{
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
-    }
-
-    .headerGeral{
-        width: 100%;
-        background-color: var(--bc);
-    }
-
-    .headerGeral .logo{
-        margin-left: 45%;
-    }
-
-    .headerGeral .nav-bar{
-        width: 100%;
-        color: var(--fc-paragraphs);
-        font-size: var(--fs-paragraphs);
-    }
-    
-    .headerGeral .nav-bar ul li{
-        list-style: none;
-        display: inline;
-        padding: 1rem;
-        float: right;
     }
     
     main{
@@ -705,6 +690,112 @@ button{
         color: var(--fc-paragraphs)
     }
 
+    .senha-sucesso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .senha-sucesso i {
+        font-size: 120px;
+        margin-top: 60px;
+    }
+
+    .senha-sucesso .bloco-sucesso {margin-top: 27px}
+
+    .senha-sucesso .btn-sucesso a{
+        width: 200px;
+        height: 60px;
+        margin-bottom: 60px;
+        border: 2px solid #000;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+    }
+
+    .senha-sucesso .btn-sucesso a:hover {
+        background-color: var(--bc);
+    }
+
+    .interna .container .formulario{
+        width: 90%;
+        margin: auto;
+        margin-left: 20%
+    }
+
+    .interna .container .formulario .row{
+        width: 50%;
+        float: left;
+        margin-left: 2%;
+    }
+
+    .formulario .baixar-conta .row .col-6-baixar-contas {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .formulario .titulo-financas {
+        font-weight: bold;
+        margin-left: 350px;
+    }
+
+    .formulario #tipo-conta-financas {
+        margin-left: 180px;
+    }
+
+    .formulario .label-financas {
+        margin-bottom: -16px;
+    }
+
+    .formulario .radio-financas {
+        margin-left: -35px;
+    }
+
+    .formulario .row .col-6-financas {
+        width: 250px;
+    }
+
+    .formulario .row-textarea #historico {
+        width: 560px;
+    }
+
+    .interna .container .formulario form input{
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        font-family: 'Itim';
+        width: 100%;
+        float: left;
+        line-height: 2rem;
+    }
+
+    .interna .container .formulario .enviar{
+        width: 60%;
+        float: left;
+    }
+
+    .interna .container .formulario .enviar .reset{
+        width: 20%;
+        margin-left: 6%;
+        margin-right: 10%;
+        margin-top: 2rem;
+    }
+
+    .interna .container .formulario .enviar .submit{
+        width: 20%;
+        margin-top: 2rem;
+    }
+
+    .interna .container .formulario .form-select{
+       border-top:none;
+       border-left: none;
+       border-right: none;
+       font-family: 'Itim';
+       width: 100%;
+       float: left;
+    }
+
     main .ajuda{
         width: 60%;
         height: auto;
@@ -741,90 +832,7 @@ button{
         margin-left: 10px;
     }
 
-    .senha-sucesso {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .senha-sucesso i {
-        font-size: 120px;
-        margin-top: 60px;
-    }
-
-    .senha-sucesso .bloco-sucesso {margin-top: 27px}
-
-    .senha-sucesso .btn-sucesso a{
-        width: 200px;
-        height: 60px;
-        margin-bottom: 60px;
-        border: 2px solid #000;
-        border-radius: 20px;
-        background-color: var(--fc-primary);
-    }
-
-    .senha-sucesso .btn-sucesso a:hover {
-        background-color: var(--bc);
-    }
-
     .paragrafoCentro {
         text-align: center;
-    }
-
-    .footerGeral{
-        width: 100%;
-        height: 43vh;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footerGeral .rodape{
-        background-color: var(--bc);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footerGeral .rodape .sociais{
-        font-size: 30px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-    }
-
-    .footerGeral .rodape .social{
-        width: 200px;
-        display: flex;
-    }
-
-    .footerGeral .rodape .social li{
-        width: 100%;
-        list-style: none;
-    }
-    
-    .footerGeral .rodape .social li a{
-        color: #fff;
-    }
-
-    .footerGeral .rodape .social a:hover{
-        color: #00968F;
-    }
-
-    .footerGeral .rodape .texto-rodape p, a{
-        width: 100%;
-        display: flex;
-        margin-top: 10px;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-    }
-
-    .footerGeral .rodape .texto-rodape a:hover{
-        color: var(--fc-primary);
     }
 }

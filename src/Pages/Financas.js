@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
-import FinancasContas from '../Modals/Financas-contas.js';
+import Contas from '../Modals/Contas.js';
 import BaixarContas from '../Modals/Baixar-contas.js';
-import VendasGerarNotas from '../Modals/Vendas-gerar-notas.js';
+import GerarNF from '../Modals/Gerar-nota-fiscal.js';
 import Integracoes from '../Modals/Integracoes.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
-import '../Styles/Financas.css';
+import '../Styles/Geral.css';
 
 class Financas extends React.Component {
     constructor(props) {
@@ -21,16 +21,16 @@ class Financas extends React.Component {
         this.state = { openModal4: false };
     }
     
-    setOpenModal = (isOpenFinancasContas) => {
-        this.setState({ openModal: isOpenFinancasContas });
+    setOpenModal = (isOpenContas) => {
+        this.setState({ openModal: isOpenContas });
     }
 
     setOpenModal2 = (isOpenBaixarContas) => {
         this.setState({ openModal2: isOpenBaixarContas });
     }
 
-    setOpenModal3 = (isOpenVendasGerarNotas) => {
-        this.setState({ openModal3: isOpenVendasGerarNotas });
+    setOpenModal3 = (isOpenGerarNF) => {
+        this.setState({ openModal3: isOpenGerarNF });
     }
 
     setOpenModal4 = (isOpenIntegracoes) => {
@@ -72,7 +72,7 @@ class Financas extends React.Component {
                                 {this.state.openModal && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <FinancasContas isOpenFinancasContas={ this.state.openModal } />
+                                            <Contas isOpenContas={ this.state.openModal } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>
@@ -96,7 +96,7 @@ class Financas extends React.Component {
                                 {this.state.openModal3 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <VendasGerarNotas isOpenVendasGerarNotas={ this.state.openModal3 } />
+                                            <GerarNF isOpenGerarNF={ this.state.openModal3 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

@@ -5,7 +5,7 @@ import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
 import CadastrarCliente from '../Modals/Cadastrar-cliente.js';
 import ClientesCadastrados from '../Modals/Clientes-cadastrados.js';
-import GerarRelatoriosClientes from '../Modals/Gerar-relatorios-clientes.js';
+import RelatoriosClientes from '../Modals/Relatorios-clientes.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
@@ -27,8 +27,8 @@ class Crm extends React.Component {
         this.setState({ openModal2: isOpenClientesCadastrados });
     }
 
-    setOpenModal3 = (isOpenGerarRelatoriosClientes) => {
-        this.setState({ openModal3: isOpenGerarRelatoriosClientes });
+    setOpenModal3 = (isOpenRelatoriosClientes) => {
+        this.setState({ openModal3: isOpenRelatoriosClientes });
     }
 
     setCloseModal = () => {
@@ -88,7 +88,7 @@ class Crm extends React.Component {
                                 {this.state.openModal3 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <GerarRelatoriosClientes isOpenGerarRelatoriosClientes={ this.state.openModal3 } />
+                                            <RelatoriosClientes isOpenRelatoriosClientes={ this.state.openModal3 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

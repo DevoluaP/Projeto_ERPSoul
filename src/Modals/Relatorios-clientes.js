@@ -1,0 +1,76 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export default function RelatoriosClientes({ isOpenRelatoriosClientes }) {
+    if (isOpenRelatoriosClientes) {
+        return(
+            <> 
+                <h1>Relatórios</h1>
+                <h3>Para gerar seu relatório, é necessário que pelo menos um dos campos esteja preenchido. </h3>
+                <div className="formulario">
+                    <form action="" method="POST">
+                      <div className="row">
+                          <div className="col-6">
+                              <input type="text" placeholder="Nome do Cliente" />
+                              <input type="date"  placeholder="Data da Compra" />
+                          </div>
+                      </div>
+                      <div className="row">
+                          <div className="col-6">
+                              <input type="text" placeholder="Número da NF" />
+                              <input type="text" placeholder="Valor da Compra" />
+                          </div>
+                      </div>
+                      <div className="botao-form">
+                          <Link to="#">
+                              <div className="botao">
+                                  <p>Gerar</p>
+                              </div>
+                          </Link>
+                      </div>
+                    </form>
+                    <div className="relatorios">
+                      <table id="table-relatorios-crm">
+                          <tr>
+                              <th>No Cliente</th>
+                              <th>Nome</th>
+                              <th>CPF/CNPJ</th>
+                          </tr>
+                          <tr>
+                              <td>1</td>
+                              <td>Alfreds Futterkiste</td>
+                              <td>123456789-11</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>Maria Anders</td>
+                              <td>321456987-22</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Germany</td>
+                              <td>222123645/0001-30</td>
+                          </tr>
+                      </table>
+                    </div>
+                    <div className="botao-form">
+                      <Link to="#">
+                          <div class="botao">
+                              <p>Imprimir</p>
+                          </div>
+                      </Link>
+                    </div>
+                    <div class="botao-form">
+                      <Link to="#" onClick={ () => this.setCloseModal() }>
+                          <div class="botao">
+                              <p>Voltar</p>
+                          </div>
+                      </Link>
+                    </div>
+                </div>
+            </>
+        );
+    }
+
+    return null;
+}

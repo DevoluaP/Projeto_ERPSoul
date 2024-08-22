@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
 import CadastrarServico from '../Modals/Cadastrar-servico.js';
-import GerarRelatoriosServicos from '../Modals/Gerar-relatorios-servicos.js';
+import RelatoriosServicos from '../Modals/Relatorios-servicos.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
@@ -21,8 +21,8 @@ class Servicos extends React.Component {
         this.setState({ openModal: isOpenCadastrarServico });
     }
 
-    setOpenModal2 = (isOpenGerarRelatoriosServicos) => {
-        this.setState({ openModal2: isOpenGerarRelatoriosServicos });
+    setOpenModal2 = (isOpenRelatoriosServicos) => {
+        this.setState({ openModal2: isOpenRelatoriosServicos });
     }
 
     setCloseModal = () => {
@@ -68,7 +68,7 @@ class Servicos extends React.Component {
                                 {this.state.openModal2 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <GerarRelatoriosServicos isOpenGerarRelatoriosServicos={ this.state.openModal2 } />
+                                            <RelatoriosServicos isOpenRelatoriosServicos={ this.state.openModal2 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

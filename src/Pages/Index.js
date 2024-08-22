@@ -46,7 +46,7 @@ class Index extends React.Component {
                             <header className="headerIndex">
                                 <div className="logo">
                                   <Link to="/home-erp">
-                                      <img src={ logo } alt="logotipo" />
+                                      <img src={ logo } alt="logotipo" title="ERP - SOUL" />
                                   </Link>
                                 </div>
                                 <div className="nav-bar">
@@ -65,7 +65,7 @@ class Index extends React.Component {
                                 <div className="container-modal-index">
                                   <button className="modal-btn-index" onClick={ () => this.setOpenModal2(true) }>TESTE GRÁTIS</button>
                                   <button className="modal-btn-index" onClick={ () => this.setOpenModal(true) }>
-                                      <i className="fa-solid fa-user"></i> ENTRE
+                                      <i className="fa-solid fa-user"></i> ENTRAR
                                   </button>
                                 </div>
                                 
@@ -99,67 +99,67 @@ class Index extends React.Component {
                             <main className="mainIndex">
                                 <div className="box1">
                                     <div className="text-box1">
-                                        <p>A <b style={{ color: '#00968F', fontSize: '35px' }}>Soul</b> é um sistema de gestão <br />
-                                            100% <b style={{ color: '#00968F', fontSize: '35px' }}>on-line</b><br />
-                                            que <b style={{ color: '#00968F', fontSize: '35px' }}>descomplica</b> seu e-commerce.
+                                        <p>A <b style={{ color: '#00968F' }}>Soul</b> é um sistema de gestão <br />
+                                            100% <b style={{ color: '#00968F' }}>on-line</b><br />
+                                            que <b style={{ color: '#00968F' }}>descomplica</b> seu e-commerce.
                                         </p>
                                     </div>
                                     <div className="img-box1">
-                                        <img src={ imgBox1 } alt="" />
+                                        <img src={ imgBox1 } alt="Imagem sobre sistema de gestão" />
                                     </div>
                                 </div>
                                 <div className="box2">
                                     <div className="img-box2">
-                                        <img src={ imgBox2 } alt="" />
+                                        <img src={ imgBox2 } alt="Imagem sobre plataforma de e-commerce" />
                                     </div>
                                     <div className="text-box2">
-                                        <p><b style={{ color: '#00FFF4', fontSize: '35px' }}>Integração</b> com plataformas de <br />e-commerce e marketplaces de forma <br /><b style={{ color: '#00FFF4', fontSize: '35px' }}>fácil</b> e <b style={{ color: '#00FFF4', fontSize: '35px' }}>rápida</b>
+                                        <p><b style={{ color: '#00FFF4' }}>Integração</b> com plataformas de <br />e-commerce e marketplaces de forma <br /><b style={{ color: '#00FFF4' }}>fácil</b> e <b style={{ color: '#00FFF4' }}>rápida</b>
                                         </p>
                                     </div>
                                 </div>
                                 <div className="box3">
                                     <div className="text-box3">
                                         <p>Gestão de Estoque como você nunca viu!<br />
-                                            <b style={{ color: '#050538', fontSize: '35px' }}>Cadastro</b> de seus fornecedores, <br />emissão dos <b style={{ color: '#050538', fontSize: '35px' }}>relatórios</b> de estoque, <br /> <b style={{ color: '#050538', fontSize: '35px' }}>controle</b> de suas compras e muito mais!
+                                            <b style={{ color: '#050538' }}>Cadastro</b> de seus fornecedores, <br />emissão dos <b style={{ color: '#050538' }}>relatórios</b> de estoque, <br /> <b style={{ color: '#050538' }}>controle</b> de suas compras e muito mais!
                                         </p>
                                     </div>
                                     <div className="img-box3">
-                                        <img src={ imgBox3 } alt="" />
+                                        <img src={ imgBox3 } alt="Imagem sobre gestão de estoque" />
                                     </div>
                                 </div>
                                 <div className="box4" id="funcionalidades">
-                                    <p>Conheça tudo que a <b style={{ color: '#00968F', fontSize: '35px' }}>Soul</b> faz por você</p>
+                                    <p>Conheça tudo que a <b style={{ color: '#00968F' }}>Soul</b> faz por você</p>
                                     <div className="caixas">
                                         <div className="caixa">
-                                            <img src={ caixa5 } alt="" />
+                                            <img src={ caixa5 } alt="Imagem sobre tarefas concluídas" />
                                             <p>100% online, segura e descomplica</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa2 } alt="" />
+                                            <img src={ caixa2 } alt="Imagem sobre planejamentos" />
                                             <p>Planejamento de fundo de caixa e análises financeiras completas</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa3 } alt="" />
+                                            <img src={ caixa3 } alt="Imagem sobre monitoramento de capital" />
                                             <p>Monitoramento de vendas e metas</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa4 } alt="" />
+                                            <img src={ caixa4 } alt="Imagem sobre histórico de vendas" />
                                             <p>Visualização do histórico de vendas, clientes e produtos</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa1 } alt="" />
+                                            <img src={ caixa1 } alt="Imagem sobre gestão de negócios" />
                                             <p>Gestão de Negócios centralizada para organização de processos operacionais.</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa6 } alt="" />
+                                            <img src={ caixa6 } alt="Imagem sobre automatização de compras e vendas" />
                                             <p>Automatização de compras e vendas, mantendo o giro de estoque atualizado</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa7 } alt="" />
+                                            <img src={ caixa7 } alt="Imagem sobre avaliação de relevância" />
                                             <p>Avaliação de relevância de cada produto com relatórios baseados em lucro/prejuízo, compras/vendas.</p>
                                         </div>
                                         <div className="caixa">
-                                            <img src={ caixa8 } alt="" />
+                                            <img src={ caixa8 } alt="Imagem sobre facilidade das negociações" />
                                             <p>Facilidade na visão das negociações</p>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@ class Index extends React.Component {
                                                 <li><i className="fa-solid fa-check"></i> COBRANÇAS</li>
                                                 <li><i className="fa-solid fa-check"></i> FORNECEDORES</li>
                                             </ul>
-                                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
+                                            <button className="btn-login" onClick={ () => this.setOpenModal2(true) } id="loginBtn">
                                                 TESTE GRÁTIS
                                             </button>
                                         </div>
@@ -194,7 +194,7 @@ class Index extends React.Component {
                                         <br />
                                         <div className="lista">
                                             <ul>
-                                                <li><i className="fa-solid fa-check"></i> R$ xxx,xxx</li>
+                                                <li className="lista-valor"><i className="fa-solid fa-check"></i> R$ xxx,xxx</li>
                                                 <li><i className="fa-solid fa-check"></i> VENDAS</li>
                                                 <li><i className="fa-solid fa-check"></i> ESTOQUE</li>
                                                 <li><i className="fa-solid fa-check"></i> NOTA FISCAL</li>
@@ -203,7 +203,7 @@ class Index extends React.Component {
                                                 <li><i className="fa-solid fa-check"></i> COBRANÇAS</li>
                                                 <li><i className="fa-solid fa-check"></i> FORNECEDORES</li>
                                             </ul>
-                                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
+                                            <button className="btn-login" onClick={ () => this.setOpenModal2(true) } id="loginBtn">
                                                 TESTE GRÁTIS
                                             </button>
                                         </div>
@@ -216,16 +216,15 @@ class Index extends React.Component {
                                             <p className="titulo"><b>É nosso cliente e está precisando de ajuda?</b></p>
                                             <br />
                                             <p><i className="fa-solid fa-book"></i> <b>Central de ajuda</b></p>
-                                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
+                                            <button className="btn-login" onClick="" id="loginBtn">
                                                 CONSULTAR MANUAIS
                                             </button>
                                         </div>
                                         <div className="central-suporte">
-                                            <img src="" alt="" />
                                             <p><i className="fa-solid fa-phone"></i> <b>Suporte</b></p>
                                             <p>+55 11 99999-9999</p>
-                                            <p style={{ fontSize: '12px' }}>Horário de atendimento: das 8h às 20h</p>
-                                            <button className="btn-login" onclick="" id="loginBtn" data-url="" data-conteudo="login">
+                                            <p className="subtitulo">Horário de atendimento: das 8h às 20h</p>
+                                            <button className="btn-login" onClick="" id="loginBtn">
                                                 CONSULTAR MANUAIS
                                             </button>
                                         </div>
@@ -233,16 +232,15 @@ class Index extends React.Component {
                                     <div className="contato">
                                         <div className="central-suporte">
                                             <p className="titulo"><b>Ainda não é nosso cliente?</b></p>
-                                            <p style={{ fontSize: '12px' }}>Fale com nossa equipe comercial.</p>
+                                            <p className="subtitulo">Fale com nossa equipe comercial.</p>
                                             <br />
-                                            <br />
-                                            <p><i className="fa-solid fa-envelope-open-text"></i> <b>E-mail</b></p>
+                                            <p className="email-central-suporte"><i className="fa-solid fa-envelope-open-text"></i> <b>E-mail</b></p>
                                             <p>soul-erp@soul.com.br</p>
                                         </div>
                                         <div className="central-suporte">
-                                            <p><i className="fa-solid fa-phone"></i> <b>Telefone</b></p><br />
+                                            <p className="tel-central-suporte"><i className="fa-solid fa-phone"></i> <b>Telefone</b></p>
                                             <p>+55 11 88888-8888</p>
-                                            <p style={{ fontSize: '12px' }}>Horário de atendimento: das 8h às 17h</p>
+                                            <p className="subtitulo" id="hora-central-suporte">Horário de atendimento: das 8h às 17h</p>
                                         </div>
                                     </div>
                                 </div>

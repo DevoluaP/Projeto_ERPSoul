@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
-import VendasCadastrarVendas from '../Modals/Vendas-cadastrar-vendas.js';
-import VendasRelatorios from '../Modals/Vendas-relatorios.js';
+import CadastrarVenda from '../Modals/Cadastrar-venda.js';
+import RelatoriosVendas from '../Modals/Relatorios-vendas.js';
 import carrinho from '../Assets/carrinho.png';
 import ajuda from '../Assets/ajuda.png';
 
@@ -17,12 +17,12 @@ class Vendas extends React.Component {
         this.state = { openModal2: false };
     }
 
-    setOpenModal = (isOpenVendasCadastrarVendas) => {
-        this.setState({ openModal: isOpenVendasCadastrarVendas });
+    setOpenModal = (isOpenCadastrarVenda) => {
+        this.setState({ openModal: isOpenCadastrarVenda });
     }
 
-    setOpenModal2 = (isOpenVendasRelatorios) => {
-        this.setState({ openModal2: isOpenVendasRelatorios });
+    setOpenModal2 = (isOpenRelatoriosVendas) => {
+        this.setState({ openModal2: isOpenRelatoriosVendas });
     }
 
     
@@ -57,7 +57,7 @@ class Vendas extends React.Component {
                                 {this.state.openModal && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <VendasCadastrarVendas isOpenVendasCadastrarVendas={ this.state.openModal } />
+                                            <CadastrarVenda isOpenCadastrarVenda={ this.state.openModal } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>
@@ -69,7 +69,7 @@ class Vendas extends React.Component {
                                 {this.state.openModal2 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <VendasRelatorios isOpenVendasRelatorios={ this.state.openModal2 } />
+                                            <RelatoriosVendas isOpenRelatoriosVendas={ this.state.openModal2 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

@@ -18,24 +18,26 @@ class HomeGratuito extends React.Component {
 
                         <main className="mainGratuito">
                             <div className="container">
-                                    <div className="carrinho">
-                                        <p className="para1"><b>Comece a vender mais.</b></p>
-                                        <img src={ carrinho } alt="Carrinho" />
-                                        <p className="para2">Plataforma que te impulsiona.</p>
-                                    </div> 
+                                <div className="carrinho">
+                                    <p className="para1"><b>Comece a vender mais.</b></p>
+                                    <img src={ carrinho } alt="Carrinho" />
+                                    <p className="para2">Plataforma que te impulsiona.</p>
+                                </div> 
                                 <hr />
                                 <div id="alterar-usuario">
                                     <div>
                                         <Link className="icon" to="#"><i class="fa-regular fa-circle-user"></i></Link>
                                         <p className="email-usuario"><b>Fulano@gmail.com</b></p>
                                         <p className="plano-usuario">Plano Gratuito</p>
-                                        <button className="alterar-dados" href="#"><Link to="#" className="btn-alterar">Alterar</Link></button>
+                                        <button className="alterar-dados">
+                                            <Link to="#" className="btn-alterar">Alterar</Link>
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="resumo-rapido">
-                                <p><b>Resumo Rápido</b></p>
+                                    <p><b>Resumo Rápido</b></p>
                                     <div id="resumo">
-                                    <p>Vendas Resumo</p>
+                                        <p>Vendas Resumo</p>
                                         <div className="dados-vendas"></div>
                                     </div>
                                     <div id="resumo">
@@ -66,10 +68,16 @@ class HomeGratuito extends React.Component {
                                         <p className="restante-gratuito">x dias restante <br />Soul</p>
                                     </div>
                                     <div id="acesso-gratuito-cor">    
-                                        <div id="logo-acesso"><img src={ logoPequeno } title="ERP - SOUL" alt="Logotipo" /></div>
+                                        <div id="logo-acesso">
+                                            <img src={ logoPequeno } title="ERP - SOUL" alt="Logotipo" />
+                                        </div>
                                         <p><b>Fulano de tal</b></p>
-                                        <button className="assinar-erp"><Link to="/pagamento" className="btn-assinar">Assinar</Link></button>
-                                        <button className="acessar-erp"><Link to="/home-erp" className="btn-acessar">Acessar</Link></button>
+                                        <button className="assinar-erp">
+                                            <Link to="/pagamento" className="btn-assinar">Assinar</Link>
+                                        </button>
+                                        <button className="acessar-erp">
+                                            <Link to="/home-erp" className="btn-acessar">Acessar</Link>
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="resumo-vendas">

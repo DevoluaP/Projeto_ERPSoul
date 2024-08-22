@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Headers from '../Inc/Headers.js';
 import Footers from '../Inc/Footers.js';
 import CadastrarContador from '../Modals/Cadastrar-contador.js';
-import VendasCadastrarProduto from '../Modals/Vendas-cadastrar-produto.js';
+import CadastrarProduto from '../Modals/Cadastrar-produto.js';
 import PlanoContas from '../Modals/Plano-contas.js';
 import RelatoriosEstoque from '../Modals/Relatorios-estoque.js';
 import carrinho from '../Assets/carrinho.png';
@@ -25,8 +25,8 @@ class Estoque extends React.Component {
         this.setState({ openModal: isOpenCadastrarContador });
     }
 
-    setOpenModal2 = (isOpenVendasCadastrarProduto) => {
-        this.setState({ openModal2: isOpenVendasCadastrarProduto });
+    setOpenModal2 = (isOpenCadastrarProduto) => {
+        this.setState({ openModal2: isOpenCadastrarProduto });
     }
 
     setOpenModal3 = (isOpenPlanoContas) => {
@@ -84,7 +84,7 @@ class Estoque extends React.Component {
                                 {this.state.openModal2 && (
                                     <div className="modal-overlay">
                                         <div className="modal-container">
-                                            <VendasCadastrarProduto isOpenVendasCadastrarProduto={ this.state.openModal2 } />
+                                            <CadastrarProduto isOpenCadastrarProduto={ this.state.openModal2 } />
                                             <div className="botoes">
                                                 <button className="close-btn" onClick={ () => this.setCloseModal() }>
                                                     <i class="fa-solid fa-xmark"></i>

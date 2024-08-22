@@ -1,34 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function ClientesCadastrados({ isOpenClientesCadastrados }) {
-    if (isOpenClientesCadastrados) {
-        return(
+export default function RelatoriosVendas({ isOpenRelatoriosVendas }) {
+    if (isOpenRelatoriosVendas) {
+        return (
             <>
                 <div className="formulario">
-                    <h1>CLIENTES CADASTRADOS</h1>
+                    <h1>Relatórios</h1>
                     <br />
                     <div className="rel-clientes">
                         <table id="table-rel-clientes">
                             <tr>
-                                <th>No Cliente</th>
-                                <th>Nome</th>
-                                <th>CPF/CNPJ</th>
+                                <th>Vendas</th>
+                                <th>Produtos</th>
+                                <th>Pedidos</th>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>Alfreds Futterkiste</td>
-                                <td>123456789-11</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Maria Anders</td>
-                                <td>321456987-22</td>
+                                <td></td>
+                                <td></td>
+
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Germany</td>
-                                <td>222123645/0001-30</td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                     </div>

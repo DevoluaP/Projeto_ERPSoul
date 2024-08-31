@@ -90,6 +90,8 @@ button{
 
     .headerIndex .container-modal-index .modal-btn-index, .mainIndex .box6 .contato .central-suporte .btn-login, .footerIndex .rodape .texto-rodape p{font-size: 3vw}
 
+    .modal-open{overflow: hidden}
+
     .headerIndex .modal-overlay-index{
         position: fixed;
         top: 0;
@@ -678,9 +680,9 @@ button{
         float: right;
     }
 
-    .headerIndex .container-modal-index .modal-btn-index:hover{
-        background-color: var(--bc);
-    }
+    .headerIndex .container-modal-index .modal-btn-index:hover{background-color: var(--bc)}
+
+    .modal-open{overflow: hidden}
 
     .headerIndex .modal-overlay-index{
         position: fixed;
@@ -719,9 +721,7 @@ button{
         margin-top: 2px;
     }
 
-    .headerIndex  .modal-container-index label{
-        color: var(--bc-secondary);
-    }
+    .headerIndex  .modal-container-index label{color: var(--bc-secondary)}
     
     .headerIndex  .close-btn-index{
         position: absolute;
@@ -757,9 +757,7 @@ button{
         display: flex;
     }
 
-    .headerIndex  .box-login a:hover{
-        color: var(--fc-primary);
-    }
+    .headerIndex  .box-login a:hover{color: var(--fc-primary)}
 
     .headerIndex  .box-login .formulario .btn-login{
         width: 40%;
@@ -860,9 +858,7 @@ button{
         display: flex;
     }
 
-    .headerIndex .box-teste a:hover{
-        color: var(--fc-primary);
-    }
+    .headerIndex .box-teste a:hover{color: var(--fc-primary)}
 
     .headerIndex  .box-teste .formulario .btn-login{
         width: 25%;
@@ -950,9 +946,7 @@ button{
         margin-top: 70px;
     }
 
-    .mainIndex .box1 b, .mainIndex .box2 b, .mainIndex .box3 b, .mainIndex .box4 b {
-        font-size: 35px;
-    }
+    .mainIndex .box1 b, .mainIndex .box2 b, .mainIndex .box3 b, .mainIndex .box4 b {font-size: 35px}
 
     .mainIndex .box1  .img-box1{
         float: right;
@@ -1112,9 +1106,7 @@ button{
         border-radius: 2%;
     }
 
-    .mainIndex .box5 .plano h2{
-        color: var(--fc-paragraphs)
-    }
+    .mainIndex .box5 .plano h2{color: var(--fc-paragraphs)}
 
     .mainIndex .box5 .plano p{
         color: var(--fc-secondary);

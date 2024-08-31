@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import Headers from '../Inc/Headers';
-import Footers from '../Inc/Footers.js';
-import NovaSenha from '../Pages/Nova-senha.js';
+import Headers from "../Inc/Headers";
+import Footers from "../Inc/Footers.js";
+import NovaSenha from "../Pages/Nova-senha.js";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class EsqueciSenha extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class EsqueciSenha extends React.Component {
 
                         <main className="interna">
                             <div className="central">
-                                <h1>Precisa recuperar sua senha?</h1>
+                                <h1 className="tituloSenha">Precisa recuperar sua senha?</h1>
                                 <p className="paragrafoCentro">Primeiro, utilize o e-mail cadastrado para validarmos o seu registro.</p>
                                 <div className="box-senha">
                                     <div className="formulario">

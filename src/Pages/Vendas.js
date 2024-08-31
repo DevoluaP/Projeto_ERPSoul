@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import CadastrarVenda from '../Modals/Cadastrar-venda.js';
-import RelatoriosVendas from '../Modals/Relatorios-vendas.js';
-import carrinho from '../Assets/carrinho.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import CadastrarVenda from "../Modals/Cadastrar-venda.js";
+import RelatoriosVendas from "../Modals/Relatorios-vendas.js";
+import carrinho from "../Assets/carrinho.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Vendas extends React.Component {
     constructor(props) {
@@ -29,6 +29,7 @@ class Vendas extends React.Component {
     setCloseModal = () => {
         this.setState({ openModal: false });
         this.setState({ openModal2: false });
+        document.body.classList.remove("modal-open");
     }
 
     render() {
@@ -82,11 +83,11 @@ class Vendas extends React.Component {
                                 <hr />
                                 <div className="ajuda">
                                     <p className="para1">
-                                        Precisa de ajuda?
+                                        Precisa de ajuda?<br />
                                         <b><Link to="#">Clique aqui.</Link></b>
                                     </p>
                                     <img src={ ajuda } alt="Ajuda" />
-                                    <p className="para2">A Soul está aqui para te ajudar.</p>
+                                    <p className="para2">A Soul está aqui <br />para te ajudar.</p>
                                 </div>
                             </div>
                         </main>

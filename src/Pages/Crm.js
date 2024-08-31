@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import CadastrarCliente from '../Modals/Cadastrar-cliente.js';
-import ClientesCadastrados from '../Modals/Clientes-cadastrados.js';
-import RelatoriosClientes from '../Modals/Relatorios-clientes.js';
-import carrinho from '../Assets/carrinho.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import CadastrarCliente from "../Modals/Cadastrar-cliente.js";
+import ClientesCadastrados from "../Modals/Clientes-cadastrados.js";
+import RelatoriosClientes from "../Modals/Relatorios-clientes.js";
+import carrinho from "../Assets/carrinho.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Crm extends React.Component {
     constructor(props) {
@@ -35,6 +35,7 @@ class Crm extends React.Component {
         this.setState({ openModal: false });
         this.setState({ openModal2: false });
         this.setState({ openModal3: false });
+        document.body.classList.remove("modal-open");
     }
 
     render() {

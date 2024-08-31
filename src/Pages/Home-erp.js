@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import crm from '../Assets/crm.png';
-import vendas from '../Assets/vendas.png';
-import servicos from '../Assets/servicos.png';
-import financas from '../Assets/financas.png';
-import estoque from '../Assets/estoque.png';
-import contab from '../Assets/contab.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import crm from "../Assets/crm.png";
+import vendas from "../Assets/vendas.png";
+import servicos from "../Assets/servicos.png";
+import financas from "../Assets/financas.png";
+import estoque from "../Assets/estoque.png";
+import contab from "../Assets/contab.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Home-erp.css';
+import "../Styles/Home-erp.css";
 
 class HomeERP extends React.Component {
     render() {

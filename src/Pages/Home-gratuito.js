@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import carrinho from '../Assets/carrinho.png';
-import logoPequeno from '../Assets/logo-pequeno.png';
-import rodape from '../Assets/rodape.png';
+import Headers from "../Inc/Headers.js";
+import carrinho from "../Assets/carrinho.png";
+import logoPequeno from "../Assets/logo-pequeno.png";
+import rodape from "../Assets/rodape.png";
 
-import '../Styles/Home-gratuito.css';
+import "../Styles/Home-gratuito.css";
 
 class HomeGratuito extends React.Component {
     render() {

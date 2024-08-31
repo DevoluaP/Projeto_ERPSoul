@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CadastrarCliente({ isOpenCadastrarCliente }) {
     if (isOpenCadastrarCliente) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
-                <h1>Cadastrar Cliente</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Cadastrar Cliente</h1>
+                    <form method="post" action="">
                         <div className="info">
                             <p>Informações pessoais</p>
                             <div className="row">
@@ -22,8 +24,7 @@ export default function CadastrarCliente({ isOpenCadastrarCliente }) {
                             </div>
                             <div className="row">
                                 <div className="col-6">
-                                    <label>Data Nascimento</label>
-                                    <input type="date" id="dt_nasc" name="dt_nasc"placeholder="Data de Nasc" required="required" />
+                                    <input type="date" id="dt_nasc" name="dt_nasc" placeholder="Data de Nasc" required="required" />
                                 </div>
                             </div>
                         </div>

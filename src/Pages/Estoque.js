@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import CadastrarContador from '../Modals/Cadastrar-contador.js';
-import CadastrarProduto from '../Modals/Cadastrar-produto.js';
-import PlanoContas from '../Modals/Plano-contas.js';
-import RelatoriosEstoque from '../Modals/Relatorios-estoque.js';
-import carrinho from '../Assets/carrinho.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import CadastrarContador from "../Modals/Cadastrar-contador.js";
+import CadastrarProduto from "../Modals/Cadastrar-produto.js";
+import PlanoContas from "../Modals/Plano-contas.js";
+import RelatoriosEstoque from "../Modals/Relatorios-estoque.js";
+import carrinho from "../Assets/carrinho.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Estoque extends React.Component {
     constructor(props) {
@@ -42,6 +42,7 @@ class Estoque extends React.Component {
         this.setState({ openModal2: false });
         this.setState({ openModal3: false });
         this.setState({ openModal4: false });
+        document.body.classList.remove("modal-open");
     }
 
     render() {

@@ -1,22 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import logo from '../Assets/logo.png';
-import TesteGratis from '../Modals/Teste-gratis.js';
-import Login from '../Modals/Login.js';
-import imgBox1 from '../Assets/img-box1.png';
-import imgBox2 from '../Assets/img-box2.png';
-import imgBox3 from '../Assets/img-box3.png';
-import caixa1 from '../Assets/caixa1.png';
-import caixa2 from '../Assets/caixa2.png';
-import caixa3 from '../Assets/caixa3.png';
-import caixa4 from '../Assets/caixa4.png';
-import caixa5 from '../Assets/caixa5.png';
-import caixa6 from '../Assets/caixa6.png';
-import caixa7 from '../Assets/caixa7.png';
-import caixa8 from '../Assets/caixa8.png';
+import logo from "../Assets/logo.png";
+import TesteGratis from "../Modals/Teste-gratis.js";
+import Login from "../Modals/Login.js";
+import imgBox1 from "../Assets/img-box1.png";
+import imgBox2 from "../Assets/img-box2.png";
+import imgBox3 from "../Assets/img-box3.png";
+import caixa1 from "../Assets/caixa1.png";
+import caixa2 from "../Assets/caixa2.png";
+import caixa3 from "../Assets/caixa3.png";
+import caixa4 from "../Assets/caixa4.png";
+import caixa5 from "../Assets/caixa5.png";
+import caixa6 from "../Assets/caixa6.png";
+import caixa7 from "../Assets/caixa7.png";
+import caixa8 from "../Assets/caixa8.png";
 
-import '../Styles/Index.css';
+import "../Styles/Index.css";
 
 class Index extends React.Component {
     constructor(props) {
@@ -36,6 +36,7 @@ class Index extends React.Component {
     setCloseModal = () => {
         this.setState({ openModal: false });
         this.setState({ openModal2: false });
+        document.body.classList.remove("modal-open");
     }
 
     render() {

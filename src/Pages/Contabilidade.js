@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import CadastrarContador from '../Modals/Cadastrar-contador.js';
-import PlanoContas from '../Modals/Plano-contas.js';
-import Integracoes from '../Modals/Integracoes.js';
-import FormX from '../Modals/FormX.js';
-import carrinho from '../Assets/carrinho.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import CadastrarContador from "../Modals/Cadastrar-contador.js";
+import PlanoContas from "../Modals/Plano-contas.js";
+import Integracoes from "../Modals/Integracoes.js";
+import FormX from "../Modals/FormX.js";
+import carrinho from "../Assets/carrinho.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Contabilidade extends React.Component {
     constructor(props) {
@@ -48,6 +48,7 @@ class Contabilidade extends React.Component {
         this.setState({ openModal3: false });
         this.setState({ openModal4: false });
         this.setState({ openModal5: false });
+        document.body.classList.remove("modal-open");
     }
 
     render() {

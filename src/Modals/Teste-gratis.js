@@ -1,15 +1,15 @@
-import React from 'react';
-
-import HomeGratuito from '../Pages/Home-gratuito.js';
+import React from "react";
 
 export default function TesteGratis({ isOpenTesteGratis }) {
     if (isOpenTesteGratis) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
                 <h2>Teste por <b style={{ color:'#00FFF4', fontSize: '40px' }}>30</b> dias grátis!</h2>
                 <div className="box-teste">
                     <div className="formulario">
-                        <form action={ HomeGratuito } method="POST">
+                        <form method="post" action="">
                             <div className="row">
                                 <div className="col-6">
                                     <input type="text" id="nome" name="nome" placeholder="Nome*" required="required" />

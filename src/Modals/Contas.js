@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contas({ isOpenContas }) {
     if (isOpenContas) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
-                <h1>Contas</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Contas</h1>
+                    <form method="post" action="">
                             <p className="titulo-financas">Selecionar tipo de conta</p>
                             <div className="row">
                                 <div className="col-6-financas" id="tipo-conta-financas">

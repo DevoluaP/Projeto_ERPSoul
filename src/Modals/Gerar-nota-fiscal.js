@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function GerarNF({ isOpenGerarNF }) {
     if (isOpenGerarNF) {
-        return (
+        document.body.classList.add("modal-open");
+
+        return(
             <>
-                <h1>Gerar nota fiscal</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Gerar nota fiscal</h1>
+                    <form method="post" action="">
                         <div className="info">
                             <p>Gerar nota fiscal</p>
                             <div className="row">

@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-import HomeGratuito from '../Pages/Home-gratuito.js';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login({ isOpenLogin }) {
     if (isOpenLogin) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
                 <h2>Entrar</h2>
                 <p>Bem vindo de volta<br /> É um prazer tê-lo aqui.</p>
                 <div className="box-login">
                     <div className="formulario">
-                        <form action={ HomeGratuito } method="POST">
+                        <form method="post" action="">
                             <div className="row">
                                 <div className="col-12">
                                     <input type="text" id="email" name="email" placeholder="E-mail" />

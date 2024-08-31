@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CadastrarVenda({ isOpenCadastrarVenda }) {
     if (isOpenCadastrarVenda) {
-        return (
+        document.body.classList.add("modal-open");
+
+        return(
             <>
-                <h1>Cadastrar venda</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Cadastrar venda</h1>
+                    <form method="post" action="">
                         <div className="info">
                             <p>Dados do cliente</p>
                             <div className="row">

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import SenhaSucesso from '../Pages/Senha-sucesso.js';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import SenhaSucesso from "../Pages/Senha-sucesso.js";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class NovaSenha extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class NovaSenha extends React.Component {
 
                         <main className="interna">
                             <div className="central">
-                                <h1>Esqueceu sua senha?</h1>
+                                <h1 className="tituloSenha">Esqueceu sua senha?</h1>
                                 <p className="paragrafoCentro">Não tem problema. <br />Basta inserir uma nova :)</p>
                                 <div className="box-senha">
                                     <div className="formulario">

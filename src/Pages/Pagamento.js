@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Pagamento extends React.Component {
     render() {

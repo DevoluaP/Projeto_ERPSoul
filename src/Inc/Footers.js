@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './Footers.css';
+import "./Footers.css";
 
 class Footers extends React.Component {
     render() {
-        return (
+        return(
             <>
                 <footer className="footerGeral">
                     <div className="rodape">

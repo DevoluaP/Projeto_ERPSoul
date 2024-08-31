@@ -178,6 +178,8 @@ button{
 
     .mainGratuito .container #alterar-usuario, .mainGratuito .container #busca-rapida, .mainGratuito .container #acessar-erp{width: 30%}
 
+    .mainGratuito .alterar-dados:hover{background: var(--bc)}
+
     .mainGratuito .container #resumo-rapido{flex-direction: row}
 
     .mainGratuito .container #resumo-rapido, .mainGratuito .container #resumo-vendas{width: 50%}
@@ -190,6 +192,8 @@ button{
     .mainGratuito #resumo-rapido #resumo .dados-vendas, .mainGratuito #resumo-rapido #resumo .dados-estoque, .mainGratuito #resumo-rapido #resumo .dados-vencimento{height: 250px}
 
     .mainGratuito .container #busca-rapida{margin-top: -130px}
+
+    .mainGratuito #busca-rapida .lista-menu-rapido .menu-rapido a:hover{color: var(--fc-primary)}
 
     .mainGratuito .container #acessar-erp{margin: 250px 0 40px -36.5%}
 
@@ -208,9 +212,12 @@ button{
 
     .mainGratuito .container .ajuda .para1 a{
         position: absolute;
-        margin: 20px 0 0 -100px}
+        margin: 20px 0 0 -100px;
+    }
 
-    .mainGratuito .container .ajuda .para2{margin: -40px -350px 20px 0}
+    .mainGratuito .container .ajuda .para1 a:hover{color: #00968f}
+
+    .mainGratuito .container .ajuda .para2{margin: -40px -350px 20px 0}   
 }
 
 /* Tela Desktop - Médio */
@@ -227,6 +234,10 @@ button{
         position: absolute;
         margin: -40px 0 0 48%;
     }
+    
+    .mainGratuito .alterar-dados:hover{background: var(--bc)}
+
+    .mainGratuito #busca-rapida .lista-menu-rapido .menu-rapido a:hover{color: var(--fc-primary)}
 
     .mainGratuito #resumo-vendas .resumo-cor{height: 150px}
 
@@ -236,6 +247,8 @@ button{
     }
 
     .mainGratuito .container .ajuda{margin-top: 20px}
+    
+    .mainGratuito .container .ajuda .para1 a:hover{color: #00968f}
 }
 
 /* Ajuste da responsividade */
@@ -256,11 +269,17 @@ button{
     
     .mainGratuito .container .carrinho .para2{margin: 75px -300px 0 0}
 
+    .mainGratuito .alterar-dados:hover{background: var(--bc)}
+
     .mainGratuito #resumo-rapido #resumo .dados-vendas, .mainGratuito #resumo-rapido #resumo .dados-estoque, .mainGratuito #resumo-rapido #resumo .dados-vencimento{height: 300px}
 
     .mainGratuito .container #busca-rapida{margin-top: -140px}
+
+    .mainGratuito #busca-rapida .lista-menu-rapido .menu-rapido a:hover{color: var(--fc-primary)}
     
     .mainGratuito .container .ajuda .para1{margin-bottom: -54px}
+
+    .mainGratuito .container .ajuda .para1 a:hover{color: #00968f}
 
     .mainGratuito .container .ajuda{margin: 19px 0 0 0}
 }
@@ -458,9 +477,7 @@ button{
         margin-left: 40px;
     }
 
-    .mainGratuito #busca-rapida .lista-menu-rapido .menu-rapido a:hover{
-        color: var(--fc-primary);
-    }
+    .mainGratuito #busca-rapida .lista-menu-rapido .menu-rapido a:hover{color: var(--fc-primary)}
 
     .mainGratuito #acessar-erp{
         width: 18%;
@@ -476,9 +493,7 @@ button{
         right: 540px;
     }
 
-    .mainGratuito .alterar-dados:hover{
-        background: var(--bc);
-    }
+    .mainGratuito .alterar-dados:hover{background: var(--bc)}
 
     .mainGratuito #acessar-erp #acesso-gratuito{
         width: 100%;
@@ -654,9 +669,7 @@ button{
         color: #050538;
     }
 
-    .mainGratuito .container .ajuda .para1 a:hover{
-        color: #00968f;
-    }
+    .mainGratuito .container .ajuda .para1 a:hover{color: #00968f}
 
     .mainGratuito .container .ajuda .para2{
         margin-top: 60px;

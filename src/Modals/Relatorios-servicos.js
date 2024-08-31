@@ -1,14 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function RelatoriosServicos({ isOpenRelatoriosServicos }) {
     if (isOpenRelatoriosServicos) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
-                <h1>Relatórios</h1>
-                <h3>Para gerar seu relatório, é necessário que pelo menos um dos campos esteja preenchido. </h3>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Relatórios</h1>
+                    <h3>Para gerar seu relatório, é necessário que pelo menos um dos campos esteja preenchido. </h3>
+                    <form method="post" action="">
                         <div className="row">
                             <div className="col-6">
                                 <input type="text" placeholder="Nome do Cliente" />

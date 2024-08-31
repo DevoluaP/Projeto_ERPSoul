@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Integracoes({ isOpenIntegracoes }) {
     if (isOpenIntegracoes) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
-                <h1>Integrações</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Integrações</h1>
+                    <form method="post" action="">
                         <div className="row">
                             <div className="col-6">
                                 <select name="categoria" id="categoria">

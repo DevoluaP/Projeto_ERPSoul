@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class SenhaSucesso extends React.Component {
     render() {

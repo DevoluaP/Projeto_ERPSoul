@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Headers from '../Inc/Headers.js';
-import Footers from '../Inc/Footers.js';
-import CadastrarServico from '../Modals/Cadastrar-servico.js';
-import RelatoriosServicos from '../Modals/Relatorios-servicos.js';
-import carrinho from '../Assets/carrinho.png';
-import ajuda from '../Assets/ajuda.png';
+import Headers from "../Inc/Headers.js";
+import Footers from "../Inc/Footers.js";
+import CadastrarServico from "../Modals/Cadastrar-servico.js";
+import RelatoriosServicos from "../Modals/Relatorios-servicos.js";
+import carrinho from "../Assets/carrinho.png";
+import ajuda from "../Assets/ajuda.png";
 
-import '../Styles/Geral.css';
+import "../Styles/Geral.css";
 
 class Servicos extends React.Component {
     constructor(props) {
@@ -28,6 +28,7 @@ class Servicos extends React.Component {
     setCloseModal = () => {
         this.setState({ openModal: false });
         this.setState({ openModal2: false });
+        document.body.classList.remove("modal-open");
     }
     
     render() {

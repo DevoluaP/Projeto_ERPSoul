@@ -1,9 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function RelatoriosVendas({ isOpenRelatoriosVendas }) {
     if (isOpenRelatoriosVendas) {
-        return (
+        document.body.classList.add("modal-open");
+
+        return(
             <>
                 <div className="formulario">
                     <h1>Relatórios</h1>

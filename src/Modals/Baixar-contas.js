@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function BaixarContas({ isOpenBaixarContas }) {
     if (isOpenBaixarContas) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
                 <div className="formulario">

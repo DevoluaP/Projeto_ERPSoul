@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function PlanoContas({ isOpenPlanoContas }) {
     if (isOpenPlanoContas) {
+        document.body.classList.add("modal-open");
+
         return(
             <>
-                <h1>Plano de Contas</h1>
                 <div className="formulario">
-                    <form action="" method="POST">
+                    <h1>Plano de Contas</h1>
+                    <form method="post" action="">
                         <h4>Preencha as informações obrigatórias para SCI</h4>
                                 <select name="opcao-plano-contas" className="opcao-plano-contas">
                                     <option placeholder>Forma de geração da partidas contábeis</option>

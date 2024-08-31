@@ -1,13 +1,13 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 td, th{
-  border:  solid 1px black;
-  text-align: center;
-  padding: .5rem;
+    padding: .5rem;
+    text-align: center;
+    border: solid 1px black;
 }
 
 a{text-decoration: none}
@@ -15,8 +15,8 @@ a{text-decoration: none}
 label, input label{display: block}
 
 button{
-    font-family: var(--ff-primary);
     cursor: pointer;
+    font-family: var(--ff-primary);
 }
 
 :root{
@@ -40,110 +40,494 @@ button{
 @media only screen and (max-width: 290px){body{display: none}}
 
 /* Tela Mobile */
-@media only screen and (max-width: 1379.99px){}
+@media only screen and (max-width: 1379.99px){
+    .bodyGeral, .pageGeral .interna, .interna .central, .interna .central .container-modal .modal-btn, .interna .central .ajuda{width: 100%}
+
+    .bodyGeral, .pageGeral, .pageGeral .interna, .interna .central, .interna .central .ajuda{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pageGeral{margin: 0}
+    
+    .pageGeral, hr{width: 90%}
+
+    .pageGeral, .pageGeral .interna, .interna .central, .interna .central .ajuda{flex-direction: column}
+
+    .pageGeral .interna{
+        text-align: center;
+        background-color: var(--bc-secondary);
+    }
+
+    .interna .carrinho{margin-bottom: -33px}
+
+    .interna .carrinho p{
+        color: #050538;
+        font-size: 17px;
+    }
+
+    .interna .carrinho .para1, .interna .central .container-modal .modal-btn, .interna .central .ajuda .para2{margin-top: 10px}
+
+    .interna .carrinho img{
+        width: 110px;
+        height: 90px;
+    }
+
+    .interna .central h1{
+        font-size: 19px;
+        color: var(--bc);
+    }
+
+    .interna .central .container-modal{width: 50%}
+
+    .interna .central .container-modal, .interna .central .ajuda .para2{margin-bottom: 10px}
+
+    .interna .central .container-modal .modal-btn{
+        padding: 10px;
+        border-radius: 15px;
+        color: var(--fc-paragraphs);
+        background-color: var(--fc-primary);
+    }
+
+    .interna .central .ajuda p{font-size: 17px}
+    
+    .interna .central .ajuda p, .interna .central .ajuda .para1 a{color: #050538}
+
+    .interna .central .ajuda .para1 a{text-decoration: none}
+
+    .interna .central .ajuda img{
+        width: 100px;
+        height: 70px;
+    }
+
+    /* CSS das páginas esqueci-senha e nova-senha */
+    .interna .central .tituloSenha{margin-top: 30px}
+
+    .interna .central .paragrafoCentro{margin-top: 10px}
+
+    .interna .central .box-senha{
+        width: 80%;
+        padding: 10px;
+        margin: 30px 0 50px 0;
+        border-radius: 11px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .interna .central .box-senha, .interna .central .box-senha .formulario form input{background-color: var(--fct-primary)}
+
+    .interna .central .box-senha, .interna .central .box-senha .formulario form, .interna .central .box-senha .formulario .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .interna .central .box-senha .formulario .labelSenha{margin: 10px 0 3px 0}
+
+    .interna .central .box-senha .formulario form input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        line-height: 35px;
+        margin-bottom: 5px;
+        font-family: var(--ff-primary);
+    }
+
+    .interna .central .box-senha .formulario form input, .interna .central .box-senha .formulario .btn{width: 100%}
+
+    .interna .central .box-senha .formulario .btn{margin-top: 20px} 
+
+    .interna .central .box-senha .formulario .btn .btn-login{
+        width: 40%;
+        padding: 8px;
+        border-radius: 20px;
+        color: var(--fc-paragraphs);
+        background-color: var(--fc-primary);
+    }
+
+    /* CSS da página senha-sucesso */
+    .interna .central .senha-sucesso, .interna .central .senha-sucesso .btn-sucesso{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .interna .central .senha-sucesso i{
+        font-size: 120px;
+        margin-top: 35px;
+    }
+
+    .interna .central .senha-sucesso .bloco-sucesso{margin-top: 20px}
+
+    .interna .central .senha-sucesso .btn-sucesso{margin: 10px 0 40px 0}
+
+    .interna .central .senha-sucesso .btn-sucesso .inicio-btn{
+        width: 150px;
+        padding: 20px;
+        border-radius: 40px;
+        border: 2px solid #000;
+        color: #fff;
+        background-color: var(--fc-primary);
+    }
+
+    /* CSS da página pagamento */
+    .interna .central .bem-vindo, .interna .central .bem-vindo .bem-vindo-txt, .interna .central .escolha, .interna .central .escolha p, .interna .central .pagamento, .interna .central .pagamento .formulario, .interna .central .pagamento .formulario form .btn{width: 100%}
+
+    .interna .central .bem-vindo, .interna .central .bem-vindo .bem-vindo-txt, .interna .central .escolha, .interna .central .pagamento, .interna .central .pagamento .formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .interna .central .bem-vindo .bem-vindo-txt{
+        width: 80%;
+        gap: 10px;
+        margin: 20px 0 10px 0;
+    }
+
+    .interna .central .escolha{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .interna .central .escolha .planinho{
+        width: 30%;
+        text-align: left;
+        margin: 20px 10px 0 10px;
+        background-color: var(--bctr);
+    }
+
+    .interna .central .escolha .planinho, .interna .central .pagamento .formulario form .btn .btn-login{color: var(--fc-paragraphs)}
+
+    .interna .central .escolha .planinho, .interna .central .pagamento{
+        padding: 20px;
+        border-radius: 11px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .interna .central .pagamento{
+        width: 80%;
+        margin: 30px 0 40px 0;
+    }
+
+    .interna .central .pagamento, .interna .central .pagamento .formulario form input{background-color: var(--fct-primary)}
+
+    .interna .central .pagamento .formulario form input{
+        width: 150px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 10px;
+        line-height: 35px;
+        font-family: var(--ff-primary);
+    }
+
+    .interna .central .pagamento .formulario form .btn .btn-login{
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        margin: 15px 0 20px 0;
+        border-radius: 20px;
+        background-color: var(--fc-primary);
+    }
+
+    /* Modals */
+    .modal-open{overflow: hidden}
+
+    .interna .central .modal-overlay, .interna .central .formulario, .interna .central .formulario form .info, .interna .central .formulario form .info p, .row-textarea, .formulario .row-textarea #historico, .interna .central .formulario .botao-form{width: 100%}
+
+    .interna .central .modal-overlay{
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 10;
+        transition: var(--transition);
+        background-color: var(--bctr);
+    }
+
+    .interna .central .modal-container{
+        width: 70%;
+        max-height: 90%;
+        padding: 20px;
+        border-radius: 11px;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: var(--box-shadow2);
+        background-color: var(--bc-secondary);
+    }
+
+    .interna .central .modal-container h1{padding-bottom: 10px}
+
+    .interna .central .formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .interna .central .formulario h3, .interna .central .formulario form h4, .interna .central .formulario form .info p, .interna .central .formulario form select, .interna .central .relatorios #table-relatorios-crm, .interna .central .rel-clientes #table-rel-clientes, .info .lista2, .interna .central .relatorios #table-relatorios-crm, .interna .central .rel-clientes #table-rel-clientes, .interna .central .formulario form .tipo-cli p, .formulario .titulo-financas, .interna .central .botoes .close-btn{color: var(--bc)}
+
+    .interna .central .formulario form .info{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .interna .central .formulario form input{
+        width: 70%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        line-height: 2rem;
+        margin-bottom: 5px;
+        font-family: var(--ff-primary);
+    }
+
+    .interna .central .formulario form select{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 8px;
+        margin-bottom: 5px;
+        font-family: var(--ff-primary);
+    }
+
+    .interna .central .formulario form hr{
+        width: 90%;
+        margin: auto;
+    }
+
+    .interna .central .relatorios, .info .lista, .row-textarea #historico, .row-textarea #desc-produto{width: 80%}
+
+    .interna .central .relatorios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 11px;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    .interna .central .relatorios #table-relatorios-crm, .interna .central .rel-clientes #table-rel-clientes, .info .modal-btn, .interna .central .formulario .botao-form .botao{background-color: var(--fc-primary)}
+
+    .interna .central .rel-clientes{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 11px;
+        box-shadow: var(--box-shadow);
+        background-color: var(--fct-primary);
+    }
+
+    .info .modal-btn{
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        color: var(--fc-paragraphs);
+    }
+
+    .info .lista ul, .info .lista2 ul{list-style: none}
+    
+    .info .lista2, .interna .central .formulario .botao-form .botao{margin: 10px 0 10px 0}
+    
+    .formulario .titulo-financas{font-weight: bold}
+
+    .interna .central .formulario .botao-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .interna .central .formulario .botao-form .botao{
+        width: 100px;
+        border: none;
+        border-radius: 1rem;
+        padding: 5px;
+        font-size: 15px;
+        font-family: var(--ff-primary);
+        color: var(--fc-paragraphs);
+    }
+
+    .interna .central .botoes{
+        top: 12px;
+        right: 10px;
+        position: absolute;
+    }
+
+    .interna .central .botoes .close-btn{
+        font-size: 30px;
+        border: none;
+        background: transparent;
+        transition: var(--transition);
+    }
+}
 
 /* Tela Tablet */
-@media only screen and (min-width: 570px) and (max-width: 1379.99px){}
+@media only screen and (min-width: 570px) and (max-width: 1379.99px){
+    .pageGeral, hr{width: 75%}
+    
+    .interna .central .container-modal{width: 40%}
+}
 
 /* Tela Desktop - Pequeno */
-@media only screen and (min-width: 768px) and (max-width: 1379.99px){}
+@media only screen and (min-width: 768px) and (max-width: 1379.99px){
+    .pageGeral, hr{width: 65%}
+
+    .interna .central h1{font-size: 22px}
+    
+    .interna .central .container-modal{width: 30%}
+
+    .interna .central .container-modal .modal-btn:hover{background-color: var(--bc)}
+
+    .interna .central .ajuda .para1 a:hover{color: var(--fc-primary)}
+
+    .interna .central .senha-sucesso .btn-sucesso .inicio-btn:hover{background-color: var(--bc)}
+
+    .interna .central .formulario .botao-form .botao:hover{background-color: #050538}
+    
+    .interna .central .box-login a:hover{color: var(--fc-primary)}
+
+    .interna .central .close-btn{cursor: pointer}
+
+    .interna .central .close-btn:hover{transform: scale(1.3)}
+}
+
+/* Ajuste da responsividade */
+@media only screen and (min-width: 1024px) and (max-width: 1379.99px){
+    .interna .carrinho, .interna .central .ajuda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .interna .carrinho .para1{margin: 45px 285px -45px 0}
+
+    .interna .carrinho .para2{margin: -24px 0 20px 310px}
+
+    hr{width: 80%}
+    
+    .interna .central h1{
+        font-size: 25px;
+        margin: 10px 0 5px 0;
+    }
+
+    .interna .central .container-modal{margin-bottom: 25px}
+
+    .interna .central .ajuda{flex-direction: row}
+
+    .interna .central .ajuda .para1{margin-top: -10px}
+
+    .interna .central .ajuda img{
+        width: 120px;
+        height: 100px;
+        margin-top: 15px;
+    }
+
+    .interna .central .ajuda .para2{margin: 0 0 -50px 10px}
+
+    .interna .central .box-senha{width: 50%}
+
+    .interna .central .paragrafoCentro{margin-bottom: 10px}
+
+    .interna .central .pagamento{width: 60%}
+}
 
 /* Tela Desktop - Largo */
 @media only screen and (min-width: 1380px){
     .bodyGeral{
-        background-color: var(--bc);
-        font-family: var(--ff-primary);
         color: var(--bc);
+        font-family: var(--ff-primary);
+        background-color: var(--bc);
     }
 
     hr{
         width: 80%;
-        margin-left: 10%;
         color: var(--bc);
+        margin-left: 10%;
     }
     
-    .logo,
-    .carrinho,
-    .para1,
-    .para2,
-    .ajuda,
-    .central,
-    .botoes,
-    .botao-form,
-    .rodape,
-    .sociais,
-    .social,
-    .texto-rodape,
-    .relatorios{
-        float: left;
-    }
+    .logo, .carrinho, .para1, .para2, .ajuda, .central, .botoes, .botao-form, .rodape, .sociais, .social, .texto-rodape, .relatorios{float: left}
 
     .pageGeral{
+        width: 90%;
         display: flex;
         flex-direction: column;
-        width: 90%;
         margin-left: 5%;
     }
     
-    main{
+    .interna{
         width: 100%;
         height: auto;
-    }
-
-    .interna{
         background-color: var(--bc-secondary);
     }
 
-    main .carrinho{
+    .interna .carrinho{
         width: 55%;
-        margin-left: 37%;
         padding: .5rem;
+        margin-left: 37%;
     }
 
-    main .carrinho img{
+    .interna .carrinho img{
         width: 10%;
         height: 20%;
-        margin-top: 2%;
         float: left;
+        margin-top: 2%;
     }
 
-    main  .carrinho .para1{
+    .interna .carrinho .para1{
+        color: var(--bc);
         margin-top: 45px;
         text-align: right;
-        color: var(--bc);
     }
     
-    main  .carrinho .para2{
-        margin-top: 90px;
+    .interna .carrinho .para2{
         color: var(--bc);
+        margin-top: 90px;
     }
 
-    main .central{
+    .interna .central{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    main .central h1,h2,h3{
+    .interna .central h1,h2,h3{
         color: var(--bc);
-        margin: auto;
-        margin-top:1rem;
         text-align: center;
+        margin: 1rem auto auto auto;
     }
 
-    main .central .formulario{
+    .interna .central .formulario{
+        height: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
         padding: 2rem;
     }
 
-    main .central .formulario .botao-form{
+    .interna .central .formulario .botao-form{
         width: 100%;
         align-items: center;
     }
 
-    main .central .formulario .botao-form .botao{
+    .interna .central .formulario .botao-form .botao{
         width: 150px;
         padding: .25rem;
         margin-top: 1rem;
@@ -157,21 +541,17 @@ button{
         font-size: 15px;
     }
 
-    main .central  .formulario .botao-form .botao a{
-        color: var(--fc-paragraphs);
-    }
+    .interna .central .formulario .botao-form .botao a{color: var(--fc-paragraphs)}
 
-    main .central .formulario .botao-form .botao:hover{
-        background-color: #050538;
-    }
+    .interna .central .formulario .botao-form .botao:hover{background-color: #050538}
 
-    main .central .container-modal{
+    .interna .central .container-modal{
         width: 30%;
-        margin-left: 37%;
         padding: 2rem;
+        margin-left: 37%;
     }
 
-    main .central .container-modal .modal-btn{
+    .interna .central .container-modal .modal-btn{
         width: 50%;
         height: auto;
         margin-left: 19%;
@@ -183,43 +563,37 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    .info .lista {
+    .interna .central .container-modal .modal-btn:hover{background-color: var(--bc)}
+
+    .info .lista{
         width: 20%;
         margin-left: 155px;
     }
 
-    .info .lista ul, .info .lista2 ul {
-        list-style: none;
-    }
+    .info .lista ul, .info .lista2 ul{list-style: none}
 
-    .info .lista2 {
-        margin-left: 600px;
-    }
+    .info .lista2{margin-left: 600px}
 
-    .info .lista2 a {
-        width: 60px;
-    }
+    .info .lista2 a{width: 60px}
 
     .info .modal-btn{
         width: 80px;
         height: 30px;
+        margin-left: 50px;
+        border-radius: 20px;
         color: var(--fc-paragraphs);
         background-color: var(--fc-primary);
-        border-radius: 20px;
-        margin-left: 50px;
     }
 
-    .info #btn-cadastrar-vendas {
+    .info #btn-cadastrar-vendas{
         position: absolute;
         margin-left: 720px;
         margin-top: -60px;
     }
 
-    main .central .container-modal .modal-btn:hover{
-        background-color: var(--bc);
-    }
-
-    main .central .modal-overlay{
+    .modal-open{overflow: hidden}
+    
+    .interna .central .modal-overlay{
         position: fixed;
         top: 0;
         left: 0;
@@ -233,7 +607,7 @@ button{
         transition: var(--transition);
     }
 
-    main .central .modal-container{
+    .interna .central .modal-container{
         width: 50%;
         height: auto;
         background: var(--bc-secondary);
@@ -244,11 +618,9 @@ button{
         box-shadow: var(--box-shadow2);
     }
 
-    main .central .modal-container h1{
-        padding: 1.5rem;
-    }
+    .interna .central .modal-container h1{padding: 1.5rem}
     
-    main .central .close-btn{
+    .interna .central .close-btn{
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -260,12 +632,9 @@ button{
         transition: var(--transition);
     }
 
-    main .central .close-btn:hover{
-        color: var(--fc);
-        transform: scale(1.3);
-    }
+    .interna .central .close-btn:hover{transform: scale(1.3)}
 
-    main .central .relatorios{
+    .interna .central .relatorios{
         width: 60%;
         height: auto;
         padding: 2rem;
@@ -276,12 +645,12 @@ button{
         background-color: var(--fct-primary);
     }
 
-    main .central .relatorios #table-relatorios-crm{
+    .interna .central .relatorios #table-relatorios-crm{
         width: 100%;
         background-color: var(--fc-primary);
     }
 
-    main .central .rel-clientes{
+    .interna .central .rel-clientes{
         width: 100%;
         height: auto;
         padding: 2rem;
@@ -292,26 +661,21 @@ button{
         background-color: var(--fct-primary);
     }
 
-    main .central .rel-clientes #table-rel-clientes{
+    .interna .central .rel-clientes #table-rel-clientes{
         width: 100%;
         background-color: var(--fc-primary);
     }
-   
 
-    main .central .formulario .cliente{
+    .interna .central .formulario .cliente{
         width: 100%;
         float: left;
     }
 
-    main .central .formulario .cliente .row{
-        width: 90%;
-    }
+    .interna .central .formulario .cliente .row{width: 90%}
 
-    main .central .formulario .cliente .input-cliente{
-        width: 65%;
-    }
+    .interna .central .formulario .cliente .input-cliente{width: 65%}
 
-    main .central .formulario form input{
+    .interna .central .formulario form input{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -322,7 +686,7 @@ button{
         margin-bottom: 2%;
     }
 
-    main .central .formulario form select{
+    .interna .central .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -334,7 +698,7 @@ button{
         margin-bottom: 2%;
     }
 
-    main .central .formulario form .info{
+    .interna .central .formulario form .info{
         width:100%;
         height: auto;
         float: left;
@@ -342,95 +706,69 @@ button{
         margin-bottom: 1rem;
     }
 
-    main .central .formulario form .info p{
-       margin-left: 13%;
-    }
+    .interna .central .formulario form .info p{margin-left: 13%}
 
-    main .central .formulario form .tipo-cli{
+    .interna .central .formulario form .tipo-cli{
         float: left;
         width: 100%;
         margin-top: 1%;
     }
 
-    main .central .formulario form .tipo-cli p{
-        margin-left: 13%;
-    }
+    .interna .central .formulario form .tipo-cli p{margin-left: 13%}
 
-    main .central .formulario form .tipo-cli .radio{
+    .interna .central .formulario form .tipo-cli .radio{
         width: 10%;
         float: left;
         display: block;
     }
     
-    main .central .formulario .tipo-cli .radio label{
-        display: block;
-    }
+    .interna .central .formulario .tipo-cli .radio label{display: block}
 
-    main .central .formulario .tipo-cli .row{
-        width: 40%;
-    }
+    .interna .central .formulario .tipo-cli .row{width: 40%}
 
-    .row-textarea {
+    .row-textarea{
         width: 20%;
         margin-left: 130px;
     }
 
-    .row-textarea #historico, .row-textarea #desc-produto {
-        width: 560px;
-    }
+    .row-textarea #historico, .row-textarea #desc-produto{width: 560px}
 
-    main .central .formulario .parcelamento{
+    .interna .central .formulario .parcelamento{
         float: left;
         width: 100%;
         margin-top: 1%;
     }
 
-    main .central .formulario .parcelamento .radio{
+    .interna .central .formulario .parcelamento .radio{
         width: 10%;
         float: left;
         display: block;
     }
 
-    main .central .formulario .parcelamento .radio label{
-        display: block;
-    }
+    .interna .central .formulario .parcelamento .radio label{display: block}
 
-    main .central .formulario .parcelamento .row{
-        width: 23%;
-    }
+    .interna .central .formulario .parcelamento .row{width: 23%}
 
-    main .central .bem-vindo{
+    .interna .central .bem-vindo{
         width: 100%;
         height: auto;
     }
 
-    main .central .bem-vindo .bem-vindo-txt{
+    .interna .central .bem-vindo .bem-vindo-txt{
         width: 30%;
         float: left;
         margin-left: 25%;
         margin-top: 1rem;
     }
 
-    main .central .bem-vindo .bem-vindo-img {
-        width: 40%;
-        float: left;
-    }
-
-    main .central .bem-vindo .bem-vindo-img img{
-        width: 25%;
-        float: left;
-    }
-
-    main .central .escolha{
+    .interna .central .escolha{
         width: 80%;
         margin-left: 250px;
     }
 
-    main .central .escolha p{
-        margin-left: -150px;
-    }
+    .interna .central .escolha p{margin-left: -150px}
 
-    main .central .escolha .planinho{
+    .interna .central .escolha .planinho{
         width: 30%;
         height: auto;
         background-color: var(--bctr);
@@ -444,7 +782,7 @@ button{
         float: left;
     }
 
-    main .central .pagamento{
+    .interna .central .pagamento{
         width: 30%;
         height: auto;
         background-color: var(--fct-primary);
@@ -457,7 +795,7 @@ button{
         float: left;
     }
 
-    main .central .pagamento .formulario form input{
+    .interna .central .pagamento .formulario form input{
         width: auto;
         border-top: none;
         border-left: none;
@@ -469,12 +807,12 @@ button{
         margin-left: 15%;
     }
 
-    main .central .pagamento .formulario .btn{
+    .interna .central .pagamento .formulario .btn{
         width: 100%;
         float: left;
     } 
 
-    main .central .pagamento .formulario .btn .btn-login{
+    .interna .central .pagamento .formulario .btn .btn-login{
         width: 25%;
         height: auto;
         margin-left: 35%;
@@ -487,12 +825,14 @@ button{
         float:left;
     }
 
-    main .central .pagamento .formulario .row{
+    .interna .central .pagamento .formulario .row{
         width: 100%;
         float: left;
     }
 
-    main .central .box-senha{
+    .paragrafoCentro{text-align: center}
+
+    .interna .central .box-senha{
         width: 30%;
         height: auto;
         background-color: var(--fct-primary);
@@ -504,7 +844,7 @@ button{
         box-shadow: var(--box-shadow);
     }
 
-    main .central .box-senha .formulario form input{
+    .interna .central .box-senha .formulario form input{
         width: 100%;
         border-top: none;
         border-left: none;
@@ -516,17 +856,17 @@ button{
         margin-left: 15%;
     }
 
-    main .central .box-senha .formulario .labelSenha {
+    .interna .central .box-senha .formulario .labelSenha {
         margin-left: 31px;
         margin-bottom: 3px;
     }
 
-    main .central .box-senha .formulario .btn{
+    .interna .central .box-senha .formulario .btn{
         width: 100%;
         float: left;
     } 
 
-    main .central .box-senha .formulario .btn .btn-login{
+    .interna .central .box-senha .formulario .btn .btn-login{
         width: 25%;
         height: auto;
         margin-left: 35%;
@@ -539,12 +879,12 @@ button{
         float:left;
     }
 
-    main .central .box-senha .formulario .row{
+    .interna .central .box-senha .formulario .row{
         width: 57%;  
         float: left;
     }
 
-    main .central .box-login{
+    .interna .central .box-login{
         width: 30%;
         height: auto;
         background-color: var(--fct-primary);
@@ -555,7 +895,7 @@ button{
         box-shadow: var(--box-shadow);
     }
 
-    main .central .box-login p{
+    .interna .central .box-login p{
         width: 100%;
         float: left;
         display: flex;
@@ -563,18 +903,15 @@ button{
         margin-top: 1rem;
     }
 
-
-    main .central .box-login a{
+    .interna .central .box-login a{
         color: var(--bc);
         display: flex;
         justify-content: center;
     }
 
-    main .central .box-login a:hover{
-        color: var(--fc-primary);
-    }
+    .interna .central .box-login a:hover{color: var(--fc-primary)}
 
-    main .central .box-login .formulario .btn-login{
+    .interna .central .box-login .formulario .btn-login{
         width: 25%;
         height: auto;
         margin-left: 35%;
@@ -586,7 +923,7 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    main .central .box-login .formulario form input{
+    .interna .central .box-login .formulario form input{
         width: 100%;
         border-top: none;
         border-left: none;
@@ -598,7 +935,7 @@ button{
         margin-bottom: 2%;
     }
 
-    main .central .box-login .formulario form select{
+    .interna .central .box-login .formulario form select{
         width: 90%;
         border-top: none;
         border-left: none;
@@ -610,43 +947,43 @@ button{
         margin-bottom: 2%;
     }
   
-    main .central .box-login .row{
+    .interna .central .box-login .row{
         width: 80%;
         float: left;
         margin-left: 10%;
     }
 
-    main .central .box-login .row .col-12{
+    .interna .central .box-login .row .col-12{
         float: left;
         width: 100%;
         text-align: left;
         margin: auto;
     }
 
-    main .central .box-login .row .col-12 .check-box{
+    .interna .central .box-login .row .col-12 .check-box{
         float: left;
         width: 10%;
         margin-left: 22%;
     }
 
-    main .central .row{
+    .interna .central .row{
         width: 22.5%;
         float: left;
         margin-left: 15%;
     }
 
-    main .central .bem-vindo {
+    .interna .central .bem-vindo {
         width: 80%;
         display: flex;
         justify-content: center;
     }
 
-    main .central .escolha p, main .central .pagamento p{
+    .interna .central .escolha p, .interna .central .pagamento p{
         margin-top: 20px;
         text-align: center;
     }
 
-    main .central #alterar-usuario{
+    .interna .central #alterar-usuario{
         width: 18%;
         height: 181px;
         background: rgba(0,150,143,0.5);
@@ -659,7 +996,7 @@ button{
         position: relative;
     }
 
-    main .central  #alterar-usuario .icon{
+    .interna .central  #alterar-usuario .icon{
         font-size: 50px;
         background: rgba(0,150,143,0.0);
         color: #000;
@@ -667,18 +1004,18 @@ button{
         margin-right: 45%;
     }
 
-    main  .central  #alterar-usuario .email-usuario{
+    .interna  .central  #alterar-usuario .email-usuario{
         font-size: 100%;
         margin-top: 10px;
         margin-top: 10px;
     }
 
-    main  .central  #alterar-usuario .plano-usuario{
+    .interna  .central  #alterar-usuario .plano-usuario{
         font-size: 100%;
         margin-top: 10px;
     }
 
-    main .central  #alterar-usuario .btn-login{
+    .interna .central  #alterar-usuario .btn-login{
         width: 40%;
         height: auto;
         margin-left: 35%;
@@ -690,21 +1027,21 @@ button{
         color: var(--fc-paragraphs)
     }
 
-    .senha-sucesso {
+    .interna .central .senha-sucesso{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    .senha-sucesso i {
+    .interna .central .senha-sucesso i{
         font-size: 120px;
         margin-top: 60px;
     }
 
-    .senha-sucesso .bloco-sucesso {margin-top: 27px}
+    .interna .central .senha-sucesso .bloco-sucesso{margin-top: 27px}
 
-    .senha-sucesso .btn-sucesso a{
+    .interna .central .senha-sucesso .btn-sucesso .inicio-btn{
         width: 200px;
         height: 60px;
         margin-bottom: 60px;
@@ -713,9 +1050,7 @@ button{
         background-color: var(--fc-primary);
     }
 
-    .senha-sucesso .btn-sucesso a:hover {
-        background-color: var(--bc);
-    }
+    .interna .central .senha-sucesso .btn-sucesso .inicio-btn:hover{background-color: var(--bc)}
 
     .interna .container .formulario{
         width: 90%;
@@ -729,36 +1064,26 @@ button{
         margin-left: 2%;
     }
 
-    .formulario .baixar-conta .row .col-6-baixar-contas {
+    .formulario .baixar-conta .row .col-6-baixar-contas{
         width: 200px;
         margin-top: 20px;
         margin-left: 10px;
     }
 
-    .formulario .titulo-financas {
+    .formulario .titulo-financas{
         font-weight: bold;
         margin-left: 350px;
     }
 
-    .formulario #tipo-conta-financas {
-        margin-left: 180px;
-    }
+    .formulario #tipo-conta-financas{margin-left: 180px}
 
-    .formulario .label-financas {
-        margin-bottom: -16px;
-    }
+    .formulario .label-financas{margin-bottom: -16px}
 
-    .formulario .radio-financas {
-        margin-left: -35px;
-    }
+    .formulario .radio-financas{margin-left: -35px}
 
-    .formulario .row .col-6-financas {
-        width: 250px;
-    }
+    .formulario .row .col-6-financas{width: 250px}
 
-    .formulario .row-textarea #historico {
-        width: 560px;
-    }
+    .formulario .row-textarea #historico{width: 560px}
 
     .interna .container .formulario form input{
         border-top:none;
@@ -796,43 +1121,35 @@ button{
        float: left;
     }
 
-    main .ajuda{
+    .interna .ajuda{
         width: 60%;
         height: auto;
         margin-left: 40%;
     }
 
-    main  .ajuda img{
+    .interna .ajuda img{
         width: 8%;
         height: 70px;
         float: left;
         margin-top: 2%;
     }
 
-    main  .ajuda p{
+    .interna .ajuda p{
         color: var(--bc);
         float: left;
     }
 
-    main  .ajuda .para1{
+    .interna .ajuda .para1{
         margin-top: 25px;
         text-align: right;
     }
 
-    main  .ajuda .para1 a{
-        color: var(--bc);
-    }
+    .interna .ajuda .para1 a{color: var(--bc)}
 
-    main  .ajuda .para1 a:hover{
-        color: var(--fc-primary);
-    }
+    .interna .ajuda .para1 a:hover{color: var(--fc-primary)}
 
-    main  .ajuda .para2{
+    .interna .ajuda .para2{
         margin-top: 45.5px;
         margin-left: 10px;
-    }
-
-    .paragrafoCentro {
-        text-align: center;
     }
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Contas({ isOpenContas, setCloseModal }) {
     if (isOpenContas) {
         document.body.classList.add("modal-open");

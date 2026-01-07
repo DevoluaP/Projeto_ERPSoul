@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Headers from "../Inc/Headers.js";
 import crm from "../Assets/crm.png";
@@ -19,7 +19,6 @@ export default function HomeERP() {
 
         const fetchUserData = async () => {
             try {
-                // let response = await fetch("https://soulerp.srv-tii.com.br/api/private-route", {
                 let response = await fetch("http://localhost:5000/api/private-route", {
                     method: "GET",
                     headers: {
@@ -128,7 +127,7 @@ export default function HomeERP() {
                                 <Link to="#"><p>Termos de uso</p></Link>
                                 <Link to="#"><p>Política de privacidade</p></Link>
                                 <br />
-                                <p>© 2024, Right Solution, All Rights Reserved</p>
+                                <p>© 2024 ERP Soul, Inc</p>
                             </div>
                         </div>
                     </footer>

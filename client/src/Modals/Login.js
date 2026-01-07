@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -49,7 +49,6 @@ export default function Login({ isOpenLogin }) {
         } else {
             const conectado = document.getElementById("conectado").checked;
 
-            // fetch("https://soulerp.srv-tii.com.br/api/user/login", {
             fetch("http://localhost:5000/api/user/login", {
                 method: "POST",
                 headers: {

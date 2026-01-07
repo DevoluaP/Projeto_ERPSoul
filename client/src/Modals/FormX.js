@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FormX({ isOpenFormX, setCloseModal }) {
     if (isOpenFormX) {
         document.body.classList.add("modal-open");

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Integracoes({ isOpenIntegracoes, setCloseModal }) {
     if (isOpenIntegracoes) {
         document.body.classList.add("modal-open");

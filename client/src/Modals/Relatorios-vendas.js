@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function RelatoriosVendas({ isOpenRelatoriosVendas, setCloseModal }) {
     if (isOpenRelatoriosVendas) {
         document.body.classList.add("modal-open");

@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 export default function CadastrarVenda({ isOpenCadastrarVenda, setCloseModal }) {
     if (isOpenCadastrarVenda) {
         document.body.classList.add("modal-open");
@@ -33,26 +30,6 @@ export default function CadastrarVenda({ isOpenCadastrarVenda, setCloseModal }) 
                                 </div>
                             </div>
                             <button className="modal-btn">Buscar</button>
-                            <div className="lista">
-                                <ul>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>Alexandra Andrade</li>
-                                    </Link>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>Karen Rodrigues</li>
-                                    </Link>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>Gabriel Andrade</li>
-                                    </Link>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>Levi Coelho</li>
-                                    </Link>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>Diego Rodrigues</li>
-                                    </Link>
-                                </ul>
-                            </div>
-
                         </div>
                         <div className="info">
                             <p>Vendedor</p>
@@ -100,19 +77,6 @@ export default function CadastrarVenda({ isOpenCadastrarVenda, setCloseModal }) 
                                 </div>
                             </div>
                             <button className="modal-btn">Buscar</button>
-                            <br />
-                            <div className="lista2">
-                                <ul>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>TESTE 1</li>
-                                    </Link>
-                                    <Link to="#" style={{ color: "black" }}>
-                                        <li>TESTE 2</li>
-                                    </Link>
-                                </ul>
-                            </div>
-                            <br />
-                            <button className="modal-btn" id="btn-cadastrar-vendas">Adicionar</button>
                         </div>
                         <div className="info">
                             <div className="row">

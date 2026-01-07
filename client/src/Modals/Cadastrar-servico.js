@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { formatCpfCnpj } from "../Inc/MaskCpfCnpj";
 import Swal from "sweetalert2";
 import { NumericFormat } from "react-number-format";
@@ -23,7 +23,6 @@ export default function CadastrarServico({ isOpenCadastrarServico, setCloseModal
         if (isOpenCadastrarServico) {
             const token = localStorage.getItem("token");
 
-            // fetch("https://soulerp.srv-tii.com.br/api/crm/clientsRegistered", {
             fetch("http://localhost:5000/api/crm/clientsRegistered", {
                 method: "GET",
                 headers: { "Authorization": `Bearer ${ token }` }
@@ -144,7 +143,6 @@ export default function CadastrarServico({ isOpenCadastrarServico, setCloseModal
         } else {
             const token = localStorage.getItem("token");
 
-            // fetch("https://soulerp.srv-tii.com.br/api/service/register", {
             fetch("http://localhost:5000/api/service/register", {
                 method: "POST",
                 headers: {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import mask from "../Inc/MaskCpfCnpj.js";
 import Swal from "sweetalert2";
 
@@ -11,7 +11,6 @@ export default function ClientesCadastrados({ isOpenClientesCadastrados, setClos
         if (isOpenClientesCadastrados) {
             const token = localStorage.getItem("token");
 
-            // fetch("https://soulerp.srv-tii.com.br/api/crm/clientsRegistered", {
             fetch("http://localhost:5000/api/crm/clientsRegistered", {
                 method: "GET",
                 headers: { "Authorization": `Bearer ${ token }` }
@@ -83,7 +82,6 @@ export default function ClientesCadastrados({ isOpenClientesCadastrados, setClos
                 confirmButtonColor: "#00968F"
             });
         } else {
-            // fetch(`https://soulerp.srv-tii.com.br/api/crm/clientsRegistered/${ id_cliente }/edit`, {
             fetch(`http://localhost:5000/api/crm/clientsRegistered/${ id_cliente }/edit`, {
                 method: "PUT",
                 headers: {
@@ -155,7 +153,6 @@ export default function ClientesCadastrados({ isOpenClientesCadastrados, setClos
         })
         .then((result) => {
             if (result.isConfirmed) {
-                // fetch(`https://soulerp.srv-tii.com.br/api/crm/clientsRegistered/${ id_cliente }/delete`, {
                 fetch(`http://localhost:5000/api/crm/clientsRegistered/${ id_cliente }/delete`, {
                     method: "PUT",
                     headers: {

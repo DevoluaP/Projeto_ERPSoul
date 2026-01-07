@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import Footers from "../Inc/Footers.js";
@@ -85,7 +85,6 @@ const NovaSenha = () => {
                 confirmButtonColor: "#00968F"
             });
         } else {
-            // fetch("https://soulerp.srv-tii.com.br/api/user/reset-password", {
             fetch("http://localhost:5000/api/user/reset-password", {
                 method: "POST",
                 headers: {

@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "../Pages/Index.js";
 import HomeGratuito from "../Pages/Home-gratuito.js";

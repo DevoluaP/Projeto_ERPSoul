@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BaixarContas({ isOpenBaixarContas, setCloseModal }) {
     if (isOpenBaixarContas) {
         document.body.classList.add("modal-open");

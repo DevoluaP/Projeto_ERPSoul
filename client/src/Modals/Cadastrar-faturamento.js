@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CadastrarFaturamento({ isOpenCadastrarFaturamento, setCloseModal }) {
     if (isOpenCadastrarFaturamento) {
         document.body.classList.add("modal-open");

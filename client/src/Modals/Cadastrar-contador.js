@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CadastrarContador({ isOpenCadastrarContador, setCloseModal }) {
     if (isOpenCadastrarContador) {
         document.body.classList.add("modal-open");

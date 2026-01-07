@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Footers from "../Inc/Footers.js";
@@ -42,7 +42,6 @@ const EsqueciSenha = () => {
                 return;
             }
 
-            // fetch("https://soulerp.srv-tii.com.br/api/user/forgot-password", {
             fetch("http://localhost:5000/api/user/forgot-password", {
                 method: "POST",
                 headers: {

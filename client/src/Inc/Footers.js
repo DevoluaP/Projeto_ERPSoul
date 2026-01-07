@@ -30,7 +30,7 @@ class Footers extends React.Component {
                             <Link to="#"><p>Termos de uso</p></Link>
                             <Link to="#"><p>Política de privacidade</p></Link>
                             <br />
-                            <p>© 2024, Right Solution, All Rights Reserved</p>
+                            <p>© 2024 ERP Soul, Inc</p>
                         </div>
                     </div>
                 </footer>

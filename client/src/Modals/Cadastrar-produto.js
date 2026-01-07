@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CadastrarProduto({ isOpenCadastrarProduto, setCloseModal }) {
     if (isOpenCadastrarProduto) {
         document.body.classList.add("modal-open");

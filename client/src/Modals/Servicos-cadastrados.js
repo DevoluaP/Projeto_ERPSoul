@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { NumericFormat } from "react-number-format";
 
@@ -17,7 +17,6 @@ export default function ServicosCadastrados({ isOpenServicosCadastrados, setClos
         if (isOpenServicosCadastrados) {
             const token = localStorage.getItem("token");
 
-            // fetch("https://soulerp.srv-tii.com.br/api/service/servicesRegistered", {
             fetch("http://localhost:5000/api/service/servicesRegistered", {
                 method: "GET",
                 headers: { "Authorization": `Bearer ${ token }` }
@@ -105,7 +104,6 @@ export default function ServicosCadastrados({ isOpenServicosCadastrados, setClos
                 confirmButtonColor: "#00968F"
             });
         } else {
-            // fetch(`https://soulerp.srv-tii.com.br/api/service/servicesRegistered/${ id_servico }/edit`, {
             fetch(`http://localhost:5000/api/service/servicesRegistered/${ id_servico }/edit`, {
                 method: "PUT",
                 headers: {
@@ -160,7 +158,6 @@ export default function ServicosCadastrados({ isOpenServicosCadastrados, setClos
                         confirmButtonColor: "#00968F"
                     });
 
-                    // fetch("https://soulerp.srv-tii.com.br/api/service/servicesRegistered", {
                     fetch("http://localhost:5000/api/service/servicesRegistered", {
                         method: "GET",
                         headers: { 
@@ -204,7 +201,6 @@ export default function ServicosCadastrados({ isOpenServicosCadastrados, setClos
         })
         .then((result) => {
             if (result.isConfirmed) {
-                // fetch(`https://soulerp.srv-tii.com.br/api/service/servicesRegistered/${ id_servico }/delete`, {
                 fetch(`http://localhost:5000/api/service/servicesRegistered/${ id_servico }/delete`, {
                     method: "PUT",
                     headers: {

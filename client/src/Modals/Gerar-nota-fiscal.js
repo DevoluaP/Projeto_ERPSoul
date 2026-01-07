@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function GerarNF({ isOpenGerarNF, setCloseModal }) {
     if (isOpenGerarNF) {
         document.body.classList.add("modal-open");

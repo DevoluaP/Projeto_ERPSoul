@@ -7,7 +7,6 @@ let pool = null;
 
 async function connectDB() {
     try {
-        // !process.env.DB_PASSWORD caso não tenha senha, retirar a verificação de senha
         if (!process.env.DB_HOST || !process.env.DB_USER || !process.env.DB_NAME) {
             throw new Error("Faltam variáveis de ambiente para a conexão ao banco de dados!");
         }
@@ -18,9 +17,9 @@ async function connectDB() {
                 user: process.env.DB_USER,
                 password: process.env.DB_PASSWORD,
                 database: process.env.DB_NAME,
-                waitForConnections: true, // Garante que a pool de conexões aguarde se atingir o limite
-                connectionLimit: 10, // Limita o número máximo de conexões simultâneas
-                queueLimit: 0, // Limita o número de requisições na fila (0 = sem limite)
+                waitForConnections: true,
+                connectionLimit: 10,
+                queueLimit: 0,
             });
 
             console.log("Conectado ao pool de conexões MySQL!");

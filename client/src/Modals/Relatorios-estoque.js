@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function RelatoriosEstoque({ isOpenRelatoriosEstoque, setCloseModal }) {
     if (isOpenRelatoriosEstoque) {
         document.body.classList.add("modal-open");

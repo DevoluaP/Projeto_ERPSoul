@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function PlanoContas({ isOpenPlanoContas, setCloseModal }) {
     if (isOpenPlanoContas) {
         document.body.classList.add("modal-open");

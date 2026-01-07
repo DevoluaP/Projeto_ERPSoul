@@ -309,7 +309,6 @@ button{
     .interna .central .formulario form select,
     .interna .central .relatorios #table-relatorios-crm,
     .interna .central .rel-clientes #table-rel-clientes,
-    .info .lista2,
     .interna .central .relatorios #table-relatorios-crm,
     .interna .central .rel-clientes #table-rel-clientes,
     .interna .central .formulario form .tipo-cli p,
@@ -359,13 +358,11 @@ button{
     }
 
     .natureza-servico,
-    .info .lista2,
     .interna .central .formulario .botao-form .botao{
         margin: 10px 0 10px 0
     }
 
     .interna .central .relatorios,
-    .info .lista,
     .row-textarea #historico,
     .row-textarea #desc-produto,
     .row-textarea #desc_servico,
@@ -438,8 +435,6 @@ button{
         border-radius: 20px;
         color: var(--fc-paragraphs);
     }
-
-    .info .lista ul, .info .lista2 ul{list-style: none}
     
     .formulario .titulo-financas{font-weight: bold}
 
@@ -678,17 +673,6 @@ button{
     }
 
     .interna .central .container-modal .modal-btn:hover{background-color: var(--bc)}
-
-    .info .lista{
-        width: 20%;
-        margin-left: 155px;
-    }
-
-    .info .lista ul, .info .lista2 ul{list-style: none}
-
-    .info .lista2{margin-left: 600px}
-
-    .info .lista2 a{width: 60px}
 
     .info .modal-btn{
         width: 80px;

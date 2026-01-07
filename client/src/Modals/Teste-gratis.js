@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import mask from "../Inc/MaskCpfCnpj.js";
 import Swal from "sweetalert2";
@@ -167,7 +167,6 @@ export default function TesteGratis({ isOpenTesteGratis }) {
                 title: "Faturamento inválido!"
             });
         } else {
-            // fetch("https://soulerp.srv-tii.com.br/api/user/register", {
             fetch("http://localhost:5000/api/user/register", {
                 method: "POST",
                 headers: {

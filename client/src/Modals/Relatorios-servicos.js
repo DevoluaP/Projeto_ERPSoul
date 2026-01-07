@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import mask from "../Inc/MaskCpfCnpj";
 import Swal from "sweetalert2";
 import * as XLSX from "xlsx";
@@ -58,7 +58,6 @@ export default function RelatoriosServicos({ isOpenRelatoriosServicos, setCloseM
         } else {
             const token = localStorage.getItem("token");
 
-            // fetch("https://soulerp.srv-tii.com.br/api/service/reports", {
             fetch("http://localhost:5000/api/service/reports", {
                 method: "POST",
                 headers: {
@@ -144,7 +143,6 @@ export default function RelatoriosServicos({ isOpenRelatoriosServicos, setCloseM
                 if (result.isConfirmed) {
                     const servicoIds = servicos.map(servico => servico.id_servico);
 
-                    // fetch("https://soulerp.srv-tii.com.br/api/service/exportReports", {
                     fetch("http://localhost:5000/api/service/exportReports", {
                         method: "POST",
                         headers: {

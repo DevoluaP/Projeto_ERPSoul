@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Headers from "../Inc/Headers.js";
 import carrinho from "../Assets/carrinho.png";
@@ -22,7 +22,6 @@ export default function HomeGratuito() {
     
         const fetchData = async () => {
             try {
-                // const userResponse = await fetch("https://soulerp.srv-tii.com.br/api/home", {
                 const userResponse = await fetch("http://localhost:5000/api/home", {
                     method: "GET",
                     headers: {
@@ -51,12 +50,10 @@ export default function HomeGratuito() {
                 setUser(userData);
     
                 const [clientesResponse, servicesResponse] = await Promise.all([
-                    // fetch("https://soulerp.srv-tii.com.br/api/crm/clientsRegistered", {
                     fetch("http://localhost:5000/api/crm/clientsRegistered", {
                         method: "GET",
                         headers: { "Authorization": `Bearer ${ token }` }
                     }),
-                    // fetch("https://soulerp.srv-tii.com.br/api/service/servicesRegistered", {
                     fetch("http://localhost:5000/api/service/servicesRegistered", {
                         method: "GET",
                         headers: { "Authorization": `Bearer ${ token }` }
@@ -74,7 +71,6 @@ export default function HomeGratuito() {
         }
     
         fetchData();
-    
         AOS.init();
     }, [navigate]);
     
@@ -139,17 +135,7 @@ export default function HomeGratuito() {
                                 <div id="resumo">
                                     <p>Estoque</p>
                                     <div className="dados-resumo">
-                                        {/* {estoque.length === 0 ? ( */}
-                                            <tr>
-                                                Não há itens no estoque.
-                                            </tr>
-                                        {/* ) : (
-                                            estoque.map((produto, index) => (
-                                                <tr key={ index }>
-                                                    { produto.nome }
-                                                </tr>
-                                            )) 
-                                        )} */}
+                                        <tr>Não há itens no estoque.</tr>
                                     </div>
                                 </div>
                             </div>
@@ -228,7 +214,7 @@ export default function HomeGratuito() {
                                 <Link to="#"><p>Termos de uso</p></Link>
                                 <Link to="#"><p>Política de privacidade</p></Link>
                                 <br />
-                                <p>© 2024, Right Solution, All Rights Reserved</p>
+                                <p>© 2024 ERP Soul, Inc</p>
                             </div>
                         </div>
                     </footer>

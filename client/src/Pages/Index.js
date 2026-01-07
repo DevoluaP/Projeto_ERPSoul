@@ -80,7 +80,6 @@ class Index extends React.Component {
         }).then((result) => {
             if (result.isConfirmed) {
                 const token = localStorage.getItem("token");
-                // fetch("https://soulerp.srv-tii.com.br/api/user/logout", {
                 fetch("http://localhost:5000/api/user/logout", {
                     method: "PUT",
                     headers: {
@@ -405,7 +404,7 @@ class Index extends React.Component {
                                         <Link to="#"><p>Termos de uso</p></Link>
                                         <Link to="#"><p>Política de privacidade</p></Link>
                                         <br />
-                                        <p>© 2024, Right Solution, All Rights Reserved</p>
+                                        <p>© 2024 ERP Soul, Inc</p>
                                     </div>
                                 </div>
                             </footer>

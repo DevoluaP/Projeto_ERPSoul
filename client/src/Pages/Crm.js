@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Headers from "../Inc/Headers.js";
 import Footers from "../Inc/Footers.js";
@@ -22,7 +22,6 @@ export default function Crm() {
 
         const fetchUserData = async () => {
             try {
-                // let response = await fetch("https://soulerp.srv-tii.com.br/api/private-route", {
                 let response = await fetch("http://localhost:5000/api/private-route", {
                     method: "GET",
                     headers: {

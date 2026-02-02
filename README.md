@@ -1,22 +1,63 @@
 # ERP Soul
-
 Este repositório contém o projeto `ERP Soul`, um sistema ERP completo com front-end e back-end, desenvolvido para facilitar a gestão de informações em um ambiente corporativo.
 
-## Estrutura do Projeto
 
+## Tecnologias Usadas
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- Express.js
+- Bcrypt
+- MySQL para o banco de dados.
+
+
+## Funcionalidades
+
+### Gestão de Usuários
+- Sistema completo de autenticação (cadastro, login e logout)
+- Alteração de senha
+- Personalização de perfil com nome e foto
+
+### Gestão de Clientes
+- Cadastro completo de clientes
+- Listagem e visualização de clientes cadastrados
+- Geração de relatórios de clientes
+
+### Gestão Comercial
+- **Vendas**: Registro e acompanhamento de vendas realizadas
+- **Produtos**: Controle de estoque e catálogo de produtos
+- **Serviços**: Cadastro e gerenciamento de serviços oferecidos
+
+### Relatórios
+- Relatórios detalhados de vendas
+- Relatórios de produtos e estoque
+- Relatórios de serviços prestados
+- Relatórios de clientes
+
+### Gestão Financeira
+- Cadastro e controle de contas a pagar/receber
+- Baixar relatório de contas a pagar/receber
+- Emissão de notas fiscais
+
+
+## Estrutura do Projeto
 O projeto é dividido em duas pastas principais:
 
 * `client`: Contém o front-end desenvolvido com React.
 * `server`: Contém o back-end desenvolvido com Node.js.
 
+
 ## Configuração Inicial
 
 ### Pré-requisitos
-
 Certifique-se de ter as seguintes ferramentas instaladas:
 
 * [Node.js](https://nodejs.org) (para rodar o back-end)
 * [Git](https://git-scm.com) (para clonar o repositório)
+* [XAMPP](https://www.apachefriends.org/) ou [WAMP](https://www.wampserver.com/) (para rodar o servidor MySQL)
+
 
 ### Passos para Instalação
 
@@ -24,64 +65,56 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 ```
 git clone https://github.com/DevoluaP/Projeto_ERPSoul.git
+```
+
+2. Instale as dependências:
+
+```bash
 cd Projeto_ERPSoul
 ```
-
-2. Instale as dependências para o back-end e front-end:
-
-* **Back-end**:
-
+```bash
+npm run install
 ```
+
+3. Configure o Banco de Dados:
+
+**Inicie o XAMPP/WAMP** e ative os módulos **Apache** e **MySQL**.
+
+No terminal, execute os comandos:
+```bash
 cd server
-npm install
+```
+```bash
+npm run setup
 ```
 
-* **Front-end**: Abra outro terminal na raiz do projeto e execute:
 
+## Testando a Aplicação
+
+1. **Verifique se o MySQL está rodando**:
+   - Abra o XAMPP/WAMP Control Panel
+   - Certifique-se que o módulo MySQL está com status "Running" (verde)
+
+2. **Inicie o back-end**:
+```bash
+   cd server
 ```
-cd client
-npm install
+```bash
+   npm start (ou npm run dev)
 ```
+   - Você deve ver:
+   `Conectado ao pool de conexões MySQL!`
+   `Servidor rodando na porta 5000`
 
-## Script Disponíveis
-
-Após a instalação, você pode iniciar o front-end e o back-end com os seguintes comandos:
-
-### Back-end (server)
-
-Na pasta `server`, você pode rodar:
-
-* `npm start`: Inicia o servidor em modo de desenvolvimento.
-
-* `npm run dev`: Inicia o servidor usando o `nodemon` para recarregar automaticamente em caso de mudanças (necessita do `nodemon` instalado globalmente ou como dependência de desenvolvimento).
-
-### Front-end (client)
-
-Na pasta `client`, você pode rodar:
-
-* `npm start`: Inicia o aplicativo React em modo de desenvolvimento.
-Abra http://localhost:3000 para visualizar no navegador.
-
-## Contribuindo
-
-Para contribuir com o `ERP Soul`, siga as seguintes etapas:
-
-1. Crie uma nova branch para suas alterações:
-
+3. **Inicie o front-end**:
+```bash
+   cd client
 ```
-git checkout -b minha-nova-feature
+```bash
+   npm start
 ```
+   - Abra http://localhost:3000 para visualizar no navegador.
 
-2. Faça commit das suas alterações:
-
-```
-git commit -m "Descrição das alterações"
-```
-
-3. Envie para o repositório:
-
-```
-git push origin minha-nova-feature
-```
-
-4. Abra um Pull Request no GitHub.
+4. **Usuário para testar**:
+   - Email: teste@erpsoul.com
+   - Senha: 123456

@@ -6,39 +6,41 @@ dotenv.config();
 let pool = null;
 
 async function connectDB() {
-    try {
-        if (!process.env.DB_HOST || !process.env.DB_USER || !process.env.DB_NAME) {
-            throw new Error("Faltam variáveis de ambiente para a conexão ao banco de dados!");
-        }
-
-        if (!pool) {
-            pool = mysql.createPool({
-                host: process.env.DB_HOST,
-                user: process.env.DB_USER,
-                password: process.env.DB_PASSWORD,
-                database: process.env.DB_NAME,
-                waitForConnections: true,
-                connectionLimit: 10,
-                queueLimit: 0,
-            });
-
-            console.log("Conectado ao pool de conexões MySQL!");
-
-            pool.on("error", async (err) => {
-                if (err.code === "PROTOCOL_CONNECTION_LOST") {
-                    console.log("Conexão perdida, reconectando...");
-                    pool = await connectDB();
-                } else {
-                    throw err;
-                }
-            });
-        }
-        
-        return pool;
-    } catch (err) {
-        console.error("Erro ao conectar ao banco de dados:", err);
-        throw err;
+  try {
+    if (!process.env.DB_HOST || !process.env.DB_USER || !process.env.DB_NAME) {
+      throw new Error(
+        "Faltam variáveis de ambiente para a conexão ao banco de dados!",
+      );
     }
+
+    if (!pool) {
+      pool = mysql.createPool({
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
+        waitForConnections: true,
+        connectionLimit: 10,
+        queueLimit: 0,
+      });
+
+      console.log("Conectado ao pool de conexões MySQL!");
+
+      pool.on("error", async (err) => {
+        if (err.code === "PROTOCOL_CONNECTION_LOST") {
+          console.log("Conexão perdida, reconectando...");
+          pool = await connectDB();
+        } else {
+          throw err;
+        }
+      });
+    }
+
+    return pool;
+  } catch (err) {
+    console.error("Erro ao conectar ao banco de dados:", err);
+    throw err;
+  }
 }
 
 module.exports = connectDB;

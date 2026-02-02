@@ -1,0 +1,294 @@
+header {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-lg);
+  background: linear-gradient(180deg, var(--bc) 0%, rgba(5, 5, 56) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+header .logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+header .logo-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+header .logo-container img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+header .logo-container a:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 150, 143, 0.4));
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-right: var(--spacing-lg);
+  z-index: 2;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--spacing-md);
+}
+
+header .navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navbar .logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--fc-paragraphs);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  overflow: hidden;
+}
+
+header .navbar .logout-btn i {
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+header .navbar .logout-btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--fc-primary);
+  box-shadow: 0 8px 20px rgba(0, 150, 143, 0.4);
+}
+
+header .navbar .logout-btn:hover i {
+  transform: scale(1.1);
+  animation: logoutPulse 0.6s ease;
+}
+
+@keyframes logoutPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+header .navbar .logout-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: var(--bc);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  border: 1px solid var(--fc-primary);
+  font-family: var(--ff-primary);
+}
+
+header .navbar .logout-btn:hover::after {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    min-height: 100px;
+    padding: 0 var(--spacing-sm);
+  }
+
+  header .logo-container img {
+    height: 90px;
+  }
+
+  header .navbar {
+    padding-right: var(--spacing-sm);
+  }
+
+  header .navbar .logout-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+  header {
+    min-height: 110px;
+    padding: 0 var(--spacing-md);
+  }
+
+  header .logo-container img {
+    height: 90px;
+  }
+
+  header .navbar {
+    padding-right: var(--spacing-md);
+  }
+
+  header .navbar .logout-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    min-height: 110px;
+  }
+
+  header .logo-container img {
+    height: 90px;
+  }
+
+  header .navbar .logout-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    min-height: 110px;
+  }
+
+  header .logo-container img {
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header {
+    min-height: 120px;
+    padding: 0 var(--spacing-xl);
+  }
+
+  header .logo-container img {
+    height: 100px;
+  }
+
+  header .navbar {
+    padding-right: var(--spacing-xl);
+  }
+
+  header .navbar .logout-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  header .navbar .logout-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+  }
+}
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+  header {
+    min-height: 100px;
+  }
+
+  header .logo-container img {
+    height: 80px;
+  }
+
+  header .navbar .logout-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  header .navbar .logout-btn::after {
+    display: none;
+  }
+}
+
+header .navbar .logout-btn:focus {
+  outline: 3px solid var(--fc-primary);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header,
+  header .logo-container a,
+  header .logo-container img,
+  header .navbar .logout-btn,
+  header .navbar .logout-btn::before,
+  header .navbar .logout-btn i {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes headerSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media print {
+  header {
+    background: white;
+    box-shadow: none;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  header .logo-container {
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  header .logo-container img {
+    filter: grayscale(100%);
+  }
+}

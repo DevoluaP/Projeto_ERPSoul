@@ -10,6 +10,40 @@ header {
   top: 0;
   z-index: 1000;
   transition: var(--transition);
+  position: relative;
+}
+
+header .btn-voltar-home {
+  position: absolute;
+  left: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+header .btn-voltar-home a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--fc-paragraphs);
+  font-size: 20px;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header .btn-voltar-home a:hover {
+  transform: translateY(-3px);
+  border-color: var(--fc-primary);
+  box-shadow: 0 8px 20px rgba(0, 150, 143, 0.4);
+}
+
+header .btn-voltar-home a:hover i {
+  transform: scale(1.1);
 }
 
 header .logo-container {
@@ -46,7 +80,6 @@ header .navbar {
   align-items: center;
   justify-content: flex-end;
   margin-left: auto;
-  padding-right: var(--spacing-lg);
   z-index: 2;
 }
 
@@ -139,12 +172,18 @@ header .navbar .logout-btn:hover::after {
     padding: 0 var(--spacing-sm);
   }
 
-  header .logo-container img {
-    height: 90px;
+  header .btn-voltar-home {
+    left: var(--spacing-sm);
   }
 
-  header .navbar {
-    padding-right: var(--spacing-sm);
+  header .btn-voltar-home a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  header .logo-container img {
+    height: 70px;
   }
 
   header .navbar .logout-btn {
@@ -160,12 +199,18 @@ header .navbar .logout-btn:hover::after {
     padding: 0 var(--spacing-md);
   }
 
-  header .logo-container img {
-    height: 90px;
+  header .btn-voltar-home {
+    left: var(--spacing-md);
   }
 
-  header .navbar {
-    padding-right: var(--spacing-md);
+  header .btn-voltar-home a {
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
+  }
+
+  header .logo-container img {
+    height: 75px;
   }
 
   header .navbar .logout-btn {
@@ -180,8 +225,14 @@ header .navbar .logout-btn:hover::after {
     min-height: 110px;
   }
 
+  header .btn-voltar-home a {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
   header .logo-container img {
-    height: 90px;
+    height: 80px;
   }
 
   header .navbar .logout-btn {
@@ -197,7 +248,7 @@ header .navbar .logout-btn:hover::after {
   }
 
   header .logo-container img {
-    height: 90px;
+    height: 85px;
   }
 }
 
@@ -207,12 +258,22 @@ header .navbar .logout-btn:hover::after {
     padding: 0 var(--spacing-xl);
   }
 
-  header .logo-container img {
-    height: 100px;
+  header .btn-voltar-home {
+    left: var(--spacing-xl);
   }
 
-  header .navbar {
-    padding-right: var(--spacing-xl);
+  header .btn-voltar-home a {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  header .btn-voltar-home a:hover {
+    transform: translateY(-4px) scale(1.05);
+  }
+
+  header .logo-container img {
+    height: 100px;
   }
 
   header .navbar .logout-btn {
@@ -231,8 +292,14 @@ header .navbar .logout-btn:hover::after {
     min-height: 100px;
   }
 
+  header .btn-voltar-home a {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
   header .logo-container img {
-    height: 80px;
+    height: 70px;
   }
 
   header .navbar .logout-btn {
@@ -246,7 +313,8 @@ header .navbar .logout-btn:hover::after {
   }
 }
 
-header .navbar .logout-btn:focus {
+header .navbar .logout-btn:focus,
+header .btn-voltar-home a:focus {
   outline: 3px solid var(--fc-primary);
   outline-offset: 4px;
   border-radius: 50%;
@@ -258,7 +326,9 @@ header .navbar .logout-btn:focus {
   header .logo-container img,
   header .navbar .logout-btn,
   header .navbar .logout-btn::before,
-  header .navbar .logout-btn i {
+  header .navbar .logout-btn i,
+  header .btn-voltar-home a,
+  header .btn-voltar-home a i {
     animation: none !important;
     transition: none !important;
   }
@@ -278,7 +348,8 @@ header .navbar .logout-btn:focus {
     position: relative;
   }
 
-  header .navbar {
+  header .navbar,
+  header .btn-voltar-home {
     display: none;
   }
 

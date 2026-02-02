@@ -5,9 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import EditarPerfil from "../Modals/Editar-perfil.js";
 import Header from "../Inc/Header.js";
-import Footer from "../Inc/Footer.js";
 import carrinho from "../Assets/carrinho.png";
 import rodape from "../Assets/rodape.png";
+import Footer from "../Inc/Footer.js";
 import "../Styles/Home.css";
 
 export default function Home() {

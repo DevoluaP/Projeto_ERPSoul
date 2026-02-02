@@ -1,6 +1,5 @@
 const express = require("express");
 const { check } = require("express-validator");
-const { loginLimiter } = require("../middlewares/loginLimiter.js");
 const {
   login,
   logout,
@@ -16,7 +15,6 @@ const router = express.Router();
 
 router.post(
   "/login",
-  loginLimiter,
   [
     check("email").isEmail().withMessage("Credenciais inválidas!")
     .normalizeEmail(),

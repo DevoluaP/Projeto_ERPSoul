@@ -1,10 +1,12 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import logo from "../Assets/logo.png";
 import "./Header.css";
 
 function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/home";
 
   const handleLogout = () => {
     Swal.fire({
@@ -50,6 +52,13 @@ function Header() {
   return (
     <>
       <header>
+        {!isHomePage && (
+          <div className="btn-voltar-home">
+            <Link to="/home">
+              <i className="fa-solid fa-arrow-left-long" />
+            </Link>
+          </div>
+        )}
         <div className="logo-container">
           <Link to="/home">
             <img src={logo} alt="logotipo" title="ERP Soul" />

@@ -49,6 +49,29 @@ a {
   background-color: var(--bc);
   border-bottom: 2px solid var(--fc-primary);
   padding: 0 20px;
+  position: relative;
+}
+
+.header-geral .btn-voltar-geral {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-geral .btn-voltar-geral a {
+  color: var(--fc-secondary);
+  font-size: 24px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-geral .btn-voltar-geral a:hover {
+  color: var(--fc-primary);
+  transform: scale(1.1);
 }
 
 .header-geral .logo {

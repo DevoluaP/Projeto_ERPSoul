@@ -166,6 +166,11 @@ const NovaSenha = () => {
       <body className="body-geral">
         <div className="page-geral" id="page">
           <header className="header-geral">
+            <div className="btn-voltar-geral">
+              <Link to="/esqueci-senha">
+                <i className="fa-solid fa-arrow-left-long" />
+              </Link>
+            </div>
             <div className="logo">
               <Link to="/">
                 <img src={logo} alt="logotipo" title="ERP Soul" />
